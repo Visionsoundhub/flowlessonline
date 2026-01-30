@@ -6,6 +6,7 @@ media_folder: "assets"
 public_folder: "assets"
 
 collections:
+  # --- 1. ΑΡΧΙΚΗ ΣΕΛΙΔΑ ---
   - name: "home"
     label: "Αρχική Σελίδα"
     files:
@@ -14,12 +15,13 @@ collections:
         name: "home_content"
         fields:
           - {label: "Hero Background Banner", name: "hero_image", widget: "image"}
-          - {label: "Hero Title", name: "hero_title", widget: "string"}
+          - {label: "Hero Title (Αν δεν υπάρχει Release)", name: "hero_title", widget: "string"}
           - label: "Πρόσφατη Κυκλοφορία (Overlay)"
             name: "latest_release"
             widget: "object"
             fields:
               - {label: "Εμφάνιση Ενότητας;", name: "show", widget: "boolean", default: true}
+              - {label: "Θέση (Μόνο για Desktop)", name: "alignment", widget: "select", options: ["left", "center", "right"], default: "center"}
               - {label: "Τίτλος Ενότητας", name: "section_title", widget: "string", default: "Πρόσφατη Κυκλοφορία"}
               - {label: "Εξώφυλλο Κομματιού", name: "cover", widget: "image"}
               - {label: "Τίτλος Κομματιού", name: "song_title", widget: "string"}
@@ -42,6 +44,23 @@ collections:
               - {label: "Κείμενο Κουμπιού", name: "btn_text", widget: "string"}
               - {label: "Link Κουμπιού", name: "btn_link", widget: "string"}
 
+  # --- 2. OUR ROSTER ---
+  - name: "artists"
+    label: "Our Roster"
+    folder: "data/artists"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Όνομα Καλλιτέχνη", name: "title", widget: "string"}
+      - {label: "Φωτογραφία Roster", name: "image", widget: "image"}
+      - {label: "Bio (Μέσα στο Modal)", name: "bio", widget: "markdown"}
+      - {label: "Spotify URL", name: "spotify", widget: "string", required: false}
+      - {label: "Instagram URL", name: "instagram", widget: "string", required: false}
+      - {label: "YouTube URL", name: "youtube", widget: "string", required: false}
+      - {label: "TikTok URL", name: "tiktok", widget: "string", required: false}
+
+  # --- 3. SOUNDCHECK RADIO ---
   - name: "radio"
     label: "Soundcheck Radio"
     files:
@@ -54,31 +73,43 @@ collections:
           - {label: "Εμφάνιση Spotify;", name: "show_spotify", widget: "boolean", default: true}
           - {label: "YouTube Link", name: "youtube_link", widget: "string"}
           - {label: "Spotify Link", name: "spotify_link", widget: "string"}
+          - label: "Στάδια Συμμετοχής (Steps)"
+            name: "steps"
+            widget: "list"
+            fields:
+              - {label: "Τίτλος", name: "step_title", widget: "string"}
+              - {label: "Περιγραφή", name: "step_desc", widget: "text"}
+              - label: "Κουμπιά (Add/Remove Buttons)"
+                name: "buttons"
+                widget: "list"
+                fields:
+                  - {label: "Κείμενο", name: "btn_text", widget: "string"}
+                  - {label: "Link (URL)", name: "btn_link", widget: "string"}
 
-  - name: "artists"
-    label: "Our Roster"
-    folder: "data/artists"
-    create: true
-    delete: true
-    slug: "{{slug}}"
-    fields:
-      - {label: "Όνομα", name: "title", widget: "string"}
-      - {label: "Φωτογραφία", name: "image", widget: "image"}
-      - {label: "Bio", name: "bio", widget: "markdown"}
-      - {label: "Spotify URL", name: "spotify", widget: "string", required: false}
-      - {label: "Instagram URL", name: "instagram", widget: "string", required: false}
-
-  - name: "settings"
-    label: "Εμφάνιση & Merch"
+  # --- 4. MERCH & COMMUNITY ---
+  - name: "extra_sections"
+    label: "Merch & Community"
     files:
-      - file: "data/merch.json"
-        label: "Merch & Crew"
-        name: "merch_settings"
+      - file: "data/extra.json"
+        label: "Διακόπτες & Merch Items"
+        name: "extra_settings"
         fields:
-          - {label: "Merch Ενεργό;", name: "merch_active", widget: "boolean", default: false}
-          - {label: "Crew Ενεργό;", name: "crew_active", widget: "boolean", default: true}
+          - {label: "Ενεργοποίηση Merch;", name: "merch_active", widget: "boolean", default: false}
+          - label: "Λίστα Προϊόντων Merch"
+            name: "merch_items"
+            widget: "list"
+            fields:
+              - {label: "Όνομα Προϊόντος", name: "name", widget: "string"}
+              - {label: "Εικόνα", name: "image", widget: "image"}
+              - {label: "Link Αγοράς", name: "link", widget: "string"}
+          - {label: "Ενεργοποίηση Join the Crew;", name: "crew_active", widget: "boolean", default: true}
+
+  # --- 5. ΕΜΦΑΝΙΣΗ SITE ---
+  - name: "appearance"
+    label: "Εμφάνιση Site"
+    files:
       - file: "data/appearance.json"
         label: "Χρώματα"
         name: "site_style"
         fields:
-          - {label: "Accent Color", name: "accent", widget: "color", default: "#00FFD1"}
+          - {label: "Accent Color (Κουμπιά/Links)", name: "accent", widget: "color", default: "#00FFD1"}
