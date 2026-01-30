@@ -1,69 +1,40 @@
-backend:
-  name: git-gateway
-  branch: main
-
-media_folder: "assets"
-public_folder: "assets"
-
-collections:
-  - name: "home"
+- name: "home"
     label: "Αρχική Σελίδα"
     files:
       - file: "data/home.json"
         label: "Περιεχόμενο Αρχικής"
         name: "home_content"
         fields:
-          - {label: "Hero Image", name: "hero_image", widget: "image"}
+          # --- HERO & LATEST RELEASE ---
+          - {label: "Hero Background Banner", name: "hero_image", widget: "image"}
           - {label: "Hero Title", name: "hero_title", widget: "string"}
-          - {label: "About Us Text", name: "about_text", widget: "markdown"} # Εδώ έχεις Bold/Colors
-          - label: "Extra Blocks"
+          - label: "Πρόσφατη Κυκλοφορία (Overlay)"
+            name: "latest_release"
+            widget: "object"
+            fields:
+              - {label: "Εμφάνιση Ενότητας;", name: "show", widget: "boolean", default: true}
+              - {label: "Τίτλος Ενότητας", name: "section_title", widget: "string", default: "Πρόσφατη Κυκλοφορία"}
+              - {label: "Εξώφυλλο Κομματιού", name: "cover", widget: "image"}
+              - {label: "Τίτλος Κομματιού", name: "song_title", widget: "string"}
+              - {label: "Σύντομο Κείμενο", name: "desc", widget: "text"}
+              - label: "Πλατφόρμα Link"
+                name: "link_type"
+                widget: "select"
+                options: ["Spotify", "YouTube"]
+              - {label: "URL Link", name: "link_url", widget: "string"}
+
+          # --- ABOUT SECTION ---
+          - {label: "About Image", name: "about_image", widget: "image"}
+          - {label: "About Title", name: "about_title", widget: "string", default: "About Flowless Music"}
+          - {label: "About Text", name: "about_text", widget: "markdown"}
+          - {label: "About Tagline (Πράσινο)", name: "about_tagline", widget: "string"}
+
+          # --- DYNAMIC BLOCKS ---
+          - label: "Extra Blocks (Add/Remove)"
             name: "blocks"
             widget: "list"
             fields:
-              - {label: "Τίτλος", name: "title", widget: "string"}
+              - {label: "Τίτλος Block", name: "title", widget: "string"}
               - {label: "Κείμενο", name: "text", widget: "markdown"}
-              - {label: "Link", name: "link", widget: "string"}
-
-  - name: "radio"
-    label: "Soundcheck Radio"
-    files:
-      - file: "data/radio.json"
-        label: "Ρυθμίσεις Radio"
-        name: "radio_settings"
-        fields:
-          - {label: "Banner Image", name: "banner_image", widget: "image"}
-          - {label: "Status Text", name: "status", widget: "string"}
-          - {label: "Εμφάνιση Spotify;", name: "show_spotify", widget: "boolean", default: true}
-          - {label: "YouTube Link", name: "youtube_link", widget: "string"}
-          - {label: "Spotify Link", name: "spotify_link", widget: "string"}
-          - label: "Steps"
-            name: "steps"
-            widget: "list"
-            fields:
-              - {label: "Title", name: "step_title", widget: "string"}
-              - {label: "Description", name: "step_desc", widget: "text"}
-              - label: "Buttons"
-                name: "buttons"
-                widget: "list"
-                fields:
-                  - {label: "Text", name: "btn_text", widget: "string"}
-                  - {label: "URL", name: "btn_link", widget: "string"}
-
-  - name: "merch_comm"
-    label: "Merch & Community"
-    files:
-      - file: "data/merch.json"
-        label: "Ρυθμίσεις Merch & Crew"
-        name: "merch_settings"
-        fields:
-          - {label: "Ενεργοποίηση Merch;", name: "merch_active", widget: "boolean", default: false}
-          - {label: "Ενεργοποίηση Join the Crew;", name: "crew_active", widget: "boolean", default: true}
-
-  - name: "appearance"
-    label: "Εμφάνιση"
-    files:
-      - file: "data/appearance.json"
-        label: "Χρώματα"
-        name: "site_style"
-        fields:
-          - {label: "Accent Color", name: "accent", widget: "color", default: "#00FFD1"}
+              - {label: "Κείμενο Κουμπιού", name: "btn_text", widget: "string"}
+              - {label: "Link Κουμπιού", name: "btn_link", widget: "string"}
