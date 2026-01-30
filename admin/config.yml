@@ -1,0 +1,62 @@
+backend:
+  name: git-gateway
+  branch: main # Ή master, ανάλογα τι έχεις στο GitHub
+
+media_folder: "assets" # Εκεί που θα αποθηκεύονται οι φωτό που ανεβάζεις
+public_folder: "assets"
+
+collections:
+  # ΡΥΘΜΙΣΕΙΣ ΓΙΑ ΤΗΝ ΑΡΧΙΚΗ (Release & Blocks)
+  - name: "home"
+    label: "Αρχική Σελίδα"
+    files:
+      - file: "data/home.json"
+        label: "Περιεχόμενο Αρχικής"
+        name: "home_content"
+        fields:
+          - {label: "New Release Image", name: "hero_image", widget: "image"}
+          - label: "Extra Blocks"
+            name: "blocks"
+            widget: "list"
+            fields:
+              - {label: "Τίτλος Block", name: "title", widget: "string"}
+              - {label: "Κείμενο", name: "text", widget: "text"}
+              - {label: "Link Button", name: "link", widget: "string"}
+
+  # ΡΥΘΜΙΣΕΙΣ ΓΙΑ ΤΟ ROSTER (Καλλιτέχνες)
+  - name: "artists"
+    label: "Roster - Καλλιτέχνες"
+    folder: "data/artists"
+    create: true # Σου επιτρέπει να προσθέτεις νέους
+    slug: "{{slug}}"
+    fields:
+      - {label: "Όνομα Καλλιτέχνη", name: "title", widget: "string"}
+      - {label: "Φωτογραφία", name: "image", widget: "image"}
+      - {label: "Bio (για το Modal)", name: "bio", widget: "text"}
+      - {label: "Spotify Link", name: "spotify", widget: "string", required: false}
+      - {label: "Instagram Link", name: "instagram", widget: "string", required: false}
+
+  # ΡΥΘΜΙΣΕΙΣ ΓΙΑ ΤΟ RADIO (Spotify Toggle)
+  - name: "radio"
+    label: "Soundcheck Radio"
+    files:
+      - file: "data/radio.json"
+        label: "Ρυθμίσεις Radio"
+        name: "radio_settings"
+        fields:
+          - {label: "Εμφάνιση Spotify;", name: "show_spotify", widget: "boolean", default: true}
+          - {label: "YouTube Link", name: "youtube_link", widget: "string"}
+          - {label: "Spotify Embed Link", name: "spotify_link", widget: "string"}
+          - {label: "Status Text (π.χ. Live Τώρα)", name: "status", widget: "string"}
+
+  # ΡΥΘΜΙΣΕΙΣ ΓΙΑ ΤΟ MERCH & JOIN THE CREW
+  - name: "merch_settings"
+    label: "Merch & Community"
+    files:
+      - file: "data/settings.json"
+        label: "Διακόπτες Σελίδων"
+        name: "toggles"
+        fields:
+          - {label: "Show Merch Items (ή Coming Soon)", name: "merch_active", widget: "boolean", default: false}
+          - {label: "Show Join the Crew Section", name: "community_active", widget: "boolean", default: false}
+          - {label: "Global Accent Color", name: "accent_color", widget: "color", default: "#00FFD1"}
