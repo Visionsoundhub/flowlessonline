@@ -15,6 +15,26 @@
           "btn_link": "dfgbpkejibgh"
         }
       ]
+    },
+    {
+      "step_title": "Στείλε το κομμάτι σου",
+      "step_desc": "Στείλε το αρχείο ή το link του κομματιού σου κατευθείαν στον Black Vybez.\n\n",
+      "buttons": [
+        {
+          "btn_text": "Στείλε DM στο Instagram",
+          "btn_link": "ργερηετηετ"
+        }
+      ]
+    },
+    {
+      "step_title": "Παρακολούθησε Live",
+      "step_desc": "Μπες στο TikTok Live για να ακούσεις το κομμάτι σου και να ανακαλύψεις νέα μουσική.",
+      "buttons": [
+        {
+          "btn_text": "Δες το Live εδώ",
+          "btn_link": "ετξετξτε"
+        }
+      ]
     }
   ],
   "intro_image": "assets/scr-for-media-site-banner.jpg",
