@@ -41,6 +41,8 @@ collections:
         label: "Ρυθμίσεις Radio"
         name: "radio_settings"
         fields:
+          # ΕΔΩ ΠΡΟΣΤΕΘΗΚΕ ΤΟ BANNER
+          - {label: "Banner Image", name: "banner_image", widget: "image"}
           - {label: "Εμφάνιση Spotify;", name: "show_spotify", widget: "boolean", default: true}
           - {label: "YouTube Link", name: "youtube_link", widget: "string"}
           - {label: "Spotify Embed Link", name: "spotify_link", widget: "string"}
