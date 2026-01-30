@@ -9,13 +9,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        :root{--bg-color:#121212;--primary-surface-color:#1E1E1E;--secondary-surface-color:#2a2a2a;--text-color:#E0E0E0;--accent-color:#00FFD1;--font-family:'Poppins',sans-serif;--header-height:70px}html{scroll-behavior:smooth;scroll-padding-top:var(--header-height)}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--font-family);background-color:var(--bg-color);color:var(--text-color);line-height:1.6}.container{width:90%;max-width:1100px;margin:0 auto}h1,h2,h3{line-height:1.2;font-weight:600}h1{font-size:2.5rem}h2{font-size:2rem;margin-bottom:1.5rem}h3{font-size:1.5rem;margin-bottom:1rem;color:var(--accent-color)}p{margin-bottom:1rem;opacity:.9}.btn{display:inline-block;background-color:var(--accent-color);color:var(--bg-color);padding:12px 30px;font-weight:700;text-transform:uppercase;border:2px solid var(--accent-color);border-radius:5px;transition:all .3s ease;text-decoration:none;cursor:pointer;margin-top:1rem}.btn:hover{background-color:transparent;color:var(--accent-color)}header{background-color:rgba(18,18,18,.8);padding:0 1rem;position:fixed;width:100%;height:var(--header-height);top:0;z-index:1000;backdrop-filter:blur(10px)}header .container{display:flex;justify-content:space-between;align-items:center;height:100%}.logo{font-weight:700;font-size:1.5rem;color:#fff}.desktop-navigation{display:none}#hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;background-repeat:no-repeat;background-position:center center;background-size:cover;padding-top:var(--header-height);position:relative}
-        /* LATEST RELEASE OVERLAY */
-        .release-overlay{background:rgba(30,30,30,.85);backdrop-filter:blur(10px);padding:2rem;border-radius:10px;border:1px solid var(--secondary-surface-color);max-width:500px;width:90%;display:flex;flex-direction:column;align-items:center;gap:1rem;box-shadow:0 15px 35px rgba(0,0,0,.5);animation:fadeInUp .8s ease-out}.release-cover{width:150px;height:150px;border-radius:5px;object-fit:cover;box-shadow:0 5px 15px rgba(0,0,0,.3)}.release-info h4{color:var(--accent-color);text-transform:uppercase;font-size:.9rem;letter-spacing:1px;margin-bottom:.5rem}.release-info h2{font-size:1.8rem;margin-bottom:.5rem}
+        :root{--bg-color:#121212;--primary-surface-color:#1E1E1E;--secondary-surface-color:#2a2a2a;--text-color:#E0E0E0;--accent-color:#00FFD1;--font-family:'Poppins',sans-serif;--header-height:70px}html{scroll-behavior:smooth;scroll-padding-top:var(--header-height)}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--font-family);background-color:var(--bg-color);color:var(--text-color);line-height:1.6}.container{width:90%;max-width:1100px;margin:0 auto}h1,h2,h3{line-height:1.2;font-weight:600}h1{font-size:2.5rem}h2{font-size:2rem;margin-bottom:1.5rem}h3{font-size:1.5rem;margin-bottom:1rem;color:var(--accent-color)}p{margin-bottom:1rem;opacity:.9}.btn{display:inline-block;background-color:var(--accent-color);color:var(--bg-color);padding:12px 30px;font-weight:700;text-transform:uppercase;border:2px solid var(--accent-color);border-radius:5px;transition:all .3s ease;text-decoration:none;cursor:pointer;margin-top:1rem}.btn:hover{background-color:transparent;color:var(--accent-color)}header{background-color:rgba(18,18,18,.8);padding:0 1rem;position:fixed;width:100%;height:var(--header-height);top:0;z-index:1000;backdrop-filter:blur(10px)}header .container{display:flex;justify-content:space-between;align-items:center;height:100%}.logo{font-weight:700;font-size:1.5rem;color:#fff}.desktop-navigation{display:none}
+        
+        /* HERO & LATEST RELEASE OVERLAY */
+        #hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;background-repeat:no-repeat;background-position:center center;background-size:cover;padding-top:var(--header-height);position:relative}
+        .release-overlay{background:rgba(18,18,18,.9);backdrop-filter:blur(15px);padding:2.5rem;border-radius:12px;border:1px solid var(--secondary-surface-color);max-width:550px;width:90%;display:flex;flex-direction:column;align-items:center;gap:1.2rem;box-shadow:0 20px 40px rgba(0,0,0,.6);animation:fadeInUp .8s ease-out}
+        .release-cover{width:180px;height:180px;border-radius:8px;object-fit:cover;box-shadow:0 8px 20px rgba(0,0,0,.4)}
+        .release-info h4{color:var(--accent-color);text-transform:uppercase;font-size:.85rem;letter-spacing:2px;margin-bottom:.5rem}
+        .release-info h2{font-size:2rem;margin-bottom:.5rem;color:#fff}
+        .release-info p{font-size:1rem;margin-bottom:1.5rem;opacity:.8}
+
         /* ABOUT SECTION */
-        #about{background-color:var(--primary-surface-color);padding:5rem 0}#about .about-grid{display:grid;grid-template-columns:1fr;gap:3rem;align-items:center;text-align:left;margin-top:2rem}.about-image-placeholder{width:100%;height:400px;border-radius:5px;background-size:cover;background-position:center}#about .tagline{font-size:1.2rem;font-weight:600;color:var(--accent-color);text-align:center;margin-top:3rem}
+        #about{background-color:var(--primary-surface-color);padding:5.5rem 0}
+        #about .about-grid{display:grid;grid-template-columns:1fr;gap:3.5rem;align-items:center;text-align:left;margin-top:2.5rem}
+        .about-image-placeholder{width:100%;height:450px;border-radius:8px;background-size:cover;background-position:center;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+        #about .tagline{font-size:1.3rem;font-weight:600;color:var(--accent-color);text-align:center;margin-top:3.5rem;max-width:800px;margin-left:auto;margin-right:auto}
+        
         /* DYNAMIC BLOCKS */
-        .page-section{padding:5rem 0;text-align:center;border-top:1px solid var(--secondary-surface-color)}.page-section:nth-of-type(even){background-color:var(--primary-surface-color)}footer{padding:3rem 0;text-align:center;background-color:var(--bg-color);border-top:1px solid var(--primary-surface-color)}@keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}@media (min-width:768px){h1{font-size:4rem}.desktop-navigation{display:block}.desktop-navigation ul{display:flex;list-style:none;gap:2.5rem;align-items:center}#about .about-grid{grid-template-columns:1fr 1.5fr}}
+        .page-section{padding:5.5rem 0;text-align:center;border-top:1px solid var(--secondary-surface-color)}
+        .page-section:nth-of-type(even){background-color:var(--primary-surface-color)}
+        
+        footer{padding:3.5rem 0;text-align:center;background-color:var(--bg-color);border-top:1px solid var(--primary-surface-color)}
+        @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+        @media (min-width:768px){h1{font-size:4.5rem}.desktop-navigation{display:block}.desktop-navigation ul{display:flex;list-style:none;gap:3rem;align-items:center}#about .about-grid{grid-template-columns:1fr 1.2fr}}
     </style>
 </head>
 <body>
@@ -62,9 +78,9 @@
             fetch('/data/home.json')
                 .then(res => res.json())
                 .then(data => {
-                    // 1. HERO & LATEST RELEASE
+                    // 1. ΡΥΘΜΙΣΗ HERO & LATEST RELEASE
                     const hero = document.getElementById('hero');
-                    if(data.hero_image) hero.style.backgroundImage = `linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.45)), url(${data.hero_image})`;
+                    if(data.hero_image) hero.style.backgroundImage = `linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.5)), url(${data.hero_image})`;
                     
                     if(data.latest_release && data.latest_release.show) {
                         hero.innerHTML = `
@@ -75,7 +91,7 @@
                                     <h2>${data.latest_release.song_title || ''}</h2>
                                     <p>${data.latest_release.desc || ''}</p>
                                     <a href="${data.latest_release.link_url}" class="btn" target="_blank">
-                                        AKOYΣΤΕ ΣΤΟ ${data.latest_release.link_type || 'SPOTIFY'}
+                                        AKOYΣΤΕ ΣΤΟ ${data.latest_release.link_type ? data.latest_release.link_type.toUpperCase() : 'SPOTIFY'}
                                     </a>
                                 </div>
                             </div>
@@ -84,34 +100,34 @@
                         hero.innerHTML = `<h1>${data.hero_title || 'Flowless Music'}</h1>`;
                     }
 
-                    // 2. ABOUT SECTION
+                    // 2. ΡΥΘΜΙΣΗ ABOUT SECTION
                     if(data.about_title) document.getElementById('aboutTitle').textContent = data.about_title;
                     if(data.about_image) document.getElementById('aboutImage').style.backgroundImage = `url(${data.about_image})`;
                     if(data.about_tagline) document.getElementById('aboutTagline').textContent = data.about_tagline;
                     
-                    // Markdown-like Bold parsing (**text**)
+                    // Parsing για Bold (**κείμενο**) και Αλλαγή γραμμής
                     if(data.about_text) {
-                        const parsedText = data.about_text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-                        document.getElementById('aboutText').innerHTML = parsedText;
+                        let text = data.about_text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+                        document.getElementById('aboutText').innerHTML = text.replace(/\n/g, '<br>');
                     }
 
-                    // 3. DYNAMIC BLOCKS
+                    // 3. ΦΟΡΤΩΣΗ ΔΥΝΑΜΙΚΩΝ BLOCKS
                     const blockContainer = document.getElementById('dynamicBlocks');
-                    if(data.blocks) {
+                    if(data.blocks && data.blocks.length > 0) {
                         data.blocks.forEach(block => {
                             const blockHtml = `
                                 <section class="page-section">
                                     <div class="container">
                                         <h2>${block.title}</h2>
-                                        <div class="block-text">${block.text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}</div>
-                                        ${block.btn_link ? `<a href="${block.btn_link}" class="btn">${block.btn_text || 'ΔΕΙΤΕ ΠΕΡΙΣΣΟΤΕΡΑ'}</a>` : ''}
+                                        <div class="block-text">${block.text ? block.text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>') : ''}</div>
+                                        ${block.btn_link ? `<a href="${block.btn_link}" class="btn">${block.btn_text || 'ΠΕΡΙΣΣΟΤΕΡΑ'}</a>` : ''}
                                     </div>
                                 </section>
                             `;
                             blockContainer.innerHTML += blockHtml;
                         });
                     }
-                }).catch(err => console.log("Περίμενε το πρώτο σου Publish στο πάνελ!"));
+                }).catch(err => console.log("Αναμονή για δεδομένα από το πάνελ..."));
         });
     </script>
 </body>
