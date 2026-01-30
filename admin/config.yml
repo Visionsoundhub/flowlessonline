@@ -6,21 +6,37 @@ media_folder: "assets"
 public_folder: "assets"
 
 collections:
-  - name: "home"
-    label: "Αρχική Σελίδα"
+  - name: "radio"
+    label: "Soundcheck Radio"
     files:
-      - file: "data/home.json"
-        label: "Περιεχόμενο Αρχικής"
-        name: "home_content"
+      - file: "data/radio.json"
+        label: "Πλήρης Διαχείριση Σελίδας"
+        name: "radio_settings"
         fields:
-          - {label: "New Release Image", name: "hero_image", widget: "image"}
-          - label: "Extra Blocks"
-            name: "blocks"
+          # --- HERO SECTION ---
+          - {label: "Banner Image", name: "banner_image", widget: "image"}
+          - {label: "Hero Tagline", name: "hero_tagline", widget: "string", default: "Το TikTok Live που δεν θες να χάσεις"}
+          
+          # --- INTRO SECTION (Γίνε μέρος της κοινότητας) ---
+          - {label: "Intro Title", name: "intro_title", widget: "string"}
+          - {label: "Intro Text", name: "intro_text", widget: "text"}
+          - {label: "Intro Image", name: "intro_image", widget: "image"}
+          
+          # --- STEPS SECTION (Πώς να συμμετέχεις) ---
+          - label: "Στάδια Συμμετοχής (Steps)"
+            name: "steps"
             widget: "list"
             fields:
-              - {label: "Τίτλος Block", name: "title", widget: "string"}
-              - {label: "Κείμενο", name: "text", widget: "text"}
-              - {label: "Link Button", name: "link", widget: "string"}
+              - {label: "Τίτλος Σταδίου", name: "step_title", widget: "string"}
+              - {label: "Περιγραφή", name: "step_desc", widget: "text"}
+              - {label: "Κείμενο Κουμπιού", name: "btn_text", widget: "string"}
+              - {label: "Link Κουμπιού", name: "btn_link", widget: "string"}
+          
+          # --- RADIO STATUS & LINKS ---
+          - {label: "Status Text (π.χ. ΣΕΖΟΝ 1)", name: "status", widget: "string"}
+          - {label: "YouTube Embed Link", name: "youtube_link", widget: "string"}
+          - {label: "Spotify Embed Link", name: "spotify_link", widget: "string"}
+          - {label: "Εμφάνιση Spotify;", name: "show_spotify", widget: "boolean", default: true}
 
   - name: "artists"
     label: "Roster - Καλλιτέχνες"
@@ -34,19 +50,14 @@ collections:
       - {label: "Spotify Link", name: "spotify", widget: "string", required: false}
       - {label: "Instagram Link", name: "instagram", widget: "string", required: false}
 
-  - name: "radio"
-    label: "Soundcheck Radio"
+  - name: "home"
+    label: "Αρχική Σελίδα"
     files:
-      - file: "data/radio.json"
-        label: "Ρυθμίσεις Radio"
-        name: "radio_settings"
+      - file: "data/home.json"
+        label: "Περιεχόμενο Αρχικής"
+        name: "home_content"
         fields:
-          # ΕΔΩ ΠΡΟΣΤΕΘΗΚΕ ΤΟ BANNER
-          - {label: "Banner Image", name: "banner_image", widget: "image"}
-          - {label: "Εμφάνιση Spotify;", name: "show_spotify", widget: "boolean", default: true}
-          - {label: "YouTube Link", name: "youtube_link", widget: "string"}
-          - {label: "Spotify Embed Link", name: "spotify_link", widget: "string"}
-          - {label: "Status Text", name: "status", widget: "string"}
+          - {label: "New Release Image", name: "hero_image", widget: "image"}
 
   - name: "settings"
     label: "Γενικές Ρυθμίσεις"
@@ -56,5 +67,4 @@ collections:
         name: "global_settings"
         fields:
           - {label: "Merch Active", name: "merch_active", widget: "boolean", default: false}
-          - {label: "Community Active", name: "community_active", widget: "boolean", default: false}
           - {label: "Accent Color", name: "accent_color", widget: "color", default: "#00FFD1"}
