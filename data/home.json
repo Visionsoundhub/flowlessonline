@@ -8,7 +8,8 @@
     "desc": "Άκου την νέα κυκλοφορία του Evoid, Toxical & Black Vybez",
     "link_type": "YouTube",
     "link_url": "https://www.youtube.com/watch?v=F7uSoDbNi08&list=RDF7uSoDbNi08&start_radio=1",
-    "cover": "assets/keno-artwork.jpg"
+    "cover": "assets/keno-artwork.jpg",
+    "alignment": "right"
   },
   "about_image": "assets/aboutusbanner.jpg",
   "about_title": "About Flowless Music",
