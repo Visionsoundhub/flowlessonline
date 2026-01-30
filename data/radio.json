@@ -1,7 +1,27 @@
 {
+  "intro_text": "Ο Evoid και ο Black Vybez σε προσκαλούν να γίνεις μέρος μιας αληθινής μουσικής κοινότητας, εκεί όπου η μουσική σου μπορεί να ακουστεί. Το Soundcheck Radio είναι η πλατφόρμα σου.",
+  "intro_title": "Γίνε μέρος της κοινότητας",
+  "steps": [
+    {
+      "step_title": "Ακολούθησε",
+      "step_desc": "Το μόνο αντάλλαγμα είναι ένα follow στα προφίλ που τρέχουν το project.",
+      "buttons": [
+        {
+          "btn_text": "Evoid",
+          "btn_link": "wrhwrhwrh"
+        },
+        {
+          "btn_text": "Black Vybez ",
+          "btn_link": "dfgbpkejibgh"
+        }
+      ]
+    }
+  ],
+  "intro_image": "assets/scr-for-media-site-banner.jpg",
   "banner_image": "assets/scr-for-media-site-banner.jpg",
-  "youtube_link": ";;;;;;;;;;;;",
-  "spotify_link": ";;;;;;;;;;;;;;;;;;;",
+  "hero_tagline": "Το TikTok Live που δεν θες να χάσεις",
   "status": ";;;;;;;;;;;;;;;;;;;;;;;",
-  "show_spotify": false
+  "youtube_link": ";;;;;;;;;;;;",
+  "show_spotify": false,
+  "spotify_link": ";;;;;;;;;;;;;;;;;;;"
 }
