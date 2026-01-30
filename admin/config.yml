@@ -6,7 +6,6 @@ media_folder: "assets"
 public_folder: "assets"
 
 collections:
-  # --- 1. ΑΡΧΙΚΗ ΣΕΛΙΔΑ (Hero & Δυναμικά Blocks) ---
   - name: "home"
     label: "Αρχική Σελίδα"
     files:
@@ -14,32 +13,17 @@ collections:
         label: "Περιεχόμενο Αρχικής"
         name: "home_content"
         fields:
-          - {label: "New Release Banner (Logo Area)", name: "hero_image", widget: "image"}
+          - {label: "Hero Image", name: "hero_image", widget: "image"}
           - {label: "Hero Title", name: "hero_title", widget: "string"}
-          - label: "Επιπλέον Blocks (Προσθήκη/Αφαίρεση)"
+          - {label: "About Us Text", name: "about_text", widget: "markdown"} # Εδώ έχεις Bold/Colors
+          - label: "Extra Blocks"
             name: "blocks"
             widget: "list"
             fields:
-              - {label: "Τίτλος Block", name: "title", widget: "string"}
-              - {label: "Κείμενο", name: "text", widget: "text"}
-              - {label: "Κείμενο Κουμπιού", name: "btn_text", widget: "string"}
-              - {label: "Link Κουμπιού", name: "btn_link", widget: "string"}
+              - {label: "Τίτλος", name: "title", widget: "string"}
+              - {label: "Κείμενο", name: "text", widget: "markdown"}
+              - {label: "Link", name: "link", widget: "string"}
 
-  # --- 2. ROSTER (Πλήρης διαχείριση Καλλιτεχνών & Modals) ---
-  - name: "artists"
-    label: "Our Roster"
-    folder: "data/artists"
-    create: true # Επιτρέπει προσθήκη νέου αρχείου (Καλλιτέχνη)
-    delete: true # Επιτρέπει διαγραφή
-    slug: "{{slug}}"
-    fields:
-      - {label: "Όνομα Καλλιτέχνη", name: "title", widget: "string"}
-      - {label: "Φωτογραφία Roster", name: "image", widget: "image"}
-      - {label: "Κείμενο Μέσα στο Modal (Bio)", name: "bio", widget: "text"}
-      - {label: "Spotify Link", name: "spotify", widget: "string", required: false}
-      - {label: "Instagram Link", name: "instagram", widget: "string", required: false}
-
-  # --- 3. SOUNDCHECK RADIO (Κείμενα, Links & Spotify Toggle) ---
   - name: "radio"
     label: "Soundcheck Radio"
     files:
@@ -47,49 +31,39 @@ collections:
         label: "Ρυθμίσεις Radio"
         name: "radio_settings"
         fields:
-          - {label: "Main Banner Image", name: "banner_image", widget: "image"}
-          - {label: "Hero Tagline", name: "hero_tagline", widget: "string"}
+          - {label: "Banner Image", name: "banner_image", widget: "image"}
+          - {label: "Status Text", name: "status", widget: "string"}
           - {label: "Εμφάνιση Spotify;", name: "show_spotify", widget: "boolean", default: true}
           - {label: "YouTube Link", name: "youtube_link", widget: "string"}
           - {label: "Spotify Link", name: "spotify_link", widget: "string"}
-          - {label: "Status (π.χ. LIVE)", name: "status", widget: "string"}
-          - label: "Βήματα Συμμετοχής (Steps)"
+          - label: "Steps"
             name: "steps"
             widget: "list"
             fields:
-              - {label: "Τίτλος", name: "step_title", widget: "string"}
-              - {label: "Περιγραφή", name: "step_desc", widget: "text"}
-              - label: "Κουμπιά (Add/Remove Buttons)"
+              - {label: "Title", name: "step_title", widget: "string"}
+              - {label: "Description", name: "step_desc", widget: "text"}
+              - label: "Buttons"
                 name: "buttons"
                 widget: "list"
                 fields:
-                  - {label: "Κείμενο", name: "btn_text", widget: "string"}
-                  - {label: "Link (URL)", name: "btn_link", widget: "string"}
+                  - {label: "Text", name: "btn_text", widget: "string"}
+                  - {label: "URL", name: "btn_link", widget: "string"}
 
-  # --- 4. MERCH & COMMUNITY (On/Off Διακόπτες) ---
-  - name: "extra_sections"
+  - name: "merch_comm"
     label: "Merch & Community"
     files:
-      - file: "data/extra.json"
-        label: "Διακόπτες & Αντικείμενα"
-        name: "extra_settings"
+      - file: "data/merch.json"
+        label: "Ρυθμίσεις Merch & Crew"
+        name: "merch_settings"
         fields:
-          - {label: "Ενεργοποίηση Merch (Wear the Movement);", name: "merch_active", widget: "boolean", default: false}
-          - label: "Λίστα Προϊόντων Merch"
-            name: "merch_items"
-            widget: "list"
-            fields:
-              - {label: "Όνομα Προϊόντος", name: "name", widget: "string"}
-              - {label: "Εικόνα", name: "image", widget: "image"}
-              - {label: "Link Αγοράς", name: "link", widget: "string"}
+          - {label: "Ενεργοποίηση Merch;", name: "merch_active", widget: "boolean", default: false}
           - {label: "Ενεργοποίηση Join the Crew;", name: "crew_active", widget: "boolean", default: true}
 
-  # --- 5. GLOBAL STYLES (Χρώματα) ---
   - name: "appearance"
-    label: "Εμφάνιση Site"
+    label: "Εμφάνιση"
     files:
       - file: "data/appearance.json"
-        label: "Χρώματα & Στυλ"
+        label: "Χρώματα"
         name: "site_style"
         fields:
-          - {label: "Accent Color (Κουμπιά/Links)", name: "accent", widget: "color", default: "#00FFD1"}
+          - {label: "Accent Color", name: "accent", widget: "color", default: "#00FFD1"}
