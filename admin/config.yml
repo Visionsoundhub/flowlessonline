@@ -1,12 +1,11 @@
 backend:
   name: git-gateway
-  branch: main # Ή master, ανάλογα τι έχεις στο GitHub
+  branch: main
 
-media_folder: "assets" # Εκεί που θα αποθηκεύονται οι φωτό που ανεβάζεις
+media_folder: "assets"
 public_folder: "assets"
 
 collections:
-  # ΡΥΘΜΙΣΕΙΣ ΓΙΑ ΤΗΝ ΑΡΧΙΚΗ (Release & Blocks)
   - name: "home"
     label: "Αρχική Σελίδα"
     files:
@@ -23,11 +22,10 @@ collections:
               - {label: "Κείμενο", name: "text", widget: "text"}
               - {label: "Link Button", name: "link", widget: "string"}
 
-  # ΡΥΘΜΙΣΕΙΣ ΓΙΑ ΤΟ ROSTER (Καλλιτέχνες)
   - name: "artists"
     label: "Roster - Καλλιτέχνες"
     folder: "data/artists"
-    create: true # Σου επιτρέπει να προσθέτεις νέους
+    create: true
     slug: "{{slug}}"
     fields:
       - {label: "Όνομα Καλλιτέχνη", name: "title", widget: "string"}
@@ -36,7 +34,6 @@ collections:
       - {label: "Spotify Link", name: "spotify", widget: "string", required: false}
       - {label: "Instagram Link", name: "instagram", widget: "string", required: false}
 
-  # ΡΥΘΜΙΣΕΙΣ ΓΙΑ ΤΟ RADIO (Spotify Toggle)
   - name: "radio"
     label: "Soundcheck Radio"
     files:
@@ -47,16 +44,15 @@ collections:
           - {label: "Εμφάνιση Spotify;", name: "show_spotify", widget: "boolean", default: true}
           - {label: "YouTube Link", name: "youtube_link", widget: "string"}
           - {label: "Spotify Embed Link", name: "spotify_link", widget: "string"}
-          - {label: "Status Text (π.χ. Live Τώρα)", name: "status", widget: "string"}
+          - {label: "Status Text", name: "status", widget: "string"}
 
-  # ΡΥΘΜΙΣΕΙΣ ΓΙΑ ΤΟ MERCH & JOIN THE CREW
-  - name: "merch_settings"
-    label: "Merch & Community"
+  - name: "settings"
+    label: "Γενικές Ρυθμίσεις"
     files:
       - file: "data/settings.json"
-        label: "Διακόπτες Σελίδων"
-        name: "toggles"
+        label: "Διακόπτες & Χρώματα"
+        name: "global_settings"
         fields:
-          - {label: "Show Merch Items (ή Coming Soon)", name: "merch_active", widget: "boolean", default: false}
-          - {label: "Show Join the Crew Section", name: "community_active", widget: "boolean", default: false}
-          - {label: "Global Accent Color", name: "accent_color", widget: "color", default: "#00FFD1"}
+          - {label: "Merch Active", name: "merch_active", widget: "boolean", default: false}
+          - {label: "Community Active", name: "community_active", widget: "boolean", default: false}
+          - {label: "Accent Color", name: "accent_color", widget: "color", default: "#00FFD1"}
