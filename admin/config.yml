@@ -29,11 +29,15 @@ collections:
             fields:
               - {label: "Τίτλος Σταδίου", name: "step_title", widget: "string"}
               - {label: "Περιγραφή", name: "step_desc", widget: "text"}
-              - {label: "Κείμενο Κουμπιού", name: "btn_text", widget: "string"}
-              - {label: "Link Κουμπιού", name: "btn_link", widget: "string"}
+              - label: "Κουμπιά (Buttons)"
+                name: "buttons"
+                widget: "list"
+                fields:
+                  - {label: "Κείμενο Κουμπιού", name: "btn_text", widget: "string"}
+                  - {label: "Link Κουμπιού", name: "btn_link", widget: "string"}
           
           # --- RADIO STATUS & LINKS ---
-          - {label: "Status Text (π.χ. ΣΕΖΟΝ 1)", name: "status", widget: "string"}
+          - {label: "Status Text", name: "status", widget: "string"}
           - {label: "YouTube Embed Link", name: "youtube_link", widget: "string"}
           - {label: "Spotify Embed Link", name: "spotify_link", widget: "string"}
           - {label: "Εμφάνιση Spotify;", name: "show_spotify", widget: "boolean", default: true}
@@ -49,22 +53,3 @@ collections:
       - {label: "Bio (για το Modal)", name: "bio", widget: "text"}
       - {label: "Spotify Link", name: "spotify", widget: "string", required: false}
       - {label: "Instagram Link", name: "instagram", widget: "string", required: false}
-
-  - name: "home"
-    label: "Αρχική Σελίδα"
-    files:
-      - file: "data/home.json"
-        label: "Περιεχόμενο Αρχικής"
-        name: "home_content"
-        fields:
-          - {label: "New Release Image", name: "hero_image", widget: "image"}
-
-  - name: "settings"
-    label: "Γενικές Ρυθμίσεις"
-    files:
-      - file: "data/settings.json"
-        label: "Διακόπτες & Χρώματα"
-        name: "global_settings"
-        fields:
-          - {label: "Merch Active", name: "merch_active", widget: "boolean", default: false}
-          - {label: "Accent Color", name: "accent_color", widget: "color", default: "#00FFD1"}
