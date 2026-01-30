@@ -6,6 +6,20 @@ media_folder: "assets"
 public_folder: "assets"
 
 collections:
+  # --- 1. ΑΡΧΙΚΗ ΣΕΛΙΔΑ ---
+  - name: "home"
+    label: "Αρχική Σελίδα"
+    files:
+      - file: "data/home.json"
+        label: "Περιεχόμενο Αρχικής"
+        name: "home_content"
+        fields:
+          - {label: "Hero Banner", name: "hero_image", widget: "image"}
+          - {label: "Hero Title", name: "hero_title", widget: "string", default: "Flowless Music"}
+          - {label: "About Title", name: "about_title", widget: "string", default: "About Us"}
+          - {label: "About Text", name: "about_text", widget: "text"}
+
+  # --- 2. SOUNDCHECK RADIO ---
   - name: "radio"
     label: "Soundcheck Radio"
     files:
@@ -13,16 +27,11 @@ collections:
         label: "Πλήρης Διαχείριση Σελίδας"
         name: "radio_settings"
         fields:
-          # --- HERO SECTION ---
           - {label: "Banner Image", name: "banner_image", widget: "image"}
-          - {label: "Hero Tagline", name: "hero_tagline", widget: "string", default: "Το TikTok Live που δεν θες να χάσεις"}
-          
-          # --- INTRO SECTION (Γίνε μέρος της κοινότητας) ---
+          - {label: "Hero Tagline", name: "hero_tagline", widget: "string"}
           - {label: "Intro Title", name: "intro_title", widget: "string"}
           - {label: "Intro Text", name: "intro_text", widget: "text"}
           - {label: "Intro Image", name: "intro_image", widget: "image"}
-          
-          # --- STEPS SECTION (Πώς να συμμετέχεις) ---
           - label: "Στάδια Συμμετοχής (Steps)"
             name: "steps"
             widget: "list"
@@ -35,13 +44,12 @@ collections:
                 fields:
                   - {label: "Κείμενο Κουμπιού", name: "btn_text", widget: "string"}
                   - {label: "Link Κουμπιού", name: "btn_link", widget: "string"}
-          
-          # --- RADIO STATUS & LINKS ---
           - {label: "Status Text", name: "status", widget: "string"}
           - {label: "YouTube Embed Link", name: "youtube_link", widget: "string"}
           - {label: "Spotify Embed Link", name: "spotify_link", widget: "string"}
           - {label: "Εμφάνιση Spotify;", name: "show_spotify", widget: "boolean", default: true}
 
+  # --- 3. ROSTER (ΚΑΛΛΙΤΕΧΝΕΣ) ---
   - name: "artists"
     label: "Roster - Καλλιτέχνες"
     folder: "data/artists"
@@ -50,6 +58,19 @@ collections:
     fields:
       - {label: "Όνομα Καλλιτέχνη", name: "title", widget: "string"}
       - {label: "Φωτογραφία", name: "image", widget: "image"}
-      - {label: "Bio (για το Modal)", name: "bio", widget: "text"}
+      - {label: "Bio", name: "bio", widget: "text"}
       - {label: "Spotify Link", name: "spotify", widget: "string", required: false}
       - {label: "Instagram Link", name: "instagram", widget: "string", required: false}
+
+  # --- 4. ΓΕΝΙΚΕΣ ΡΥΘΜΙΣΕΙΣ (MERCH & ΧΡΩΜΑΤΑ) ---
+  - name: "settings"
+    label: "Γενικές Ρυθμίσεις"
+    files:
+      - file: "data/settings.json"
+        label: "Merch & Site Settings"
+        name: "global_settings"
+        fields:
+          - {label: "Είναι το Merch Ενεργό;", name: "merch_active", widget: "boolean", default: false}
+          - {label: "Merch Page Title", name: "merch_title", widget: "string", default: "Coming Soon"}
+          - {label: "Merch External Link", name: "merch_link", widget: "string", required: false}
+          - {label: "Χρώμα Site (Accent)", name: "accent_color", widget: "color", default: "#00FFD1"}
