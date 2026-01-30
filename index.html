@@ -9,29 +9,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        :root{--bg-color:#121212;--primary-surface-color:#1E1E1E;--secondary-surface-color:#2a2a2a;--text-color:#E0E0E0;--accent-color:#00FFD1;--font-family:'Poppins',sans-serif;--header-height:70px}html{scroll-behavior:smooth;scroll-padding-top:var(--header-height)}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--font-family);background-color:var(--bg-color);color:var(--text-color);line-height:1.6}.container{width:90%;max-width:1100px;margin:0 auto}h1,h2,h3{line-height:1.2;font-weight:600}h1{font-size:2.5rem}h2{font-size:2rem;margin-bottom:1.5rem}h3{font-size:1.5rem;margin-bottom:1rem;color:var(--accent-color)}p{margin-bottom:1rem;opacity:.9}.btn{display:inline-block;background-color:var(--accent-color);color:var(--bg-color);padding:12px 30px;font-weight:700;text-transform:uppercase;border:2px solid var(--accent-color);border-radius:5px;transition:all .3s ease;text-decoration:none;cursor:pointer;margin-top:1rem}.btn:hover{background-color:transparent;color:var(--accent-color)}header{background-color:rgba(18,18,18,.8);padding:0 1rem;position:fixed;width:100%;height:var(--header-height);top:0;z-index:1000;backdrop-filter:blur(10px)}header .container{display:flex;justify-content:space-between;align-items:center;height:100%}.logo{font-weight:700;font-size:1.5rem;color:#fff}.desktop-navigation{display:none}
+        :root{--bg-color:#121212;--primary-surface-color:#1E1E1E;--secondary-surface-color:#2a2a2a;--text-color:#E0E0E0;--accent-color:#00FFD1;--font-family:'Poppins',sans-serif;--header-height:70px}html{scroll-behavior:smooth;scroll-padding-top:var(--header-height)}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--font-family);background-color:var(--bg-color);color:var(--text-color);line-height:1.6}.container{width:90%;max-width:1100px;margin:0 auto}h2{font-size:2rem;margin-bottom:1.5rem}p{margin-bottom:1rem;opacity:.9}.btn{display:inline-block;background-color:var(--accent-color);color:var(--bg-color);padding:12px 30px;font-weight:700;text-transform:uppercase;border:2px solid var(--accent-color);border-radius:5px;transition:all .3s ease;text-decoration:none;margin-top:1rem}.btn:hover{background-color:transparent;color:var(--accent-color)}
         
-        /* HERO & LATEST RELEASE OVERLAY */
-        #hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;background-repeat:no-repeat;background-position:center center;background-size:cover;padding-top:var(--header-height);position:relative}
-        .release-overlay{background:rgba(18,18,18,.9);backdrop-filter:blur(15px);padding:2.5rem;border-radius:12px;border:1px solid var(--secondary-surface-color);max-width:550px;width:90%;display:flex;flex-direction:column;align-items:center;gap:1.2rem;box-shadow:0 20px 40px rgba(0,0,0,.6);animation:fadeInUp .8s ease-out}
-        .release-cover{width:180px;height:180px;border-radius:8px;object-fit:cover;box-shadow:0 8px 20px rgba(0,0,0,.4)}
-        .release-info h4{color:var(--accent-color);text-transform:uppercase;font-size:.85rem;letter-spacing:2px;margin-bottom:.5rem}
-        .release-info h2{font-size:2rem;margin-bottom:.5rem;color:#fff}
-        .release-info p{font-size:1rem;margin-bottom:1.5rem;opacity:.8}
+        /* NAV & BURGER */
+        header{background-color:rgba(18,18,18,.8);padding:0 1rem;position:fixed;width:100%;height:var(--header-height);top:0;z-index:1000;backdrop-filter:blur(10px)}
+        header .container{display:flex;justify-content:space-between;align-items:center;height:100%}.logo{font-weight:700;font-size:1.5rem;color:#fff}.desktop-navigation{display:none}
+        .mobile-nav-toggle{display:block;position:relative;z-index:1003;width:2rem;height:2rem;background:0 0;border:0;cursor:pointer}.burger-icon{position:relative;display:inline-block;width:24px;height:2px;background-color:#fff}.burger-icon:after,.burger-icon:before{content:'';position:absolute;left:0;width:100%;height:2px;background-color:#fff}.burger-icon:before{top:-8px}.burger-icon:after{top:8px}
+        .mobile-navigation{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.5rem;position:fixed;z-index:1002;inset:0;background-color:var(--bg-color);transform:translateX(100%);transition:transform .35s ease-out}
+        .mobile-navigation[data-visible=true]{transform:translateX(0%)}.mobile-navigation ul{list-style:none;text-align:center}.mobile-navigation li{margin-bottom:2rem}.mobile-navigation a{font-size:1.5rem;font-weight:600;color:#fff;text-decoration:none}.nav-close-btn{background:0 0;color:var(--accent-color);border:2px solid var(--accent-color);padding:10px 25px;border-radius:5px;margin-top:3rem}
+        .nav-overlay{position:fixed;z-index:1001;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(5px);opacity:0;pointer-events:none;transition:opacity .35s ease-out}.nav-overlay[data-visible=true]{opacity:1;pointer-events:auto}
 
-        /* ABOUT SECTION */
-        #about{background-color:var(--primary-surface-color);padding:5.5rem 0}
-        #about .about-grid{display:grid;grid-template-columns:1fr;gap:3.5rem;align-items:center;text-align:left;margin-top:2.5rem}
-        .about-image-placeholder{width:100%;height:450px;border-radius:8px;background-size:cover;background-position:center;box-shadow:0 10px 30px rgba(0,0,0,.3)}
-        #about .tagline{font-size:1.3rem;font-weight:600;color:var(--accent-color);text-align:center;margin-top:3.5rem;max-width:800px;margin-left:auto;margin-right:auto}
-        
-        /* DYNAMIC BLOCKS */
-        .page-section{padding:5.5rem 0;text-align:center;border-top:1px solid var(--secondary-surface-color)}
+        /* HERO & ALIGNMENT */
+        #hero{min-height:100vh;display:flex;align-items:center;justify-content:center;background-repeat:no-repeat;background-position:center center;background-size:cover;padding-top:var(--header-height);position:relative;padding-left:5%;padding-right:5%}
+        .release-overlay{background:rgba(18,18,18,.9);backdrop-filter:blur(15px);padding:2.5rem;border-radius:12px;border:1px solid var(--secondary-surface-color);max-width:500px;width:100%;display:flex;flex-direction:column;align-items:center;gap:1.2rem;box-shadow:0 20px 40px rgba(0,0,0,.6);text-align:center}
+        .release-cover{width:180px;height:180px;border-radius:8px;object-fit:cover}
+
+        /* ABOUT & BLOCKS */
+        #about{background-color:var(--primary-surface-color);padding:5rem 0}
+        .about-grid{display:grid;grid-template-columns:1fr;gap:3rem;align-items:center;text-align:left}
+        .about-image-placeholder{width:100%;height:400px;border-radius:8px;background-size:cover;background-position:center}
+        .tagline{font-size:1.3rem;font-weight:600;color:var(--accent-color);text-align:center;margin-top:3.5rem}
+        .page-section{padding:5rem 0;text-align:center;border-top:1px solid var(--secondary-surface-color)}
         .page-section:nth-of-type(even){background-color:var(--primary-surface-color)}
-        
-        footer{padding:3.5rem 0;text-align:center;background-color:var(--bg-color);border-top:1px solid var(--primary-surface-color)}
-        @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-        @media (min-width:768px){h1{font-size:4.5rem}.desktop-navigation{display:block}.desktop-navigation ul{display:flex;list-style:none;gap:3rem;align-items:center}#about .about-grid{grid-template-columns:1fr 1.2fr}}
+
+        @media (min-width:768px){
+            .mobile-nav-toggle{display:none}.desktop-navigation{display:block}.desktop-navigation ul{display:flex;list-style:none;gap:3rem}.about-grid{grid-template-columns:1fr 1.2fr}
+            /* Δυναμική Στοίχιση μόνο σε Desktop */
+            #hero[data-align="left"]{justify-content:flex-start}
+            #hero[data-align="center"]{justify-content:center}
+            #hero[data-align="right"]{justify-content:flex-end}
+        }
     </style>
 </head>
 <body>
@@ -39,95 +46,69 @@
         <div class="container">
             <a href="index.html" class="logo">Flowless Music</a>
             <nav class="desktop-navigation">
-                <ul>
-                    <li><a href="index.html">Αρχική</a></li>
-                    <li><a href="roster.html">Our Roster</a></li>
-                    <li><a href="soundcheck.html">Soundcheck Radio</a></li>
-                    <li><a href="merch.html">Merch</a></li>
-                </ul>
+                <ul><li><a href="index.html">Αρχική</a></li><li><a href="roster.html">Our Roster</a></li><li><a href="soundcheck.html">Soundcheck Radio</a></li><li><a href="merch.html">Merch</a></li></ul>
             </nav>
+            <button class="mobile-nav-toggle"><span class="burger-icon"></span></button>
         </div>
     </header>
-    <main id="mainContent">
-        <section id="hero">
-            </section>
+    <div class="nav-overlay"></div>
+    <nav class="mobile-navigation" data-visible="false">
+        <ul><li><a href="index.html">Αρχική</a></li><li><a href="roster.html">Our Roster</a></li><li><a href="soundcheck.html">Soundcheck Radio</a></li><li><a href="merch.html">Merch</a></li></ul>
+        <button class="nav-close-btn">Κλείσιμο</button>
+    </nav>
 
+    <main id="mainContent">
+        <section id="hero" data-align="center"></section>
         <section id="about">
             <div class="container">
                 <h2 id="aboutTitle">About Flowless Music</h2>
-                <div class="about-grid">
-                    <div id="aboutImage" class="about-image-placeholder"></div>
-                    <div id="aboutText" class="about-content">
-                        </div>
-                </div>
+                <div class="about-grid"><div id="aboutImage" class="about-image-placeholder"></div><div id="aboutText" class="about-content"></div></div>
                 <p id="aboutTagline" class="tagline"></p>
             </div>
         </section>
-
-        <div id="dynamicBlocks">
-            </div>
+        <div id="dynamicBlocks"></div>
     </main>
-    <footer>
-        <div class="container">
-            <p>© 2026 Flowless Music. All Rights Reserved.</p>
-        </div>
-    </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            fetch('/data/home.json')
-                .then(res => res.json())
-                .then(data => {
-                    // 1. ΡΥΘΜΙΣΗ HERO & LATEST RELEASE
-                    const hero = document.getElementById('hero');
-                    if(data.hero_image) hero.style.backgroundImage = `linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.5)), url(${data.hero_image})`;
-                    
-                    if(data.latest_release && data.latest_release.show) {
-                        hero.innerHTML = `
-                            <div class="release-overlay">
-                                ${data.latest_release.cover ? `<img src="${data.latest_release.cover}" class="release-cover">` : ''}
-                                <div class="release-info">
-                                    <h4>${data.latest_release.section_title || 'Πρόσφατη Κυκλοφορία'}</h4>
-                                    <h2>${data.latest_release.song_title || ''}</h2>
-                                    <p>${data.latest_release.desc || ''}</p>
-                                    <a href="${data.latest_release.link_url}" class="btn" target="_blank">
-                                        AKOYΣΤΕ ΣΤΟ ${data.latest_release.link_type ? data.latest_release.link_type.toUpperCase() : 'SPOTIFY'}
-                                    </a>
-                                </div>
-                            </div>
-                        `;
-                    } else {
-                        hero.innerHTML = `<h1>${data.hero_title || 'Flowless Music'}</h1>`;
-                    }
+            // Navigation
+            const navToggle = document.querySelector('.mobile-nav-toggle'), mobileNav = document.querySelector('.mobile-navigation'), navOverlay = document.querySelector('.nav-overlay'), navCloseBtn = document.querySelector('.nav-close-btn');
+            const openNav = () => { mobileNav.setAttribute('data-visible', 'true'); navOverlay.setAttribute('data-visible', 'true'); };
+            const closeNav = () => { mobileNav.setAttribute('data-visible', 'false'); navOverlay.setAttribute('data-visible', 'false'); };
+            navToggle.addEventListener('click', openNav); navCloseBtn.addEventListener('click', closeNav); navOverlay.addEventListener('click', closeNav);
 
-                    // 2. ΡΥΘΜΙΣΗ ABOUT SECTION
-                    if(data.about_title) document.getElementById('aboutTitle').textContent = data.about_title;
-                    if(data.about_image) document.getElementById('aboutImage').style.backgroundImage = `url(${data.about_image})`;
-                    if(data.about_tagline) document.getElementById('aboutTagline').textContent = data.about_tagline;
-                    
-                    // Parsing για Bold (**κείμενο**) και Αλλαγή γραμμής
-                    if(data.about_text) {
-                        let text = data.about_text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-                        document.getElementById('aboutText').innerHTML = text.replace(/\n/g, '<br>');
-                    }
+            // Data Fetch
+            fetch('/data/home.json').then(res => res.json()).then(data => {
+                const hero = document.getElementById('hero');
+                if(data.hero_image) hero.style.backgroundImage = `linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.5)), url(${data.hero_image})`;
+                
+                // Alignment logic
+                const align = data.latest_release.alignment || 'center';
+                hero.setAttribute('data-align', align);
 
-                    // 3. ΦΟΡΤΩΣΗ ΔΥΝΑΜΙΚΩΝ BLOCKS
-                    const blockContainer = document.getElementById('dynamicBlocks');
-                    if(data.blocks && data.blocks.length > 0) {
-                        data.blocks.forEach(block => {
-                            const blockHtml = `
-                                <section class="page-section">
-                                    <div class="container">
-                                        <h2>${block.title}</h2>
-                                        <div class="block-text">${block.text ? block.text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>') : ''}</div>
-                                        ${block.btn_link ? `<a href="${block.btn_link}" class="btn">${block.btn_text || 'ΠΕΡΙΣΣΟΤΕΡΑ'}</a>` : ''}
-                                    </div>
-                                </section>
-                            `;
-                            blockContainer.innerHTML += blockHtml;
-                        });
-                    }
-                }).catch(err => console.log("Αναμονή για δεδομένα από το πάνελ..."));
+                if(data.latest_release && data.latest_release.show) {
+                    hero.innerHTML = `<div class="release-overlay">
+                        ${data.latest_release.cover ? `<img src="${data.latest_release.cover}" class="release-cover">` : ''}
+                        <div class="release-info">
+                            <h4>${data.latest_release.section_title || ''}</h4>
+                            <h2 style="color:white; margin-bottom:10px;">${data.latest_release.song_title || ''}</h2>
+                            <p>${data.latest_release.desc || ''}</p>
+                            <a href="${data.latest_release.link_url}" class="btn" target="_blank">AKOYΣΤΕ ΣΤΟ ${data.latest_release.link_type || 'SPOTIFY'}</a>
+                        </div>
+                    </div>`;
+                } else { hero.innerHTML = `<h1 style="font-size:4rem; color:var(--accent-color); text-transform:uppercase;">${data.hero_title || 'Flowless Music'}</h1>`; }
+
+                if(data.about_image) document.getElementById('aboutImage').style.backgroundImage = `url(${data.about_image})`;
+                if(data.about_text) document.getElementById('aboutText').innerHTML = data.about_text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
+                if(data.about_tagline) document.getElementById('aboutTagline').textContent = data.about_tagline;
+
+                const blockContainer = document.getElementById('dynamicBlocks');
+                if(data.blocks) {
+                    data.blocks.forEach(block => {
+                        blockContainer.innerHTML += `<section class="page-section"><div class="container"><h2>${block.title}</h2><div>${block.text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>')}</div>${block.btn_link ? `<a href="${block.btn_link}" class="btn">${block.btn_text || 'ΠΕΡΙΣΣΟΤΕΡΑ'}</a>` : ''}</div></section>`;
+                    });
+                }
+            });
         });
     </script>
 </body>
