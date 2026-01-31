@@ -1,0 +1,12 @@
+{
+  "merch_active": false,
+  "merch_items": [
+    {
+      "name": "Flowless Classic Tee",
+      "price": "25€",
+      "image": "assets/merch1.jpg",
+      "link": "#"
+    }
+  ],
+  "crew_active": true
+}
