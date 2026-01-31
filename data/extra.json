@@ -5,11 +5,12 @@
       "name": "Flowless Classic Tee",
       "price": "25€",
       "image": "assets/merch1.jpg",
-      "link": "#"
+      "link": "#",
+      "desc": "Flowless Classic Tee"
     }
   ],
   "crew_active": false,
-  "teaser_title": "ψφδδδ",
-  "teaser_desc": "ψφδδδ",
-  "teaser_btn_text": "ψφδδδ"
+  "teaser_title": "Η νέα σεζόν έρχεται με νέα σχέδια",
+  "teaser_desc": "Δύο νέα, limited σχέδια έρχονται μαζί με την έναρξη της επόμενης σεζόν του Soundcheck Radio. Γράψου στη λίστα για να το μάθεις πρώτος.[](#subscribe)",
+  "teaser_btn_text": "Ενημέρωσέ με"
 }
