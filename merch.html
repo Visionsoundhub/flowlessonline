@@ -10,7 +10,7 @@
     <style>
         :root{--bg-color:#121212;--primary-surface-color:#1E1E1E;--secondary-surface-color:#2a2a2a;--text-color:#E0E0E0;--accent-color:#00FFD1;--font-family:'Poppins',sans-serif;--header-height:70px}
         
-        /* Smooth Scrolling για να γλιστράει η σελίδα στο κουμπί */
+        /* Smooth Scroll για να γλιστράει η σελίδα */
         html { scroll-behavior: smooth; }
         
         *{box-sizing:border-box;margin:0;padding:0}
@@ -45,16 +45,16 @@
         .merch-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-top:3rem}
         .merch-item{background:var(--primary-surface-color);padding:2rem;border-radius:12px;border:1px solid var(--secondary-surface-color);text-align:left}
         .merch-img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:8px;margin-bottom:1.5rem}
-        .merch-item h3{font-size:1.5rem;margin-bottom:0.5rem}
         .merch-desc{font-size:0.95rem;opacity:0.8;margin-bottom:1.5rem;line-height:1.6}
         .price{color:var(--accent-color);font-weight:700;font-size:1.3rem;display:block;margin-bottom:1.5rem}
         
         .btn{display:inline-block;background:var(--accent-color);color:var(--bg-color);padding:12px 25px;border-radius:5px;text-decoration:none;font-weight:700;transition:0.3s;width:100%;text-align:center;cursor:pointer}
         .btn:hover{box-shadow:0 0 15px var(--accent-color)}
         
-        .teaser-card{background:var(--primary-surface-color);padding:3rem;border-radius:12px;border:1px solid var(--secondary-surface-color)}
-        
-        /* Form styling */
+        .teaser-card{background:var(--primary-surface-color);padding:3rem;border-radius:12px;border:1px solid var(--secondary-surface-color);max-width:800px;margin:0 auto}
+        .teaser-card h2 { margin-bottom: 1rem; }
+
+        /* Subscribe Section */
         .subscribe-form { margin-top: 2rem; display: flex; flex-direction: column; align-items: center; gap: 1rem; }
         .subscribe-form input { padding: 12px; border-radius: 5px; border: 1px solid var(--secondary-surface-color); background: var(--primary-surface-color); color: white; width: 100%; max-width: 400px; }
         @media (min-width: 600px) { .subscribe-form { flex-direction: row; justify-content: center; } }
@@ -90,7 +90,7 @@
         <section id="hero"><h1>WEAR THE <span>MOVEMENT</span></h1></section>
         
         <section class="page-section" id="merchContent"></section>
-        
+
         <section id="community" class="page-section" style="display:none">
             <h2>Join the Crew</h2>
             <p style="color:var(--accent-color);font-weight:700">COMING SOON</p>
@@ -114,7 +114,12 @@
 
             fetch('/data/extra.json').then(res => res.json()).then(data => {
                 const container = document.getElementById('merchContent');
-                const parse = (t) => t ? t.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>') : '';
+                
+                // Συνάρτηση για Markdown (έντονα & αλλαγή γραμμής)
+                const parse = (t) => {
+                    if(!t) return '';
+                    return t.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
+                };
 
                 if (data.merch_active) {
                     let html = '<h2>Official Merch</h2><div class="merch-grid">';
@@ -131,11 +136,11 @@
                     html += '</div>';
                     container.innerHTML = html;
                 } else {
-                    // Το κουμπί εδώ οδηγεί στο #subscribe
+                    // Εδώ το κουμπί συνδέεται αυτόματα με το #subscribe
                     container.innerHTML = `
                         <div class="teaser-card">
                             <h2>${data.teaser_title || 'Coming Soon'}</h2>
-                            <p>${parse(data.teaser_desc)}</p>
+                            <div class="merch-desc">${parse(data.teaser_desc)}</div>
                             ${data.teaser_btn_text ? `<a href="#subscribe" class="btn" style="max-width:200px">${data.teaser_btn_text}</a>` : ''}
                         </div>`;
                 }
