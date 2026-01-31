@@ -6,32 +6,52 @@
     <title>Merch - Flowless Music</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        :root{--bg-color:#121212;--primary-surface-color:#1E1E1E;--secondary-surface-color:#2a2a2a;--text-color:#E0E0E0;--accent-color:#00FFD1;--font-family:'Poppins',sans-serif;--header-height:70px}*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--font-family);background-color:var(--bg-color);color:var(--text-color)}
+        :root{--bg-color:#121212;--primary-surface-color:#1E1E1E;--secondary-surface-color:#2a2a2a;--text-color:#E0E0E0;--accent-color:#00FFD1;--font-family:'Poppins',sans-serif;--header-height:70px}
+        *{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--font-family);background-color:var(--bg-color);color:var(--text-color);line-height:1.7}
         
-        /* HEADER & WHITE LOGO */
+        /* HEADER & NAV */
         header{background-color:rgba(18,18,18,.8);height:var(--header-height);position:fixed;width:100%;top:0;z-index:1000;backdrop-filter:blur(10px)}
         .container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;height:100%;padding:0 1rem}
         .logo{font-weight:700;font-size:1.5rem;color:#fff !important;text-decoration:none}
-        .desktop-navigation{display:none}@media(min-width:768px){.desktop-navigation{display:block}.desktop-navigation ul{display:flex;list-style:none;gap:2rem}.desktop-navigation a{color:#fff;text-decoration:none;font-weight:600}}
+        .desktop-navigation{display:none}@media(min-width:768px){.desktop-navigation{display:block}.desktop-navigation ul{display:flex;list-style:none;gap:2rem}.desktop-navigation a{color:#fff;text-decoration:none;font-weight:600;transition:0.3s}.desktop-navigation a:hover{color:var(--accent-color)}}
         
-        /* BURGER MENU */
-        .mobile-nav-toggle{display:block;width:24px;height:24px;background:none;border:none;cursor:pointer;position:relative;z-index:1003}@media(min-width:768px){.mobile-nav-toggle{display:none}}.burger-icon,.burger-icon:after,.burger-icon:before{content:'';display:block;width:24px;height:2px;background:#fff;position:absolute}.burger-icon:before{top:-8px}.burger-icon:after{top:8px}
+        /* BURGER */
+        .mobile-nav-toggle{display:block;width:24px;height:24px;background:none;border:none;cursor:pointer;position:relative;z-index:1003}@media(min-width:768px){.mobile-nav-toggle{display:none}}.burger-icon,.burger-icon:after,.burger-icon:before{content:'';display:block;width:24px;height:2px;background:#fff;position:absolute;left:0}.burger-icon:before{top:-8px}.burger-icon:after{top:8px}
         .mobile-navigation{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2rem;position:fixed;inset:0;background:var(--bg-color);transform:translateX(100%);transition:0.3s;z-index:1002}.mobile-navigation[data-visible=true]{transform:translateX(0%)}.mobile-navigation a{font-size:1.5rem;color:#fff;text-decoration:none}
 
-        /* TEASER BOX (MATCH IMAGE) */
-        .teaser-wrapper{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:2rem}
-        .teaser-card{background:rgba(30,30,30,0.6);padding:4rem 2rem;border-radius:15px;max-width:800px;width:100%;text-align:center;border:1px solid #222;box-shadow:0 20px 50px rgba(0,0,0,0.3)}
-        .teaser-card h2{color:var(--accent-color);font-size:2.2rem;text-transform:uppercase;letter-spacing:1px;margin-bottom:1.5rem}
-        .teaser-card p{font-size:1.1rem;line-height:1.7;opacity:0.8;margin-bottom:2.5rem;max-width:600px;margin-left:auto;margin-right:auto}
-        .btn{display:inline-block;background:var(--accent-color);color:#000;padding:15px 35px;font-weight:700;border-radius:5px;text-decoration:none;text-transform:uppercase;transition:0.3s;border:none;cursor:pointer}
-        .btn:hover{transform:scale(1.05);filter:brightness(1.1)}
+        /* CONTENT */
+        main{padding-top:var(--header-height)}
+        .page-section{padding:5rem 2rem;max-width:1200px;margin:0 auto;text-align:center}
+        
+        /* TEASER CARD */
+        .teaser-card{background:rgba(30,30,30,0.4);padding:4rem 2rem;border-radius:15px;border:1px solid var(--secondary-surface-color);max-width:800px;margin:4rem auto;box-shadow:0 20px 50px rgba(0,0,0,0.3)}
+        .teaser-card h2{color:var(--accent-color);font-size:2.2rem;text-transform:uppercase;margin-bottom:1.5rem}
+        .teaser-card p{font-size:1.1rem;opacity:0.8;margin-bottom:2rem}
+
+        /* SHOP GRID */
+        .merch-grid{display:grid;grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));gap:2rem;margin-top:3rem}
+        .merch-card{background:var(--primary-surface-color);border-radius:12px;overflow:hidden;border:1px solid var(--secondary-surface-color);transition:0.3s}.merch-card:hover{transform:translateY(-10px)}
+        .merch-img{width:100%;aspect-ratio:1/1;object-fit:cover}
+        .merch-info{padding:1.5rem}.price{color:var(--accent-color);font-weight:700;font-size:1.2rem;margin-bottom:1rem}
+
+        /* BUTTONS & FORMS */
+        .btn{display:inline-block;background:var(--accent-color);color:#000;padding:12px 30px;font-weight:700;border-radius:5px;text-transform:uppercase;cursor:pointer;border:none}
+        .crew-section{background:var(--primary-surface-color);padding:5rem 2rem;text-align:center}
+        input{padding:12px;border-radius:5px;border:1px solid var(--secondary-surface-color);background:var(--bg-color);color:#fff;min-width:250px;margin-right:10px}
     </style>
 </head>
 <body>
     <header><div class="container"><a href="index.html" class="logo">Flowless Music</a><nav class="desktop-navigation"><ul><li><a href="index.html">Αρχική</a></li><li><a href="roster.html">Our Roster</a></li><li><a href="soundcheck.html">Soundcheck Radio</a></li><li><a href="merch.html">Merch</a></li></ul></nav><button class="mobile-nav-toggle"><span class="burger-icon"></span></button></div></header>
     <nav class="mobile-navigation" data-visible="false"><ul><li><a href="index.html">Αρχική</a></li><li><a href="roster.html">Our Roster</a></li><li><a href="soundcheck.html">Soundcheck Radio</a></li><li><a href="merch.html">Merch</a></li></ul></nav>
 
-    <main id="merchContent" class="teaser-wrapper"></main>
+    <main>
+        <div id="merchContent" class="page-section"></div>
+        <section id="crewSection" class="crew-section" style="display:none">
+            <h2>Join the Crew</h2>
+            <p style="margin:1rem 0 2rem">Μάθε πρώτος για τα νέα drops.</p>
+            <form name="crew" netlify><input type="email" placeholder="Email..." required><button type="submit" class="btn">Εγγραφη</button></form>
+        </section>
+    </main>
 
     <script>
         const navT=document.querySelector('.mobile-nav-toggle'),navM=document.querySelector('.mobile-navigation');
@@ -41,15 +61,96 @@
         
         fetch('/data/extra.json').then(r=>r.json()).then(data=>{
             const cont=document.getElementById('merchContent');
+            const parse = (t) => t ? t.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>').replace(/\n/g,'<br>') : '';
+
             if(data.merch_active){
-                cont.innerHTML='<div style="padding-top:100px;text-align:center"><h2>Shop Opening Soon...</h2></div>';
-            }else{
-                cont.innerHTML=`<div class="teaser-card">
-                    <h2>${data.teaser_title || 'Η ΝΕΑ ΣΕΖΟΝ ΕΡΧΕΤΑΙ ΜΕ ΝΕΑ ΣΧΕΔΙΑ'}</h2>
-                    <p>${data.teaser_desc ? data.teaser_desc.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>').replace(/\n/g,'<br>') : ''}</p>
-                    <button class="btn">${data.teaser_btn_text || 'ΕΝΗΜΕΡΩΣΕ ΜΕ'}</button>
-                </div>`;
+                let html = '<h1>OUR <span>MERCH</span></h1><div class="merch-grid">';
+                data.merch_items.forEach(item => {
+                    html += `<div class="merch-card"><img src="${item.image}" class="merch-img"><div class="merch-info"><h3>${item.name}</h3><div class="price">${item.price}</div><a href="${item.link}" class="btn">Αγορα</a></div></div>`;
+                });
+                cont.innerHTML = html + '</div>';
+            } else {
+                cont.innerHTML = `<div class="teaser-card"><h2>${data.teaser_title}</h2><p>${parse(data.teaser_desc)}</p><button class="btn">${data.teaser_btn_text}</button></div>`;
             }
+            if(data.crew_active) document.getElementById('crewSection').style.display = 'block';
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merch - Flowless Music</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root{--bg-color:#121212;--primary-surface-color:#1E1E1E;--secondary-surface-color:#2a2a2a;--text-color:#E0E0E0;--accent-color:#00FFD1;--font-family:'Poppins',sans-serif;--header-height:70px}
+        *{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--font-family);background-color:var(--bg-color);color:var(--text-color);line-height:1.7}
+        
+        /* HEADER & NAV */
+        header{background-color:rgba(18,18,18,.8);height:var(--header-height);position:fixed;width:100%;top:0;z-index:1000;backdrop-filter:blur(10px)}
+        .container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;height:100%;padding:0 1rem}
+        .logo{font-weight:700;font-size:1.5rem;color:#fff !important;text-decoration:none}
+        .desktop-navigation{display:none}@media(min-width:768px){.desktop-navigation{display:block}.desktop-navigation ul{display:flex;list-style:none;gap:2rem}.desktop-navigation a{color:#fff;text-decoration:none;font-weight:600;transition:0.3s}.desktop-navigation a:hover{color:var(--accent-color)}}
+        
+        /* BURGER */
+        .mobile-nav-toggle{display:block;width:24px;height:24px;background:none;border:none;cursor:pointer;position:relative;z-index:1003}@media(min-width:768px){.mobile-nav-toggle{display:none}}.burger-icon,.burger-icon:after,.burger-icon:before{content:'';display:block;width:24px;height:2px;background:#fff;position:absolute;left:0}.burger-icon:before{top:-8px}.burger-icon:after{top:8px}
+        .mobile-navigation{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2rem;position:fixed;inset:0;background:var(--bg-color);transform:translateX(100%);transition:0.3s;z-index:1002}.mobile-navigation[data-visible=true]{transform:translateX(0%)}.mobile-navigation a{font-size:1.5rem;color:#fff;text-decoration:none}
+
+        /* CONTENT */
+        main{padding-top:var(--header-height)}
+        .page-section{padding:5rem 2rem;max-width:1200px;margin:0 auto;text-align:center}
+        
+        /* TEASER CARD */
+        .teaser-card{background:rgba(30,30,30,0.4);padding:4rem 2rem;border-radius:15px;border:1px solid var(--secondary-surface-color);max-width:800px;margin:4rem auto;box-shadow:0 20px 50px rgba(0,0,0,0.3)}
+        .teaser-card h2{color:var(--accent-color);font-size:2.2rem;text-transform:uppercase;margin-bottom:1.5rem}
+        .teaser-card p{font-size:1.1rem;opacity:0.8;margin-bottom:2rem}
+
+        /* SHOP GRID */
+        .merch-grid{display:grid;grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));gap:2rem;margin-top:3rem}
+        .merch-card{background:var(--primary-surface-color);border-radius:12px;overflow:hidden;border:1px solid var(--secondary-surface-color);transition:0.3s}.merch-card:hover{transform:translateY(-10px)}
+        .merch-img{width:100%;aspect-ratio:1/1;object-fit:cover}
+        .merch-info{padding:1.5rem}.price{color:var(--accent-color);font-weight:700;font-size:1.2rem;margin-bottom:1rem}
+
+        /* BUTTONS & FORMS */
+        .btn{display:inline-block;background:var(--accent-color);color:#000;padding:12px 30px;font-weight:700;border-radius:5px;text-transform:uppercase;cursor:pointer;border:none}
+        .crew-section{background:var(--primary-surface-color);padding:5rem 2rem;text-align:center}
+        input{padding:12px;border-radius:5px;border:1px solid var(--secondary-surface-color);background:var(--bg-color);color:#fff;min-width:250px;margin-right:10px}
+    </style>
+</head>
+<body>
+    <header><div class="container"><a href="index.html" class="logo">Flowless Music</a><nav class="desktop-navigation"><ul><li><a href="index.html">Αρχική</a></li><li><a href="roster.html">Our Roster</a></li><li><a href="soundcheck.html">Soundcheck Radio</a></li><li><a href="merch.html">Merch</a></li></ul></nav><button class="mobile-nav-toggle"><span class="burger-icon"></span></button></div></header>
+    <nav class="mobile-navigation" data-visible="false"><ul><li><a href="index.html">Αρχική</a></li><li><a href="roster.html">Our Roster</a></li><li><a href="soundcheck.html">Soundcheck Radio</a></li><li><a href="merch.html">Merch</a></li></ul></nav>
+
+    <main>
+        <div id="merchContent" class="page-section"></div>
+        <section id="crewSection" class="crew-section" style="display:none">
+            <h2>Join the Crew</h2>
+            <p style="margin:1rem 0 2rem">Μάθε πρώτος για τα νέα drops.</p>
+            <form name="crew" netlify><input type="email" placeholder="Email..." required><button type="submit" class="btn">Εγγραφη</button></form>
+        </section>
+    </main>
+
+    <script>
+        const navT=document.querySelector('.mobile-nav-toggle'),navM=document.querySelector('.mobile-navigation');
+        navT.onclick=()=>{const v=navM.getAttribute('data-visible')==='true';navM.setAttribute('data-visible',!v)};
+        
+        fetch('/data/appearance.json').then(r=>r.json()).then(d=>{if(d.accent)document.documentElement.style.setProperty('--accent-color',d.accent)});
+        
+        fetch('/data/extra.json').then(r=>r.json()).then(data=>{
+            const cont=document.getElementById('merchContent');
+            const parse = (t) => t ? t.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>').replace(/\n/g,'<br>') : '';
+
+            if(data.merch_active){
+                let html = '<h1>OUR <span>MERCH</span></h1><div class="merch-grid">';
+                data.merch_items.forEach(item => {
+                    html += `<div class="merch-card"><img src="${item.image}" class="merch-img"><div class="merch-info"><h3>${item.name}</h3><div class="price">${item.price}</div><a href="${item.link}" class="btn">Αγορα</a></div></div>`;
+                });
+                cont.innerHTML = html + '</div>';
+            } else {
+                cont.innerHTML = `<div class="teaser-card"><h2>${data.teaser_title}</h2><p>${parse(data.teaser_desc)}</p><button class="btn">${data.teaser_btn_text}</button></div>`;
+            }
+            if(data.crew_active) document.getElementById('crewSection').style.display = 'block';
         });
     </script>
 </body>
