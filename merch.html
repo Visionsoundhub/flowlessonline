@@ -9,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root{--bg-color:#121212;--primary-surface-color:#1E1E1E;--secondary-surface-color:#2a2a2a;--text-color:#E0E0E0;--accent-color:#00FFD1;--font-family:'Poppins',sans-serif;--header-height:70px}
+        
+        /* Smooth Scrolling για να γλιστράει η σελίδα στο κουμπί */
+        html { scroll-behavior: smooth; }
+        
         *{box-sizing:border-box;margin:0;padding:0}
         body{font-family:var(--font-family);background-color:var(--bg-color);color:var(--text-color);line-height:1.7}
         
@@ -45,10 +49,15 @@
         .merch-desc{font-size:0.95rem;opacity:0.8;margin-bottom:1.5rem;line-height:1.6}
         .price{color:var(--accent-color);font-weight:700;font-size:1.3rem;display:block;margin-bottom:1.5rem}
         
-        .btn{display:inline-block;background:var(--accent-color);color:var(--bg-color);padding:12px 25px;border-radius:5px;text-decoration:none;font-weight:700;transition:0.3s;width:100%;text-align:center}
+        .btn{display:inline-block;background:var(--accent-color);color:var(--bg-color);padding:12px 25px;border-radius:5px;text-decoration:none;font-weight:700;transition:0.3s;width:100%;text-align:center;cursor:pointer}
         .btn:hover{box-shadow:0 0 15px var(--accent-color)}
         
         .teaser-card{background:var(--primary-surface-color);padding:3rem;border-radius:12px;border:1px solid var(--secondary-surface-color)}
+        
+        /* Form styling */
+        .subscribe-form { margin-top: 2rem; display: flex; flex-direction: column; align-items: center; gap: 1rem; }
+        .subscribe-form input { padding: 12px; border-radius: 5px; border: 1px solid var(--secondary-surface-color); background: var(--primary-surface-color); color: white; width: 100%; max-width: 400px; }
+        @media (min-width: 600px) { .subscribe-form { flex-direction: row; justify-content: center; } }
     </style>
 </head>
 <body>
@@ -79,10 +88,21 @@
 
     <main>
         <section id="hero"><h1>WEAR THE <span>MOVEMENT</span></h1></section>
+        
         <section class="page-section" id="merchContent"></section>
+        
         <section id="community" class="page-section" style="display:none">
             <h2>Join the Crew</h2>
             <p style="color:var(--accent-color);font-weight:700">COMING SOON</p>
+        </section>
+
+        <section id="subscribe" class="page-section">
+            <h2>Μην Χάσεις Κανένα Drop</h2>
+            <p>Άφησε το email σου για να ενημερωθείς πρώτος.</p>
+            <form class="subscribe-form" name="merch-subscribe" netlify action="/thank-you.html">
+                <input type="email" name="email" placeholder="Το email σου..." required>
+                <button type="submit" class="btn" style="max-width: 150px;">Εγγραφή</button>
+            </form>
         </section>
     </main>
 
@@ -111,11 +131,12 @@
                     html += '</div>';
                     container.innerHTML = html;
                 } else {
+                    // Το κουμπί εδώ οδηγεί στο #subscribe
                     container.innerHTML = `
                         <div class="teaser-card">
                             <h2>${data.teaser_title || 'Coming Soon'}</h2>
                             <p>${parse(data.teaser_desc)}</p>
-                            ${data.teaser_btn_text ? `<a href="#" class="btn" style="max-width:200px">${data.teaser_btn_text}</a>` : ''}
+                            ${data.teaser_btn_text ? `<a href="#subscribe" class="btn" style="max-width:200px">${data.teaser_btn_text}</a>` : ''}
                         </div>`;
                 }
 
