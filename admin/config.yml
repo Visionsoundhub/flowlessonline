@@ -74,16 +74,20 @@ collections:
         name: "radio_settings"
         fields:
           - {label: "Banner Image", name: "banner_image", widget: "image"}
-          - {label: "Status Text", name: "status", widget: "string"}
+          - {label: "Hero Tagline", name: "hero_tagline", widget: "markdown"}
+          - {label: "Intro Title", name: "intro_title", widget: "string"}
+          - {label: "Intro Text", name: "intro_text", widget: "markdown"}
+          - {label: "Intro Image", name: "intro_image", widget: "image"}
+          - {label: "Status Text (π.χ. Live τώρα)", name: "status", widget: "markdown"}
           - {label: "Εμφάνιση Spotify;", name: "show_spotify", widget: "boolean", default: true}
-          - {label: "YouTube Link", name: "youtube_link", widget: "string"}
-          - {label: "Spotify Link", name: "spotify_link", widget: "string"}
+          - {label: "YouTube Embed Link", name: "youtube_link", widget: "string"}
+          - {label: "Spotify Embed Link", name: "spotify_link", widget: "string"}
           - label: "Στάδια Συμμετοχής (Steps)"
             name: "steps"
             widget: "list"
             fields:
               - {label: "Τίτλος", name: "step_title", widget: "string"}
-              - {label: "Περιγραφή", name: "step_desc", widget: "text"}
+              - {label: "Περιγραφή", name: "step_desc", widget: "markdown"}
               - label: "Κουμπιά (Add/Remove)"
                 name: "buttons"
                 widget: "list"
@@ -104,7 +108,7 @@ collections:
             name: "merch_items"
             widget: "list"
             fields:
-              - {label: "Όνομα", name: "name", widget: "string"}
+              - {label: "Όνομα Προϊόντος", name: "name", widget: "string"}
               - {label: "Εικόνα", name: "image", widget: "image"}
               - {label: "Link Αγοράς", name: "link", widget: "string"}
           - {label: "Ενεργοποίηση Join the Crew;", name: "crew_active", widget: "boolean", default: true}
