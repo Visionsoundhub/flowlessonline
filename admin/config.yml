@@ -6,6 +6,90 @@ media_folder: "assets"
 public_folder: "assets"
 
 collections:
+  - name: "home"
+    label: "Αρχική Σελίδα"
+    files:
+      - file: "data/home.json"
+        label: "Περιεχόμενο Αρχικής"
+        name: "home_content"
+        fields:
+          - {label: "Hero Background Banner", name: "hero_image", widget: "image"}
+          - {label: "Hero Title (Αν δεν υπάρχει Release)", name: "hero_title", widget: "string"}
+          - label: "Πρόσφατη Κυκλοφορία (Overlay)"
+            name: "latest_release"
+            widget: "object"
+            fields:
+              - {label: "Εμφάνιση Ενότητας;", name: "show", widget: "boolean", default: true}
+              - {label: "Θέση (Μόνο για Desktop)", name: "alignment", widget: "select", options: ["left", "center", "right"], default: "center"}
+              - {label: "Τίτλος Ενότητας", name: "section_title", widget: "string", default: "Πρόσφατη Κυκλοφορία"}
+              - {label: "Εξώφυλλο Κομματιού", name: "cover", widget: "image"}
+              - {label: "Τίτλος Κομματιού", name: "song_title", widget: "string"}
+              - {label: "Σύντομο Κείμενο", name: "desc", widget: "text"}
+              - label: "Πλατφόρμα Link"
+                name: "link_type"
+                widget: "select"
+                options: ["Spotify", "YouTube"]
+              - {label: "URL Link", name: "link_url", widget: "string"}
+          - {label: "About Image", name: "about_image", widget: "image"}
+          - {label: "About Title", name: "about_title", widget: "string", default: "About Flowless Music"}
+          - {label: "About Text", name: "about_text", widget: "markdown"}
+          - {label: "About Tagline (Πράσινο)", name: "about_tagline", widget: "string"}
+          - label: "Extra Blocks (Add/Remove)"
+            name: "blocks"
+            widget: "list"
+            fields:
+              - {label: "Τίτλος Block", name: "title", widget: "string"}
+              - {label: "Κείμενο", name: "text", widget: "markdown"}
+              - {label: "Κείμενο Κουμπιού", name: "btn_text", widget: "string"}
+              - {label: "Link Κουμπιού", name: "btn_link", widget: "string"}
+
+  - name: "radio"
+    label: "Soundcheck Radio"
+    files:
+      - file: "data/radio.json"
+        label: "Ρυθμίσεις Radio"
+        name: "radio_settings"
+        fields:
+          - {label: "Banner Image", name: "banner_image", widget: "image"}
+          - {label: "Status Text", name: "status", widget: "string"}
+          - {label: "Εμφάνιση Spotify;", name: "show_spotify", widget: "boolean", default: true}
+          - {label: "YouTube Link", name: "youtube_link", widget: "string"}
+          - {label: "Spotify Link", name: "spotify_link", widget: "string"}
+
+  - name: "artists"
+    label: "Our Roster"
+    folder: "data/artists"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Όνομα", name: "title", widget: "string"}
+      - {label: "Φωτογραφία", name: "image", widget: "image"}
+      - {label: "Bio", name: "bio", widget: "markdown"}
+      - {label: "Spotify URL", name: "spotify", widget: "string", required: false}
+      - {label: "Instagram URL", name: "instagram", widget: "string", required: false}
+
+  - name: "settings"
+    label: "Εμφάνιση & Merch"
+    files:
+      - file: "data/merch.json"
+        label: "Merch & Crew"
+        name: "merch_settings"
+        fields:
+          - {label: "Merch Ενεργό;", name: "merch_active", widget: "boolean", default: false}
+          - {label: "Crew Ενεργό;", name: "crew_active", widget: "boolean", default: true}
+      - file: "data/appearance.json"
+        label: "Χρώματα"
+        name: "site_style"
+        fields:
+          - {label: "Accent Color", name: "accent", widget: "color", default: "#00FFD1"}backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets"
+public_folder: "assets"
+
+collections:
   # --- 1. ΑΡΧΙΚΗ ΣΕΛΙΔΑ ---
   - name: "home"
     label: "Αρχική Σελίδα"
@@ -113,3 +197,4 @@ collections:
         name: "site_style"
         fields:
           - {label: "Accent Color (Κουμπιά/Links)", name: "accent", widget: "color", default: "#00FFD1"}
+
