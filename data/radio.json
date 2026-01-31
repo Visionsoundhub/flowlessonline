@@ -1,47 +1,28 @@
 {
-  "intro_text": "Ο Evoid και ο Black Vybez σε προσκαλούν να γίνεις μέρος μιας αληθινής μουσικής κοινότητας, εκεί όπου η μουσική σου μπορεί να ακουστεί. Το Soundcheck Radio είναι η πλατφόρμα σου.",
+  "banner_image": "assets/scr_banner.jpg",
+  "hero_tagline": "Το TikTok Live που δεν θες να χάσεις",
   "intro_title": "Γίνε μέρος της κοινότητας",
+  "intro_text": "Ο Evoid και ο Black Vybez σε προσκαλούν να ακούσεις τη μουσική σου live.",
+  "intro_image": "assets/hosts.jpg",
+  "status": "✅ <strong>ΣΕΖΟΝ 1</strong> - Επόμενο Live: <strong>ΕΡΧΕΤΑΙ ΣΥΝΤΟΜΑ!</strong>",
+  "youtube_link": "https://www.youtube.com/embed/VIDEO_ID",
+  "spotify_link": "https://open.spotify.com/embed/show/SHOW_ID",
+  "show_spotify": true,
   "steps": [
     {
       "step_title": "Ακολούθησε",
-      "step_desc": "Το μόνο αντάλλαγμα είναι ένα follow στα προφίλ που τρέχουν το project.",
+      "step_desc": "Κάνε follow στα προφίλ μας.",
       "buttons": [
-        {
-          "btn_text": "Evoid",
-          "btn_link": "wrhwrhwrh"
-        },
-        {
-          "btn_text": "Black Vybez ",
-          "btn_link": "dfgbpkejibgh"
-        }
+        {"btn_text": "Evoid", "btn_link": "https://instagram.com/..."},
+        {"btn_text": "Black Vybez", "btn_link": "https://instagram.com/..."}
       ]
     },
     {
       "step_title": "Στείλε το κομμάτι σου",
-      "step_desc": "Στείλε το αρχείο ή το link του κομματιού σου κατευθείαν στον Black Vybez.\n\n",
+      "step_desc": "Στείλε DM με το link σου.",
       "buttons": [
-        {
-          "btn_text": "Στείλε DM στο Instagram",
-          "btn_link": "ργερηετηετ"
-        }
-      ]
-    },
-    {
-      "step_title": "Παρακολούθησε Live",
-      "step_desc": "Μπες στο TikTok Live για να ακούσεις το κομμάτι σου και να ανακαλύψεις νέα μουσική.",
-      "buttons": [
-        {
-          "btn_text": "Δες το Live εδώ",
-          "btn_link": "ετξετξτε"
-        }
+        {"btn_text": "DM στο Insta", "btn_link": "https://instagram.com/..."}
       ]
     }
-  ],
-  "intro_image": "assets/scr-for-media-site-banner.jpg",
-  "banner_image": "assets/scr-for-media-site-banner.jpg",
-  "hero_tagline": "Το TikTok Live που δεν θες να χάσεις",
-  "status": "Sesson 1",
-  "youtube_link": ";;;;;;;;;;;;",
-  "show_spotify": false,
-  "spotify_link": ";;;;;;;;;;;;;;;;;;;"
+  ]
 }
