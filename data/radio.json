@@ -1,28 +1,47 @@
 {
-  "banner_image": "assets/scr_banner.jpg",
-  "hero_tagline": "Το TikTok Live που δεν θες να χάσεις",
+  "intro_text": "Ο Evoid και ο Black Vybez σε προσκαλούν να γίνεις μέρος μιας αληθινής μουσικής κοινότητας, εκεί όπου η μουσική σου μπορεί να ακουστεί. Το Soundcheck Radio είναι η πλατφόρμα σου.",
   "intro_title": "Γίνε μέρος της κοινότητας",
-  "intro_text": "Ο Evoid και ο Black Vybez σε προσκαλούν να ακούσεις τη μουσική σου live.",
-  "intro_image": "assets/hosts.jpg",
-  "status": "✅ <strong>ΣΕΖΟΝ 1</strong> - Επόμενο Live: <strong>ΕΡΧΕΤΑΙ ΣΥΝΤΟΜΑ!</strong>",
-  "youtube_link": "https://www.youtube.com/embed/VIDEO_ID",
-  "spotify_link": "https://open.spotify.com/embed/show/SHOW_ID",
-  "show_spotify": true,
   "steps": [
     {
       "step_title": "Ακολούθησε",
       "step_desc": "Κάνε follow στα προφίλ μας.",
       "buttons": [
-        {"btn_text": "Evoid", "btn_link": "https://instagram.com/..."},
-        {"btn_text": "Black Vybez", "btn_link": "https://instagram.com/..."}
+        {
+          "btn_text": "Evoid",
+          "btn_link": "https://instagram.com/..."
+        },
+        {
+          "btn_text": "Black Vybez",
+          "btn_link": "https://instagram.com/..."
+        }
       ]
     },
     {
       "step_title": "Στείλε το κομμάτι σου",
       "step_desc": "Στείλε DM με το link σου.",
       "buttons": [
-        {"btn_text": "DM στο Insta", "btn_link": "https://instagram.com/..."}
+        {
+          "btn_text": "DM στο Insta",
+          "btn_link": "https://instagram.com/..."
+        }
+      ]
+    },
+    {
+      "step_title": "Παρακολούθησε Live",
+      "step_desc": "Μπες στο TikTok Live για να ακούσεις το κομμάτι σου και να ανακαλύψεις νέα μουσική.",
+      "buttons": [
+        {
+          "btn_text": "Δες το Live εδώ",
+          "btn_link": "δωδωδωδ"
+        }
       ]
     }
-  ]
+  ],
+  "intro_image": "assets/scr-for-media-site-banner.jpg",
+  "banner_image": "assets/scr-for-media-site-banner.jpg",
+  "hero_tagline": "Το TikTok Live που δεν θες να χάσεις",
+  "status": "ΣΕΖΟΝ 1 - Επόμενο Live: **ΕΡΧΕΤΑΙ ΣΥΝΤΟΜΑ!**",
+  "youtube_link": "https://www.youtube.com/embed/VIDEO_ID",
+  "show_spotify": false,
+  "spotify_link": "https://open.spotify.com/embed/show/SHOW_ID"
 }
