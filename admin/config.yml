@@ -95,7 +95,7 @@ collections:
                   - {label: "Text", name: "btn_text", widget: "string"}
                   - {label: "URL", name: "btn_link", widget: "string"}
 
-  # --- 4. MERCH & COMMUNITY ---
+# --- 4. MERCH & COMMUNITY ---
   - name: "merch_comm"
     label: "Merch & Community"
     files:
@@ -110,9 +110,11 @@ collections:
           - label: "Λίστα Προϊόντων Merch"
             name: "merch_items"
             widget: "list"
+            summary: '{{fields.name}}'
             fields:
               - {label: "Όνομα Προϊόντος", name: "name", widget: "string"}
               - {label: "Τιμή", name: "price", widget: "string"}
+              - {label: "Περιγραφή Προϊόντος", name: "desc", widget: "markdown"}
               - {label: "Εικόνα", name: "image", widget: "image"}
               - {label: "Link Αγοράς", name: "link", widget: "string"}
           - {label: "Ενεργοποίηση Join the Crew;", name: "crew_active", widget: "boolean", default: true}
@@ -126,3 +128,4 @@ collections:
         name: "site_style"
         fields:
           - {label: "Accent Color (Κουμπιά/Links)", name: "accent", widget: "color", default: "#00FFD1"}
+
