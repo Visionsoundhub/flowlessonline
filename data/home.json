@@ -4,11 +4,11 @@
   "latest_release": {
     "show": true,
     "section_title": "Πρόσφατη Κυκλοφορία",
-    "song_title": "K E N O",
-    "desc": "Άκου την νέα κυκλοφορία του Evoid, Toxical & Black Vybez",
-    "link_type": "YouTube",
-    "link_url": "https://www.youtube.com/watch?v=F7uSoDbNi08&list=RDF7uSoDbNi08&start_radio=1",
-    "cover": "assets/keno-artwork.jpg",
+    "song_title": "Super Saiyan",
+    "desc": "Άκου την νέα κυκλοφορία του Big G σε συνεργασία με Vybezmadethis ",
+    "link_type": "Spotify",
+    "link_url": "https://open.spotify.com/album/796fz2olD6KcrYUHPSaPQh?si=zrpsaLiLR_OW9RNxK_JfKw",
+    "cover": "assets/supersaiyan-artwork-1-.jpg",
     "alignment": "left"
   },
   "about_image": "assets/fmlogo.png",
