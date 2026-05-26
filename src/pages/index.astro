@@ -15,13 +15,21 @@ const heroTitle = home?.heroTitle || 'Flowless Music';
 const heroBg = home?.heroImage ? `url(${home.heroImage})` : 'none';
 const showRelease = home?.showRelease ?? false;
 
-// Gather spotlight details if exists
-const spotlightTrack = {
-    src: home?.releaseLinkUrl || '',
-    title: home?.releaseSong || 'No Track',
-    artist: home?.releaseTitle || 'Flowless Artist',
-    artwork: home?.releaseCover || '/assets/fmlogo.png'
+// Function to convert Spotify URL to Embed URL
+const getSpotifyEmbedUrl = (url: string) => {
+    if (!url) return '';
+    // Replace standard URL path with embed path
+    let embedUrl = url.replace('open.spotify.com/', 'open.spotify.com/embed/');
+    // Clean up query params if needed or add generator tracking
+    if (embedUrl.includes('?')) {
+        embedUrl = embedUrl.split('?')[0] + '?utm_source=generator&theme=0';
+    } else {
+        embedUrl += '?utm_source=generator&theme=0';
+    }
+    return embedUrl;
 };
+
+const spotifyEmbedUrl = getSpotifyEmbedUrl(home?.releaseLinkUrl || '');
 ---
 
 <Layout title="Home">
@@ -31,27 +39,34 @@ const spotlightTrack = {
             {showRelease ? (
                 <div class="spotlight-wrapper animate-fade-up">
                     <div class="spotlight-artwork-container">
-                        {home?.releaseCover && (
-                            <img src={home.releaseCover} alt="Cover" class="spotlight-cover" />
+                        {spotifyEmbedUrl ? (
+                            <iframe 
+                                style="border-radius:12px" 
+                                src={spotifyEmbedUrl} 
+                                width="100%" 
+                                height="352" 
+                                frameBorder="0" 
+                                allowfullscreen="" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy">
+                            </iframe>
+                        ) : (
+                            home?.releaseCover && (
+                                <img src={home.releaseCover} alt="Cover" class="spotlight-cover" />
+                            )
                         )}
-                        <button class="spotlight-play-btn" id="hero-play-trigger" data-src={spotlightTrack.src} data-title={spotlightTrack.title} data-artist={spotlightTrack.artist} data-artwork={spotlightTrack.artwork}>
-                            <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                        </button>
                     </div>
                     
                     <div class="spotlight-details">
-                        <span class="spotlight-badge accent-glow-text">FEATURED RELEASE</span>
+                        <span class="spotlight-badge accent-glow-text">LATEST RELEASE</span>
                         <h1>{home?.releaseSong}</h1>
                         <span class="spotlight-artist">{home?.releaseTitle}</span>
                         <p class="spotlight-desc">{home?.releaseDesc}</p>
                         
                         <div class="spotlight-actions">
-                            <button class="btn" id="hero-play-action" data-src={spotlightTrack.src} data-title={spotlightTrack.title} data-artist={spotlightTrack.artist} data-artwork={spotlightTrack.artwork}>
-                                ΑΚΟΥΣΤΕ ΤΩΡΑ
-                            </button>
                             {home?.releaseLinkUrl && (
-                                <a href={home.releaseLinkUrl} target="_blank" class="btn btn-outline">
-                                    BUY / STREAM
+                                <a href={home.releaseLinkUrl} target="_blank" class="btn">
+                                    LISTEN ON SPOTIFY
                                 </a>
                             )}
                         </div>
@@ -80,16 +95,18 @@ const spotlightTrack = {
                     <p>Ακούστε τις τελευταίες επίσημες κυκλοφορίες των καλλιτεχνών μας σε όλες τις πλατφόρμες.</p>
                     
                     <div class="mini-release-list">
-                        <div class="mini-release-item" data-src={spotlightTrack.src} data-title={spotlightTrack.title} data-artist={spotlightTrack.artist} data-artwork={spotlightTrack.artwork}>
-                            <img src={spotlightTrack.artwork} alt="Artwork" />
-                            <div class="mini-info">
-                                <span class="mini-title">{spotlightTrack.title}</span>
-                                <span class="mini-artist">{spotlightTrack.artist}</span>
+                        <a href={home?.releaseLinkUrl} target="_blank" class="mini-release-item-link" style="text-decoration:none; color:inherit;">
+                            <div class="mini-release-item">
+                                <img src={home?.releaseCover} alt="Artwork" />
+                                <div class="mini-info">
+                                    <span class="mini-title">{home?.releaseSong}</span>
+                                    <span class="mini-artist">{home?.releaseTitle}</span>
+                                </div>
+                                <div class="mini-play-btn" aria-label="Open in Spotify">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                </div>
                             </div>
-                            <button class="mini-play-btn" aria-label="Play track">
-                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                            </button>
-                        </div>
+                        </a>
                     </div>
                     
                     <a href="/roster" class="card-link">View all Releases &rarr;</a>
@@ -151,40 +168,6 @@ const spotlightTrack = {
         </section>
     )}
 </Layout>
-
-<script>
-    // Play Triggers Handler
-    const setupPlayTriggers = () => {
-        const playTriggers = document.querySelectorAll('#hero-play-trigger, #hero-play-action, .mini-release-item');
-        
-        playTriggers.forEach(trigger => {
-            trigger.addEventListener('click', (e) => {
-                const target = e.currentTarget as HTMLElement;
-                const src = target.getAttribute('data-src');
-                const title = target.getAttribute('data-title');
-                const artist = target.getAttribute('data-artist');
-                const artwork = target.getAttribute('data-artwork');
-
-                if (src) {
-                    window.dispatchEvent(new CustomEvent('play-track', {
-                        detail: {
-                            src,
-                            title,
-                            artist,
-                            artwork
-                        }
-                    }));
-                }
-            });
-        });
-    };
-
-    // Initialize triggers
-    setupPlayTriggers();
-    
-    // Support dynamic page loads
-    document.addEventListener('astro:after-swap', setupPlayTriggers);
-</script>
 
 <style>
     /* HERO SPOTLIGHT */
