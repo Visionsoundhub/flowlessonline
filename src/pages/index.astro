@@ -1,0 +1,175 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { createReader } from '@keystatic/core/reader';
+import keystaticConfig from '../../keystatic.config';
+
+const reader = createReader(process.cwd(), keystaticConfig);
+const home = await reader.singletons.home.read();
+
+// Default values if no config is set yet
+const heroTitle = home?.heroTitle || 'Flowless Music';
+const heroBg = home?.heroImage ? `url(${home.heroImage})` : 'none';
+const showRelease = home?.showRelease ?? false;
+---
+
+<Layout title="Home">
+    <section class="hero" style={`background-image: linear-gradient(rgba(13,13,13,0.7), rgba(13,13,13,0.9)), ${heroBg}`}>
+        <div class="container animate-fade-in">
+            {showRelease ? (
+                <div class="release-box">
+                    {home?.releaseCover && <img src={home.releaseCover} alt="Cover" class="release-cover" />}
+                    <div class="release-info">
+                        <span class="badge">{home?.releaseTitle}</span>
+                        <h2>{home?.releaseSong}</h2>
+                        <p>{home?.releaseDesc}</p>
+                        {home?.releaseLinkUrl && (
+                            <a href={home.releaseLinkUrl} target="_blank" class="btn">
+                                ΑΚΟΥΣΤΕ ΣΤΟ {home?.releaseLinkType?.toUpperCase()}
+                            </a>
+                        )}
+                    </div>
+                </div>
+            ) : (
+                <h1 class="glitch-title">{heroTitle}</h1>
+            )}
+        </div>
+    </section>
+
+    {home?.aboutText && (
+        <section class="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        {home.aboutImage && <img src={home.aboutImage} alt="About Flowless" />}
+                    </div>
+                    <div class="about-content animate-fade-in">
+                        <h2>{home.aboutTitle}</h2>
+                        <div class="prose">
+                            {home.aboutText}
+                        </div>
+                        {home.aboutTagline && <p class="tagline">{home.aboutTagline}</p>}
+                    </div>
+                </div>
+            </div>
+        </section>
+    )}
+</Layout>
+
+<style>
+    .hero {
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+        margin-top: calc(var(--header-height) * -1);
+        padding-top: var(--header-height);
+    }
+    
+    .glitch-title {
+        font-size: 5rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: transparent;
+        -webkit-text-stroke: 2px #fff;
+        position: relative;
+    }
+    
+    .release-box {
+        background: rgba(26, 26, 26, 0.6);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 3rem;
+        border-radius: 20px;
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+        max-width: 800px;
+        margin: 0 auto;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+    
+    .release-cover {
+        width: 250px;
+        height: 250px;
+        border-radius: 12px;
+        object-fit: cover;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        transition: transform 0.5s ease;
+    }
+    
+    .release-box:hover .release-cover {
+        transform: scale(1.05) rotate(2deg);
+    }
+    
+    .badge {
+        display: inline-block;
+        background: var(--accent-color);
+        color: #000;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-weight: 700;
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+        letter-spacing: 0.05em;
+    }
+    
+    .release-info h2 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .about {
+        padding: 8rem 0;
+        background-color: var(--surface-primary);
+    }
+    
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+    }
+    
+    .about-image img {
+        width: 100%;
+        border-radius: 20px;
+        filter: grayscale(20%);
+        transition: filter 0.5s ease;
+    }
+    
+    .about-image:hover img {
+        filter: grayscale(0%);
+    }
+    
+    .prose {
+        font-size: 1.1rem;
+        color: var(--text-secondary);
+        margin-bottom: 2rem;
+    }
+    
+    .tagline {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: var(--accent-color);
+        border-left: 4px solid var(--accent-color);
+        padding-left: 1rem;
+    }
+
+    @media (max-width: 768px) {
+        .release-box {
+            flex-direction: column;
+            text-align: center;
+            padding: 2rem;
+        }
+        .about-grid {
+            grid-template-columns: 1fr;
+        }
+        .glitch-title {
+            font-size: 3rem;
+        }
+    }
+</style>

@@ -1,0 +1,187 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { createReader } from '@keystatic/core/reader';
+import keystaticConfig from '../../keystatic.config';
+
+const reader = createReader(process.cwd(), keystaticConfig);
+const radio = await reader.singletons.radio.read();
+
+const bannerBg = radio?.bannerImage ? `url(${radio.bannerImage})` : 'var(--surface-secondary)';
+---
+
+<Layout title="Soundcheck Radio">
+    <div class="radio-hero" style={`background-image: linear-gradient(rgba(13,13,13,0.5), rgba(13,13,13,0.9)), ${bannerBg}`}>
+        <div class="container text-center animate-fade-in">
+            <h1 class="glitch-title">SOUNDCHECK <span class="text-accent">RADIO</span></h1>
+            {radio?.heroTagline && <p class="tagline">{radio.heroTagline}</p>}
+            {radio?.status && (
+                <div class="live-status">
+                    <span class="pulse"></span>
+                    {radio.status}
+                </div>
+            )}
+        </div>
+    </div>
+
+    <section class="radio-content">
+        <div class="container">
+            <div class="radio-grid">
+                <div class="radio-info">
+                    {radio?.introTitle && <h2>{radio.introTitle}</h2>}
+                    <div class="prose">
+                        {radio?.introText && radio.introText}
+                    </div>
+                </div>
+                
+                <div class="media-players">
+                    {radio?.youtubeLink && (
+                        <div class="video-container">
+                            <iframe 
+                                src={radio.youtubeLink.replace('watch?v=', 'embed/')} 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                    )}
+                    
+                    {radio?.showSpotify && radio?.spotifyLink && (
+                        <div class="spotify-container">
+                            <iframe 
+                                style="border-radius:12px" 
+                                src={radio.spotifyLink.replace('track/', 'embed/track/').replace('playlist/', 'embed/playlist/')} 
+                                width="100%" 
+                                height="152" 
+                                frameborder="0" 
+                                allowfullscreen="" 
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                                loading="lazy"
+                            ></iframe>
+                        </div>
+                    )}
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>
+
+<style>
+    .radio-hero {
+        padding: 10rem 0 6rem;
+        background-size: cover;
+        background-position: center;
+        border-bottom: 1px solid var(--surface-secondary);
+        margin-top: calc(var(--header-height) * -1);
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .text-accent {
+        color: var(--accent-color);
+    }
+
+    .glitch-title {
+        font-size: 5rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: -0.02em;
+        margin-bottom: 1rem;
+    }
+
+    .tagline {
+        font-size: 1.5rem;
+        color: var(--text-primary);
+        max-width: 600px;
+        margin: 0 auto 2rem;
+    }
+
+    .live-status {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(255, 0, 0, 0.1);
+        border: 1px solid rgba(255, 0, 0, 0.3);
+        color: #ff4444;
+        padding: 8px 20px;
+        border-radius: 50px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    .pulse {
+        width: 10px;
+        height: 10px;
+        background: #ff4444;
+        border-radius: 50%;
+        animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(255, 68, 68, 0.4); }
+        70% { box-shadow: 0 0 0 10px rgba(255, 68, 68, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(255, 68, 68, 0); }
+    }
+
+    .radio-content {
+        padding: 5rem 0;
+        background-color: var(--surface-primary);
+    }
+
+    .radio-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 4rem;
+        align-items: start;
+    }
+
+    .radio-info h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .prose {
+        color: var(--text-secondary);
+        font-size: 1.1rem;
+    }
+
+    .media-players {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+        overflow: hidden;
+        border-radius: 16px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .spotify-container {
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        border-radius: 12px;
+    }
+
+    @media (max-width: 768px) {
+        .radio-grid {
+            grid-template-columns: 1fr;
+        }
+        .glitch-title {
+            font-size: 3rem;
+        }
+    }
+</style>

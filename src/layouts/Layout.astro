@@ -1,0 +1,55 @@
+---
+import '../styles/global.css';
+import { createReader } from '@keystatic/core/reader';
+import keystaticConfig from '../../keystatic.config';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+
+// Fetch appearance settings (if they exist)
+const reader = createReader(process.cwd(), keystaticConfig);
+const appearance = await reader.singletons.appearance.read();
+const accentColor = appearance?.accent || '#00FFD1';
+---
+
+<!doctype html>
+<html lang="el">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Flowless Music - Official Website" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title} | Flowless Music</title>
+        <style define:vars={{ accentColor }}>
+            :root {
+                --accent-color: var(--accentColor);
+            }
+        </style>
+	</head>
+	<body>
+        <header>
+            <div class="container">
+                <a href="/" class="logo">Flowless</a>
+                <nav class="desktop-nav">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/roster">Roster</a></li>
+                        <li><a href="/soundcheck">Soundcheck</a></li>
+                        <li><a href="/merch">Merch</a></li>
+                    </ul>
+                </nav>
+                <!-- Mobile nav toggle would go here -->
+            </div>
+        </header>
+		<main>
+			<slot />
+		</main>
+        <footer style="text-align: center; padding: 3rem 0; border-top: 1px solid var(--surface-secondary); margin-top: 5rem;">
+            <p>&copy; {new Date().getFullYear()} Flowless Music. All rights reserved.</p>
+        </footer>
+	</body>
+</html>
