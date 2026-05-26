@@ -6,48 +6,145 @@ import keystaticConfig from '../../keystatic.config';
 const reader = createReader(process.cwd(), keystaticConfig);
 const home = await reader.singletons.home.read();
 
+// Fetch Roster for the feed
+const rosterList = await reader.collections.roster.all();
+const featuredArtists = rosterList.slice(0, 3); // Take top 3 for homepage
+
 // Default values if no config is set yet
 const heroTitle = home?.heroTitle || 'Flowless Music';
 const heroBg = home?.heroImage ? `url(${home.heroImage})` : 'none';
 const showRelease = home?.showRelease ?? false;
+
+// Gather spotlight details if exists
+const spotlightTrack = {
+    src: home?.releaseLinkUrl || '',
+    title: home?.releaseSong || 'No Track',
+    artist: home?.releaseTitle || 'Flowless Artist',
+    artwork: home?.releaseCover || '/assets/fmlogo.png'
+};
 ---
 
 <Layout title="Home">
-    <section class="hero" style={`background-image: linear-gradient(rgba(13,13,13,0.7), rgba(13,13,13,0.9)), ${heroBg}`}>
-        <div class="container animate-fade-in">
+    <!-- HERO SECTION WITH SPOTLIGHT -->
+    <section class="hero-spotlight" style={`background-image: radial-gradient(circle at 50% 20%, rgba(0, 255, 209, 0.08), transparent 50%), linear-gradient(rgba(8, 8, 9, 0.7), #080809), ${heroBg}`}>
+        <div class="container">
             {showRelease ? (
-                <div class="release-box">
-                    {home?.releaseCover && <img src={home.releaseCover} alt="Cover" class="release-cover" />}
-                    <div class="release-info">
-                        <span class="badge">{home?.releaseTitle}</span>
-                        <h2>{home?.releaseSong}</h2>
-                        <p>{home?.releaseDesc}</p>
-                        {home?.releaseLinkUrl && (
-                            <a href={home.releaseLinkUrl} target="_blank" class="btn">
-                                ΑΚΟΥΣΤΕ ΣΤΟ {home?.releaseLinkType?.toUpperCase()}
-                            </a>
+                <div class="spotlight-wrapper animate-fade-up">
+                    <div class="spotlight-artwork-container">
+                        {home?.releaseCover && (
+                            <img src={home.releaseCover} alt="Cover" class="spotlight-cover" />
                         )}
+                        <button class="spotlight-play-btn" id="hero-play-trigger" data-src={spotlightTrack.src} data-title={spotlightTrack.title} data-artist={spotlightTrack.artist} data-artwork={spotlightTrack.artwork}>
+                            <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        </button>
+                    </div>
+                    
+                    <div class="spotlight-details">
+                        <span class="spotlight-badge accent-glow-text">FEATURED RELEASE</span>
+                        <h1>{home?.releaseSong}</h1>
+                        <span class="spotlight-artist">{home?.releaseTitle}</span>
+                        <p class="spotlight-desc">{home?.releaseDesc}</p>
+                        
+                        <div class="spotlight-actions">
+                            <button class="btn" id="hero-play-action" data-src={spotlightTrack.src} data-title={spotlightTrack.title} data-artist={spotlightTrack.artist} data-artwork={spotlightTrack.artwork}>
+                                ΑΚΟΥΣΤΕ ΤΩΡΑ
+                            </button>
+                            {home?.releaseLinkUrl && (
+                                <a href={home.releaseLinkUrl} target="_blank" class="btn btn-outline">
+                                    BUY / STREAM
+                                </a>
+                            )}
+                        </div>
                     </div>
                 </div>
             ) : (
-                <h1 class="glitch-title">{heroTitle}</h1>
+                <div class="hero-center animate-fade-up">
+                    <h1 class="premium-glitch">{heroTitle}</h1>
+                    <p class="hero-subtitle">FUTURE SOUNDS & UNDERGROUND MUSIC LABEL</p>
+                    <a href="/roster" class="btn">DISCOVER ROSTER</a>
+                </div>
             )}
         </div>
     </section>
 
-    {home?.aboutText && (
-        <section class="about">
-            <div class="container">
-                <div class="about-grid">
-                    <div class="about-image">
-                        {home.aboutImage && <img src={home.aboutImage} alt="About Flowless" />}
+    <!-- CONTENT GRID (DEFECTED LOGIC) -->
+    <section class="grid-section">
+        <div class="container">
+            <h2 class="section-title animate-fade-up">LATEST FROM THE LABEL</h2>
+            
+            <div class="content-grid animate-fade-up">
+                <!-- GRID CARD 1: LATEST RELEASES -->
+                <div class="premium-card grid-card">
+                    <span class="card-tag">RELEASES</span>
+                    <h3>Current Sounds</h3>
+                    <p>Ακούστε τις τελευταίες επίσημες κυκλοφορίες των καλλιτεχνών μας σε όλες τις πλατφόρμες.</p>
+                    
+                    <div class="mini-release-list">
+                        <div class="mini-release-item" data-src={spotlightTrack.src} data-title={spotlightTrack.title} data-artist={spotlightTrack.artist} data-artwork={spotlightTrack.artwork}>
+                            <img src={spotlightTrack.artwork} alt="Artwork" />
+                            <div class="mini-info">
+                                <span class="mini-title">{spotlightTrack.title}</span>
+                                <span class="mini-artist">{spotlightTrack.artist}</span>
+                            </div>
+                            <button class="mini-play-btn" aria-label="Play track">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                            </button>
+                        </div>
                     </div>
-                    <div class="about-content animate-fade-in">
+                    
+                    <a href="/roster" class="card-link">View all Releases &rarr;</a>
+                </div>
+
+                <!-- GRID CARD 2: SOUNDCHECK -->
+                <div class="premium-card grid-card highlight-card">
+                    <span class="card-tag">SOUNDCHECK</span>
+                    <h3>Radio & Podcasts</h3>
+                    <p>Live DJ sets, podcasts και ραδιοφωνικές εκπομπές από το team του Flowless.</p>
+                    <div class="soundcheck-preview">
+                        <div class="wave-visualizer static-wave">
+                            <div class="wave-bar playing" style="height: 14px"></div>
+                            <div class="wave-bar playing" style="height: 18px"></div>
+                            <div class="wave-bar playing" style="height: 12px"></div>
+                            <div class="wave-bar playing" style="height: 16px"></div>
+                        </div>
+                    </div>
+                    <a href="/soundcheck" class="btn btn-outline" style="margin-top: 1rem; width: 100%;">TUNE IN</a>
+                </div>
+
+                <!-- GRID CARD 3: MERCH -->
+                <div class="premium-card grid-card">
+                    <span class="card-tag">CLOTHING</span>
+                    <h3>Official Merch</h3>
+                    <p>Premium t-shirts, hoodies και αξεσουάρ. Σχεδιασμένα για την κοινότητά μας.</p>
+                    <div style="height: 40px;"></div>
+                    <a href="/merch" class="card-link">Enter the Store &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BIO / ABOUT SECTION -->
+    {home?.aboutText && (
+        <section class="about-section">
+            <div class="container">
+                <div class="about-wrapper">
+                    <div class="about-image-container animate-fade-up">
+                        {home.aboutImage && (
+                            <img src={home.aboutImage} alt="About Flowless" class="about-img" />
+                        )}
+                        <div class="image-gradient-overlay"></div>
+                    </div>
+                    <div class="about-text-details animate-fade-up">
+                        <span class="about-tag uppercase">ABOUT THE LABEL</span>
                         <h2>{home.aboutTitle}</h2>
-                        <div class="prose">
+                        <div class="about-body">
                             {home.aboutText}
                         </div>
-                        {home.aboutTagline && <p class="tagline">{home.aboutTagline}</p>}
+                        {home.aboutTagline && (
+                            <p class="about-tagline">
+                                "{home.aboutTagline}"
+                            </p>
+                        )}
                     </div>
                 </div>
             </div>
@@ -55,121 +152,421 @@ const showRelease = home?.showRelease ?? false;
     )}
 </Layout>
 
+<script>
+    // Play Triggers Handler
+    const setupPlayTriggers = () => {
+        const playTriggers = document.querySelectorAll('#hero-play-trigger, #hero-play-action, .mini-release-item');
+        
+        playTriggers.forEach(trigger => {
+            trigger.addEventListener('click', (e) => {
+                const target = e.currentTarget as HTMLElement;
+                const src = target.getAttribute('data-src');
+                const title = target.getAttribute('data-title');
+                const artist = target.getAttribute('data-artist');
+                const artwork = target.getAttribute('data-artwork');
+
+                if (src) {
+                    window.dispatchEvent(new CustomEvent('play-track', {
+                        detail: {
+                            src,
+                            title,
+                            artist,
+                            artwork
+                        }
+                    }));
+                }
+            });
+        });
+    };
+
+    // Initialize triggers
+    setupPlayTriggers();
+    
+    // Support dynamic page loads
+    document.addEventListener('astro:after-swap', setupPlayTriggers);
+</script>
+
 <style>
-    .hero {
-        min-height: 90vh;
+    /* HERO SPOTLIGHT */
+    .hero-spotlight {
+        min-height: 95vh;
         display: flex;
         align-items: center;
-        justify-content: center;
         background-size: cover;
         background-position: center;
         margin-top: calc(var(--header-height) * -1);
         padding-top: var(--header-height);
-    }
-    
-    .glitch-title {
-        font-size: 5rem;
-        font-weight: 800;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        text-align: center;
-        color: transparent;
-        -webkit-text-stroke: 2px #fff;
         position: relative;
+        overflow: hidden;
     }
-    
-    .release-box {
-        background: rgba(26, 26, 26, 0.6);
-        backdrop-filter: blur(20px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        padding: 3rem;
-        border-radius: 20px;
-        display: flex;
+
+    .hero-spotlight::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 150px;
+        background: linear-gradient(to top, #080809, transparent);
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    .spotlight-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
         gap: 3rem;
         align-items: center;
-        max-width: 800px;
+        max-width: 1000px;
         margin: 0 auto;
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        z-index: 2;
+        position: relative;
     }
-    
-    .release-cover {
-        width: 250px;
-        height: 250px;
-        border-radius: 12px;
+
+    @media (min-width: 768px) {
+        .spotlight-wrapper {
+            grid-template-columns: 350px 1fr;
+        }
+    }
+
+    .spotlight-artwork-container {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 1;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 30px 60px rgba(0,0,0,0.8), 0 0 40px rgba(0, 255, 209, 0.08);
+    }
+
+    .spotlight-cover {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
-        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-        transition: transform 0.5s ease;
+        transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
-    
-    .release-box:hover .release-cover {
-        transform: scale(1.05) rotate(2deg);
+
+    .spotlight-artwork-container:hover .spotlight-cover {
+        transform: scale(1.06);
     }
-    
-    .badge {
-        display: inline-block;
+
+    .spotlight-play-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.9);
         background: var(--accent-color);
         color: #000;
-        padding: 4px 12px;
-        border-radius: 20px;
-        font-weight: 700;
+        border: none;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        box-shadow: 0 10px 25px rgba(0, 255, 209, 0.4);
+    }
+
+    .spotlight-artwork-container:hover .spotlight-play-btn {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    .spotlight-play-btn:hover {
+        background: #fff;
+        transform: translate(-50%, -50%) scale(1.08);
+    }
+
+    .spotlight-details h1 {
+        margin: 0.5rem 0 1rem 0;
+    }
+
+    .spotlight-badge {
+        font-weight: 800;
         font-size: 0.8rem;
+        color: var(--accent-color);
+        letter-spacing: 0.15em;
+    }
+
+    .spotlight-artist {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #fff;
+        display: block;
+        margin-bottom: 1.5rem;
+    }
+
+    .spotlight-desc {
+        max-width: 600px;
+        margin-bottom: 2rem;
+    }
+
+    .spotlight-actions {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    /* Hero Center (When no spotlight) */
+    .hero-center {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .premium-glitch {
+        font-size: clamp(3rem, 7vw, 6rem);
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: -0.04em;
+        line-height: 1;
         margin-bottom: 1rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        letter-spacing: 0.2em;
+        color: var(--accent-color);
+        font-weight: 700;
+        margin-bottom: 2.5rem;
+    }
+
+    /* GRID SECTION */
+    .grid-section {
+        padding: 6rem 0;
+        background: #080809;
+        position: relative;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 4rem;
+        text-transform: uppercase;
         letter-spacing: 0.05em;
     }
-    
-    .release-info h2 {
-        font-size: 2.5rem;
+
+    .content-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    @media (min-width: 768px) {
+        .content-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .grid-card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        min-height: 320px;
+    }
+
+    .card-tag {
+        font-size: 0.75rem;
+        font-weight: 800;
+        color: var(--accent-color);
+        letter-spacing: 0.1em;
+        margin-bottom: 1rem;
+        display: block;
+        text-transform: uppercase;
+    }
+
+    .grid-card h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
         margin-bottom: 1rem;
     }
-    
-    .about {
-        padding: 8rem 0;
-        background-color: var(--surface-primary);
+
+    .grid-card p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        flex-grow: 1;
     }
-    
-    .about-grid {
+
+    .card-link {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 0.95rem;
+        display: inline-block;
+        transition: color 0.2s ease, transform 0.2s ease;
+        margin-top: auto;
+    }
+
+    .card-link:hover {
+        color: var(--accent-color);
+        transform: translateX(4px);
+    }
+
+    .highlight-card {
+        border-color: rgba(0, 255, 209, 0.15);
+        box-shadow: 0 0 40px rgba(0, 255, 209, 0.03);
+    }
+
+    /* Mini release track list inside card */
+    .mini-release-list {
+        margin-bottom: 2rem;
+    }
+
+    .mini-release-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: rgba(255,255,255,0.02);
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid rgba(255,255,255,0.03);
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .mini-release-item:hover {
+        background: rgba(255,255,255,0.05);
+        border-color: rgba(0, 255, 209, 0.2);
+    }
+
+    .mini-release-item img {
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        object-fit: cover;
+    }
+
+    .mini-info {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        overflow: hidden;
+    }
+
+    .mini-title {
+        font-size: 0.85rem;
+        font-weight: 700;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .mini-artist {
+        font-size: 0.75rem;
+        color: var(--text-secondary);
+    }
+
+    .mini-play-btn {
+        background: rgba(255, 255, 255, 0.05);
+        border: none;
+        color: #fff;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .mini-release-item:hover .mini-play-btn {
+        background: var(--accent-color);
+        color: #000;
+    }
+
+    .soundcheck-preview {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+        background: rgba(0, 255, 209, 0.02);
+        border-radius: 8px;
+        border: 1px dashed rgba(0, 255, 209, 0.2);
+    }
+
+    .static-wave {
+        gap: 6px;
+    }
+
+    /* ABOUT / BIO SECTION */
+    .about-section {
+        padding: 8rem 0;
+        background: #0b0b0d;
+        border-top: 1px solid rgba(255, 255, 255, 0.03);
+    }
+
+    .about-wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         gap: 4rem;
         align-items: center;
     }
-    
-    .about-image img {
+
+    @media (min-width: 768px) {
+        .about-wrapper {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .about-image-container {
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+        aspect-ratio: 16/10;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+
+    .about-img {
         width: 100%;
-        border-radius: 20px;
-        filter: grayscale(20%);
-        transition: filter 0.5s ease;
+        height: 100%;
+        object-fit: cover;
+        filter: grayscale(10%) contrast(1.1);
+        transition: transform 0.5s ease;
     }
-    
-    .about-image:hover img {
-        filter: grayscale(0%);
+
+    .about-image-container:hover .about-img {
+        transform: scale(1.02);
     }
-    
-    .prose {
+
+    .image-gradient-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(11, 11, 13, 0.4), transparent);
+        pointer-events: none;
+    }
+
+    .about-tag {
+        font-size: 0.8rem;
+        font-weight: 800;
+        color: var(--accent-color);
+        letter-spacing: 0.15em;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+
+    .about-text-details h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    .about-body {
         font-size: 1.1rem;
         color: var(--text-secondary);
         margin-bottom: 2rem;
     }
-    
-    .tagline {
-        font-size: 1.4rem;
-        font-weight: 600;
-        color: var(--accent-color);
-        border-left: 4px solid var(--accent-color);
-        padding-left: 1rem;
-    }
 
-    @media (max-width: 768px) {
-        .release-box {
-            flex-direction: column;
-            text-align: center;
-            padding: 2rem;
-        }
-        .about-grid {
-            grid-template-columns: 1fr;
-        }
-        .glitch-title {
-            font-size: 3rem;
-        }
+    .about-tagline {
+        font-size: 1.3rem;
+        font-style: italic;
+        color: #fff;
+        border-left: 3px solid var(--accent-color);
+        padding-left: 1.2rem;
+        line-height: 1.4;
     }
 </style>
+
