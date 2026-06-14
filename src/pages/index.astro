@@ -136,15 +136,15 @@ const spotifyEmbedUrl = getSpotifyEmbedUrl(home?.releaseSpotifyUrl || home?.rele
                 <div class="premium-card grid-card">
                     <span class="card-tag">RELEASES</span>
                     <h3>Current Sounds</h3>
-                    <p>Ακούστε τις τελευταίες επίσημες κυκλοφορίες των καλλιτεχνών μας σε όλες τις πλατφόρμες.</p>
+                    <p>Ακούστε την επίσημη λίστα με όλες τις κυκλοφορίες της Flowless Music στο Spotify.</p>
                     
                     <div class="mini-release-list">
-                        <a href={home?.releaseLinkUrl} target="_blank" class="mini-release-item-link" style="text-decoration:none; color:inherit;">
+                        <a href={home?.releasesPlaylistUrl} target="_blank" class="mini-release-item-link" style="text-decoration:none; color:inherit;">
                             <div class="mini-release-item">
-                                <img src={home?.releaseCover} alt="Artwork" />
+                                <img src={home?.aboutImage || "/assets/fmlogo.png"} alt="Flowless Playlist" />
                                 <div class="mini-info">
-                                    <span class="mini-title">{home?.releaseSong}</span>
-                                    <span class="mini-artist">{home?.releaseTitle}</span>
+                                    <span class="mini-title">Flowless Official Playlist</span>
+                                    <span class="mini-artist">Όλες οι κυκλοφορίες μας</span>
                                 </div>
                                 <div class="mini-play-btn" aria-label="Open in Spotify">
                                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
@@ -153,7 +153,7 @@ const spotifyEmbedUrl = getSpotifyEmbedUrl(home?.releaseSpotifyUrl || home?.rele
                         </a>
                     </div>
                     
-                    <a href={home?.releasesPlaylistUrl || home?.releaseLinkUrl} target="_blank" class="card-link">View all Releases &rarr;</a>
+                    <a href={home?.releasesPlaylistUrl} target="_blank" class="card-link">Listen on Spotify &rarr;</a>
                 </div>
 
                 <!-- GRID CARD 2: SOUNDCHECK -->
