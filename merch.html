@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merch — Flowless Music</title>
+<meta name="description" content="Flowless Music merch — drop 001 σύντομα.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230a0a0c'/><text x='50' y='72' font-size='64' font-family='Arial Black' font-weight='900' fill='%23e02b38' text-anchor='middle'>F</text></svg>">
+</head>
+<body class="merch-body">
+
+<div class="merch-grain" aria-hidden="true"></div>
+
+<div class="cables" aria-hidden="true">
+  <!-- ελαστικά καλώδια: physics στο script.js, άκρες εκτός κάδρου -->
+  <svg id="cablesSvg" fill="none"></svg>
+</div>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo">FLOWLESS<span class="nav-logo-dot">.</span></a>
+  <div class="nav-links">
+    <a href="index.html#release" data-i18n="nav_release">Release</a>
+    <a href="index.html#roster" data-i18n="nav_roster">Roster</a>
+    <a href="index.html#playlist" data-i18n="nav_playlist">Playlist</a>
+    <a href="merch.html" data-i18n="nav_merch" style="color:var(--bone)">Merch</a>
+    <a href="index.html#contact" data-i18n="nav_contact">Επικοινωνία</a>
+  </div>
+  <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN</button>
+</nav>
+
+<header class="merch-hero">
+  <p class="section-label" data-i18n="merch_label">Merch</p>
+  <h1 class="section-title" data-i18n="merch_title">Drop 001 — σύντομα</h1>
+  <p class="contact-note" data-i18n="merch_sub">Tees, hoodies και άλλα. Όταν βγει, βγαίνει πρώτα εδώ.</p>
+</header>
+
+<div class="merch-grid">
+  <div class="merch-item">
+    <div class="merch-shape" aria-hidden="true">
+      <svg viewBox="0 0 100 100" fill="currentColor"><path d="M35 18 L20 28 L14 48 L26 52 L26 84 L74 84 L74 52 L86 48 L80 28 L65 18 C62 25 56 28 50 28 C44 28 38 25 35 18 Z"/></svg>
+    </div>
+    <h3>Flowless Tee</h3>
+    <p data-i18n="m_tee">Σύντομα</p>
+  </div>
+  <div class="merch-item">
+    <div class="merch-shape" aria-hidden="true">
+      <svg viewBox="0 0 100 100" fill="currentColor"><path d="M34 22 L18 32 L12 54 L24 58 L24 88 L76 88 L76 58 L88 54 L82 32 L66 22 C64 16 58 10 50 10 C42 10 36 16 34 22 Z M42 20 C44 24 47 26 50 26 C53 26 56 24 58 20 C56 17 53 15 50 15 C47 15 44 17 42 20 Z M40 88 L40 66 L60 66 L60 88 Z"/></svg>
+    </div>
+    <h3>Flowless Hoodie</h3>
+    <p data-i18n="m_hoodie">Σύντομα</p>
+  </div>
+  <div class="merch-item">
+    <div class="merch-shape" aria-hidden="true">
+      <svg viewBox="0 0 100 100" fill="currentColor"><path d="M20 58 C20 38 33 26 50 26 C67 26 80 38 80 58 L80 62 L20 62 Z M78 62 L96 66 L94 72 L76 68 Z M22 62 L20 70 L60 70 L60 62 Z" opacity="0"/><path d="M18 56 C18 38 32 26 50 26 C68 26 82 38 82 56 L82 60 L18 60 Z M80 60 L97 64 L95 71 L78 66 Z"/></svg>
+    </div>
+    <h3>Flowless Cap</h3>
+    <p data-i18n="m_cap">Σύντομα</p>
+  </div>
+  <div class="merch-item">
+    <div class="merch-shape" aria-hidden="true">
+      <svg viewBox="0 0 100 100" fill="currentColor"><path d="M50 12 A38 38 0 1 0 50 88 A38 38 0 1 0 50 12 Z M50 42 A8 8 0 1 1 50 58 A8 8 0 1 1 50 42 Z M50 47 A3 3 0 1 0 50 53 A3 3 0 1 0 50 47 Z" fill-rule="evenodd"/></svg>
+    </div>
+    <h3>Vinyl / CD</h3>
+    <p data-i18n="m_vinyl">Σύντομα</p>
+  </div>
+</div>
+
+<footer class="footer">
+  <p>FLOWLESS MUSIC © <span id="year"></span> · flowlessmusic.gr</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
