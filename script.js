@@ -472,3 +472,21 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 applyLang();
+
+console.log(
+  `%c
+  ___ _    ___  _      __  ___ ___ _____ ___  ___ 
+ | __| |  / _ \\| | /\\ / / / __|_ _|_   _| __|/ __|
+ | _| | |_| (_) | |/  \\| |  \\__ \\| |  | | | _| \\__ \\
+ |_|  |____\\___/|__/ \\__/ |___/___| |_| |___|___/
+                                                   
+  🕵️‍♂️ Inspector Gadget detected!
+ 
+  [!] ΠΡΟΣΟΧΗ: Αν κοιτάς αυτόν τον κώδικα για πολλή ώρα, μπορεί να συνειδητοποιήσεις
+  πόσο αργό είναι το δικό σου site. Η αντιγραφή κώδικα απαγορεύεται αυστηρά 
+  από τους νόμους του καλού γούστου.
+ 
+  Θέλεις ένα πραγματικά premium & γρήγορο site; Φτιάξ' το μαζί μας στο flowsites.gr
+`,
+  "color: #e02b38; font-family: monospace; font-size: 11px; font-weight: bold;"
+);
