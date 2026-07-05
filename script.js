@@ -1,6 +1,6 @@
 /* ============ FLOWLESS MUSIC ============ */
 
-/* ---------- Artist data (εύκολο update: ονόματα, bio, tags, socials) ---------- */
+/* ---------- Artist Roster Data ---------- */
 const ARTISTS = [
   {
     id: 'evoid',
@@ -67,7 +67,7 @@ const ARTISTS = [
   }
 ];
 
-/* Latest release — ενημέρωσε εδώ όταν βγει νέο */
+/* ---------- Latest Release Registry ---------- */
 const LATEST_RELEASE = {
   artist: 'E-VOID',
   title: '2 Αλήθειες & 1 Ψέμα',
@@ -82,7 +82,7 @@ const LATEST_RELEASE = {
 };
 const PLAYLIST_URL = 'https://open.spotify.com/playlist/766LR1ZtOxjvZ8fiRQLkMz?si=40bdc0412e1743f6';
 
-/* ---------- i18n ---------- */
+/* ---------- Internationalization (i18n) ---------- */
 const STRINGS = {
   en: {
     nav_release: 'Release',
@@ -99,7 +99,7 @@ const STRINGS = {
     release_desc: 'The next label release is in the mix right now.',
     release_listen: 'Listen — soon',
     roster_label: 'The roster',
-    roster_title: "We don't all do the same style",
+    roster_title: 'Choose frequency',
     console_hint: 'SOLO = open channel',
     playlist_title: 'All our tracks',
     playlist_soon: 'The label Spotify playlist drops here soon.',
@@ -111,12 +111,12 @@ const STRINGS = {
     merch_sub: 'Tees, hoodies, more. When it lands, it lands here first.',
     m_tee: 'Coming soon', m_hoodie: 'Coming soon', m_cap: 'Coming soon', m_vinyl: 'Coming soon'
   },
-  el: {} // ελληνικά defaults κρατιούνται από το HTML στο πρώτο load
+  el: {} // Greek defaults cached from DOM on startup
 };
 
 let lang = localStorage.getItem('fm-lang') || 'el';
 
-/* αποθήκευσε τα ελληνικά defaults πριν οποιοδήποτε switch */
+/* Populate Greek strings from DOM elements */
 document.querySelectorAll('[data-i18n]').forEach(el => {
   STRINGS.el[el.dataset.i18n] = el.textContent;
 });
@@ -135,7 +135,7 @@ function applyLang() {
   renderPlaylist();
 }
 
-/* ---------- Latest release ---------- */
+/* ---------- Render Latest Release ---------- */
 function renderRelease() {
   const box = document.getElementById('releaseCard');
   if (!box || !LATEST_RELEASE) return;
@@ -156,7 +156,7 @@ function renderRelease() {
     </div>`;
 }
 
-/* ---------- Playlist embed ---------- */
+/* ---------- Render Playlist Embed ---------- */
 function renderPlaylist() {
   const box = document.getElementById('playlistFrame');
   if (!box) return;
@@ -178,7 +178,7 @@ if (toggleBtn) toggleBtn.addEventListener('click', () => {
   applyLang();
 });
 
-/* ---------- Console (roster) ---------- */
+/* ---------- Roster Console Strip Logic ---------- */
 let soloId = null;
 const meterTimers = [];
 
@@ -188,7 +188,7 @@ function renderConsole() {
   meterTimers.forEach(clearInterval);
   meterTimers.length = 0;
   wrap.innerHTML = '';
-  const faderPositions = ['34%', '22%', '40%', '28%', '36%']; // "τυχαία" resting θέση ανά κανάλι
+  const faderPositions = ['34%', '22%', '40%', '28%', '36%']; // Default fader resting heights
 
   ARTISTS.forEach((a, idx) => {
     const strip = document.createElement('button');
@@ -217,7 +217,7 @@ function animateMeter(strip, idx) {
   const tick = () => {
     const isSolo = strip.classList.contains('solo');
     const dimmed = strip.parentElement.classList.contains('has-solo') && !isSolo;
-    // κάθε κανάλι "παίζει" σε δικό του επίπεδο· dimmed κανάλια σχεδόν σβηστά
+    // Channel visualizer audio simulation dynamics
     const base = dimmed ? 1.5 : 4 + Math.sin(Date.now() / (700 + idx * 160)) * 2.5;
     const level = Math.max(0, Math.round(base + Math.random() * 3.2));
     leds.forEach((led, i) => {
@@ -258,13 +258,13 @@ function renderDetail() {
     </div>`;
 }
 
-/* ---------- Spectrum (hero) ---------- */
+/* ---------- Hero Bottom Spectrum Visualizer ---------- */
 const spectrum = document.getElementById('spectrum');
 if (spectrum) {
   const N = 48;
   for (let i = 0; i < N; i++) {
     const bar = document.createElement('i');
-    // κάθε μπάρα δικός της ρυθμός/φάση — δεν μοιάζει loop
+    // Asynchronous frequency oscillations
     bar.style.animationDuration = (0.7 + Math.random() * 1.1).toFixed(2) + 's';
     bar.style.animationDelay = '-' + (Math.random() * 2).toFixed(2) + 's';
     bar.style.height = (18 + Math.random() * 38).toFixed(0) + 'px';
@@ -272,14 +272,14 @@ if (spectrum) {
   }
 }
 
-/* ---------- Wordmark per-letter tape warp ---------- */
+/* ---------- Hero Wordmark Character Warp ---------- */
 const wordmark = document.querySelector('.hero-wordmark');
 if (wordmark && matchMedia('(pointer: fine)').matches && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  // σπάσε κάθε text node σε γράμματα-spans (κρατώντας τη δομή FLOW/LESS/MUSIC)
+  // Segment text into spans to target individual characters
   const splitLetters = el => {
     [...el.childNodes].forEach(node => {
       if (node.nodeType === 3) {
-        if (!node.textContent.trim()) { node.remove(); return; } // κενά μεταξύ γραμμών: όχι spans
+        if (!node.textContent.trim()) { node.remove(); return; } // Ignore empty nodes
         const frag = document.createDocumentFragment();
         [...node.textContent].forEach(ch => {
           if (!ch.trim()) { frag.appendChild(document.createTextNode(ch)); return; }
@@ -301,7 +301,7 @@ if (wordmark && matchMedia('(pointer: fine)').matches && !matchMedia('(prefers-r
   });
 }
 
-/* ---------- Hero dot grid (μπιλάκια — hover glow) ---------- */
+/* ---------- Interactive Dot Matrix Canvas ---------- */
 const dotsCanvas = document.getElementById('heroDots');
 if (dotsCanvas && !matchMedia('(prefers-reduced-motion: reduce)').matches && matchMedia('(pointer: fine)').matches) {
   const ctx = dotsCanvas.getContext('2d');
@@ -327,9 +327,9 @@ if (dotsCanvas && !matchMedia('(prefers-reduced-motion: reduce)').matches && mat
       const dx = d.x - mouse.x, dy = d.y - mouse.y;
       const dist = Math.hypot(dx, dy);
       const target = dist < RADIUS ? 1 - dist / RADIUS : 0;
-      d.glow += (target - d.glow) * 0.09; // αργό fade in/out
+      d.glow += (target - d.glow) * 0.09; // Smooth transitions via linear interpolation
       const g = d.glow;
-      // base: μισοφωτεινό γκρι-κόκκινο · glow: accent, όχι τέρμα έντονο (max ~.55)
+      // Calculate coordinates and alpha values
       const r = 1.1 + g * 0.9;
       ctx.beginPath();
       ctx.arc(d.x, d.y, r, 0, 6.2832);
@@ -348,7 +348,7 @@ if (dotsCanvas && !matchMedia('(prefers-reduced-motion: reduce)').matches && mat
   });
   hero.addEventListener('mouseleave', () => { mouse.x = -9999; mouse.y = -9999; });
 
-  /* παύση όταν το hero βγει από το viewport */
+  /* Freeze animations when hero is out of viewport */
   new IntersectionObserver(([e]) => {
     if (e.isIntersecting) { if (!raf) raf = requestAnimationFrame(draw); }
     else { cancelAnimationFrame(raf); raf = null; }
@@ -360,20 +360,20 @@ if (dotsCanvas && !matchMedia('(prefers-reduced-motion: reduce)').matches && mat
   raf = requestAnimationFrame(draw);
 }
 
-/* ---------- Merch: ελαστικά καλώδια (magnet προς κέρσορα + spring) ---------- */
+/* ---------- Interactive SVG Cable Simulation ---------- */
 const cablesSvg = document.getElementById('cablesSvg');
 if (cablesSvg) {
   const NS = 'http://www.w3.org/2000/svg';
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
   const fine = matchMedia('(pointer: fine)').matches;
-  const N = 48;                 // σημεία ανά καλώδιο
-  const PULL_R = 130;           // ακτίνα επιρροής κέρσορα
-  const PULL_MAX = 44;          // max τράβηγμα px
-  const K = 0.12, DAMP = 0.84; // spring / απόσβεση
+  const N = 48;                 // Number of cable segments
+  const PULL_R = 130;           // Cursor interaction radius
+  const PULL_MAX = 44;          // Max translation distance (px)
+  const K = 0.12, DAMP = 0.84; // Hooke stiffness / damping coefficients
   let W = 0, H = 0, cables = [], raf = null;
   const mouse = { x: -9999, y: -9999 };
 
-  // ορισμός καμπύλης: quadratic bezier με άκρες εκτός κάδρου
+  // Establish quadratic bezier path with offscreen endpoints
   const DEFS = [
     { y0: -30, cy: 1.9, y1: -60, w: [6, 2.5], cols: ['#232128', '#2e2b34'] },
     { y0: -60, cy: 1.55, y1: -35, w: [7, 3], cols: ['#1e1c22', '#292630'] },
@@ -432,7 +432,7 @@ if (cablesSvg) {
         let tx = 0, ty = 0;
         if (dist < PULL_R && dist > 0.01) {
           const f = (1 - dist / PULL_R);
-          const pull = Math.min(PULL_MAX, PULL_R) * f * f; // απαλό στο κέντρο επιρροής
+          const pull = Math.min(PULL_MAX, PULL_R) * f * f; // Force dissipation curve
           tx = (dx / dist) * pull;
           ty = (dy / dist) * pull;
         }
@@ -460,7 +460,7 @@ if (cablesSvg) {
   build();
 }
 
-/* ---------- Scroll reveals ---------- */
+/* ---------- Scroll Reveals ---------- */
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
@@ -468,7 +468,7 @@ const io = new IntersectionObserver(entries => {
 }, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-/* ---------- Init ---------- */
+/* ---------- App Entry Point ---------- */
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 applyLang();
