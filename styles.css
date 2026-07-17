@@ -556,3 +556,4 @@ img{max-width:100%;display:block}
   .news-item{grid-template-columns:1fr}
   .news-item .news-thumb{aspect-ratio:16/9}
 }
+.news-byline{font-family:var(--mono);font-size:.66rem;letter-spacing:.06em;color:var(--ash);margin-top:-4px}

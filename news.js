@@ -25,6 +25,7 @@ function postCard(p) {
         <span class="news-region">${REGION_LABEL[p.region] || ''}</span>
         <span class="news-date">${fmtDate(p.date)}</span>
       </div>
+      ${p.author ? `<p class="news-byline">Γράφει ο ${p.author}</p>` : ''}
       <h3 class="news-item-title">${p.title}</h3>
       <div class="artist-tags">${tags}</div>
       ${body}
