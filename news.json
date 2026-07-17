@@ -1,6 +1,41 @@
 {
-  "updated": "2026-07-17",
+  "updated": "2026-07-18",
   "posts": [
+    {
+      "id": "2026-07-18-roi-612",
+      "date": "2026-07-18",
+      "author": "Στέφανος Ρήγας",
+      "region": "gr",
+      "title": "Ο ROI 6/12 ανεβαίνει με το BAM",
+      "summary": "Ο ράπερ της Mad House Records μπήκε στο εξώφυλλο του Spotify Hot Greek Rap με τη νέα του κυκλοφορία.",
+      "body": [
+        "Ο ROI 6/12, ράπερ της Mad House Records, κυκλοφόρησε το νέο single «BAM» και μπήκε στο εξώφυλλο της playlist Hot Greek Rap του Spotify, μιας από τις πιο δημοφιλείς λίστες ελληνικού ραπ στην πλατφόρμα. Η κίνηση έρχεται μετά από σειρά κυκλοφοριών που τον έχουν φέρει στο προσκήνιο της σκηνής τους τελευταίους μήνες.",
+        "Τα προηγούμενα single του, «Mask Off» και «Bar», έχουν πιστοποιηθεί χρυσά σε ψηφιακές πωλήσεις, ενώ η συνεργασία του με τον Bossikan στο «Bossidonas» έχει γίνει πλατινένια και έχει συγκεντρώσει πάνω από 7.000 recreations στο TikTok."
+      ],
+      "tags": ["Ελλάδα", "Ανερχόμενος", "ROI 6/12"],
+      "image": "",
+      "sources": [
+        { "name": "The Look", "url": "https://www.thelook.gr/mousiki/roi-6-12-o-anerchomenos-raper-kykloforise-to-neo-tou-single-bam/" }
+      ]
+    },
+    {
+      "id": "2026-07-18-izzy-escobar",
+      "date": "2026-07-18",
+      "author": "Νίκος Στοϊκος",
+      "region": "intl",
+      "title": "Η Izzy Escobar «κλέβει» το καλοκαίρι με το Hate to Be The One",
+      "summary": "Το τραγούδι της μπήκε στο τελευταίο κεφάλαιο του Hacks και σκαρφάλωσε στο top 10 του Shazam σε ΗΠΑ και Καναδά.",
+      "body": [
+        "Η Νεοϋορκέζα τραγουδοποιός Izzy Escobar κυκλοφόρησε το επίσημο video για το «Hate to Be The One», λίγο μετά την ένταξη του κομματιού στην τελευταία σεζόν του Hacks του HBO. Η τηλεοπτική έκθεση έσπρωξε το τραγούδι στο top 10 του Shazam σε ΗΠΑ και Καναδά, σημάδι της ανοδικής πορείας που έχει η καλλιτέχνης μέσα στο 2026.",
+        "Εκπαιδευμένη στο βιολί και το πιάνο, με κουβανοϊταλική καταγωγή, η Escobar είχε ήδη τραβήξει την προσοχή με το «Evergreen Avenue» στο soundtrack του Devil Wears Prada 2, δίπλα σε ονόματα όπως Lady Gaga, Dua Lipa και Laufey. Έχει επαινεθεί από Forbes, Billboard και BBC, ενώ μέσα στο καλοκαίρι ανεβαίνει σε σκηνές σε Νέα Υόρκη, Λος Άντζελες, Βερολίνο, Παρίσι και Λονδίνο, καθώς και σε φεστιβάλ όπως το BottleRock και το Austin City Limits."
+      ],
+      "tags": ["Εξωτερικό", "Ανερχόμενος", "Izzy Escobar"],
+      "image": "",
+      "sources": [
+        { "name": "MusicNews.com", "url": "https://www.musicnews.com/news/2026-07-14-izzy-escobar-unveils-official-music-video-for-hate-to-be-the-one" },
+        { "name": "iHeart", "url": "https://www.iheart.com/content/2026-07-14-who-is-izzy-escobar-watch-her-new-hate-to-be-the-one-video/" }
+      ]
+    },
     {
       "id": "2026-07-17-greek-chart",
       "date": "2026-07-17",
