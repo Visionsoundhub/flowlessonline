@@ -520,7 +520,7 @@ img{max-width:100%;display:block}
   font-family:var(--mono);font-size:.62rem;letter-spacing:.16em;
   text-transform:uppercase;color:var(--blood);
 }
-.news-card-title{font-family:var(--display);font-size:1.15rem;line-height:1.1;letter-spacing:.01em}
+.news-card-title{font-family:var(--body);font-weight:900;font-size:1.1rem;line-height:1.25;letter-spacing:-.01em}
 .news-card-sum{color:var(--ash);font-size:.9rem;line-height:1.5}
 .news-more{margin-top:28px;text-align:center}
 
@@ -556,7 +556,7 @@ img{max-width:100%;display:block}
 .news-item[data-region="intl"] .news-region{color:#e6b34a;border-color:rgba(230,179,74,.35)}
 .news-date{font-family:var(--mono);font-size:.72rem;color:var(--ash)}
 .news-byline{font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;color:var(--ash)}
-.news-item-title{font-family:var(--display);font-size:1.9rem;line-height:1.05;letter-spacing:.01em}
+.news-item-title{font-family:var(--body);font-weight:900;font-size:1.5rem;line-height:1.2;letter-spacing:-.01em}
 .news-item .artist-tags{margin:2px 0}
 .news-item-body p{color:var(--bone);opacity:.9;font-size:1rem;line-height:1.7}
 .news-sources{font-family:var(--mono);font-size:.7rem;color:var(--ash);
