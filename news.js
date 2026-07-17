@@ -18,7 +18,7 @@ function postCard(p) {
   const sources = (p.sources || []).length
     ? `<div class="news-sources"><span>Πηγές:</span> ${p.sources.map(s => `<a href="${s.url}" target="_blank" rel="noopener">${s.name}</a>`).join(' · ')}</div>`
     : '';
-  return `<article class="news-item">
+  return `<article class="news-item" data-region="${p.region || ''}">
     ${img}
     <div class="news-item-body">
       <div class="news-meta">
@@ -49,12 +49,47 @@ fetch('news.json?_=' + Date.now())
     ALL_POSTS = (data.posts || []).sort((a, b) => (a.date < b.date ? 1 : -1));
     const up = document.getElementById('newsUpdated');
     if (up && data.updated) up.textContent = 'Τελευταία ενημέρωση: ' + fmtDate(data.updated);
+    injectSeo(ALL_POSTS);
     renderList();
   })
   .catch(() => {
     const box = document.getElementById('newsList');
     if (box) box.innerHTML = '<p class="news-empty">Δεν φορτώθηκαν τα νέα.</p>';
   });
+
+/* SEO: JSON-LD structured data (Article list) for Google */
+function injectSeo(posts) {
+  const base = 'https://flowlessmusic.gr/news.html';
+  const items = posts.slice(0, 20).map((p, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    item: {
+      '@type': 'NewsArticle',
+      headline: p.title,
+      datePublished: p.date,
+      articleSection: p.region === 'intl' ? 'Διεθνή' : 'Ελλάδα',
+      author: { '@type': 'Person', name: p.author || 'Flowless Music' },
+      publisher: { '@type': 'Organization', name: 'Flowless Music' },
+      description: p.summary || '',
+      ...(p.image ? { image: 'https://flowlessmusic.gr/' + p.image } : {}),
+      url: base + '#' + p.id
+    }
+  }));
+  const ld = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Μουσικά νέα — Flowless Music',
+    itemListElement: items
+  };
+  let tag = document.getElementById('news-ld');
+  if (!tag) {
+    tag = document.createElement('script');
+    tag.type = 'application/ld+json';
+    tag.id = 'news-ld';
+    document.head.appendChild(tag);
+  }
+  tag.textContent = JSON.stringify(ld);
+}
 
 document.getElementById('newsFilters')?.addEventListener('click', e => {
   const btn = e.target.closest('.news-filter');
