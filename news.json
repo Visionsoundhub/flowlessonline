@@ -1,0 +1,85 @@
+{
+  "updated": "2026-07-17",
+  "posts": [
+    {
+      "id": "2026-07-17-greek-chart",
+      "date": "2026-07-17",
+      "region": "gr",
+      "title": "Ο Light κρατάει την κορυφή στο ελληνικό Spotify",
+      "summary": "Στη λίστα της 15ης Ιουλίου ο Light είναι πρώτος με το Baila, ακολουθούν RACK και SNIK.",
+      "body": [
+        "Στο daily chart της Ελλάδας για τις 15 Ιουλίου, το Baila του Light με τον Arab είναι στο νούμερο ένα με 124.254 streams την ημέρα. Δεύτερο έρχεται το PALOMA του RACK με MENJU και Oge στα 120.849, και τρίτο το KLEIDIA του SNIK με τον Trannos στα 118.578.",
+        "Ο Light έχει τέσσερα κομμάτια μέσα στο top 10, με τα Katsiki, Adam & Eve και omw να συμπληρώνουν την εικόνα. Η διαφορά ανάμεσα στην πρώτη και την τρίτη θέση είναι κάτω από 6.000 streams, οπότε η κορυφή αλλάζει εύκολα μέσα στη βδομάδα."
+      ],
+      "tags": ["Ελλάδα", "Chart", "Trap"],
+      "image": "",
+      "sources": [
+        { "name": "kworb Greece daily", "url": "https://kworb.net/spotify/country/gr_daily.html" }
+      ]
+    },
+    {
+      "id": "2026-07-17-toquel-top10",
+      "date": "2026-07-17",
+      "region": "gr",
+      "title": "Ο TOQUEL με τέσσερα κομμάτια στο top 10",
+      "summary": "Τέσσερις εμφανίσεις μέσα στη δεκάδα, με το GEITONIA KAI TILEFONO στο νούμερο τέσσερα.",
+      "body": [
+        "Ο TOQUEL έχει τέσσερα κομμάτια στο top 10 της Ελλάδας. Το GEITONIA KAI TILEFONO με Bloody Hawk και Beyond είναι τέταρτο με 114.469 daily streams. Ακολουθούν το XIMEROMA με Saske και Beyond στα 93.323, το VACE ZELA στα 87.333 και το POIOS NA SOU TO PEI με LILA και Beyond στα 70.232.",
+        "Μαζί με τον Light, οι δύο τους κρατούν το μεγαλύτερο μέρος της δεκάδας. Η μηχανή των collabs συνεχίζει να δουλεύει, με τον Beyond να εμφανίζεται σε τρία από τα τέσσερα κομμάτια."
+      ],
+      "tags": ["Ελλάδα", "Chart", "TOQUEL"],
+      "image": "",
+      "sources": [
+        { "name": "kworb Greece daily", "url": "https://kworb.net/spotify/country/gr_daily.html" }
+      ]
+    },
+    {
+      "id": "2026-07-17-lives-releases",
+      "date": "2026-07-17",
+      "region": "gr",
+      "title": "Lives και κυκλοφορίες μέσα στον Ιούλιο",
+      "summary": "Ταφ Λάθος και Κάτοχος στην Τεχνόπολη, νέα δουλειά από XRS και Aeon.",
+      "body": [
+        "Ο Ταφ Λάθος έδωσε συναυλία στην Τεχνόπολη στην Αθήνα στις 10 Ιουλίου, μαζί με τον εορτασμό των 30 χρόνων της Innersense Productions. Στην ίδια περίοδο ο Κάτοχος παρουσίασε νέο άλμπουμ σε live στην Τεχνόπολη στις 1 Ιουλίου, το πρώτο του κεφάλαιο μετά την τριλογία Baby Steph που έκλεισε τον Ιανουάριο του 2025.",
+        "Στις κυκλοφορίες, ο XRS έβγαλε το single ΜΑΝΙΑ και ο Aeon παρουσίασε το EP Χύμα Ραπ Project 2 με πέντε κομμάτια."
+      ],
+      "tags": ["Ελλάδα", "Live", "Κυκλοφορίες"],
+      "image": "",
+      "sources": [
+        { "name": "Rapnroll", "url": "https://www.rapnroll.gr/category/news/hip_hop_elinikh_skinh_news/" }
+      ]
+    },
+    {
+      "id": "2026-07-17-olivia-rodrigo",
+      "date": "2026-07-17",
+      "region": "intl",
+      "title": "Η Olivia Rodrigo πρώτη με 485.000 units",
+      "summary": "Το τρίτο της άλμπουμ κάνει το μεγαλύτερο ξεκίνημα της χρονιάς για σόλο καλλιτέχνη.",
+      "body": [
+        "Το τρίτο άλμπουμ της Olivia Rodrigo, You Seem Pretty Sad for a Girl So in Love, μπήκε στο νούμερο ένα του Billboard 200 με 485.000 equivalent album units την πρώτη βδομάδα. Είναι η μεγαλύτερη βδομάδα της καριέρας της και το μεγαλύτερο ξεκίνημα για σόλο καλλιτέχνη μέσα στο 2026.",
+        "Το άλμπουμ έγινε και η πιο streamed κυκλοφορία σε μία μέρα για γυναίκα καλλιτέχνη στο Spotify για το 2026."
+      ],
+      "tags": ["Εξωτερικό", "Billboard", "Pop"],
+      "image": "",
+      "sources": [
+        { "name": "Billboard", "url": "https://www.billboard.com/music/music-news/olivia-rodrigo-you-seem-pretty-sad-breaks-streaming-records-1236272521/" }
+      ]
+    },
+    {
+      "id": "2026-07-17-madonna-ateez",
+      "date": "2026-07-17",
+      "region": "intl",
+      "title": "Δέκατο νούμερο ένα για τη Madonna",
+      "summary": "Το Confessions II ανοίγει με 134.000 units, τρίτη κορυφή για τους Ateez.",
+      "body": [
+        "Η Madonna πήρε το δέκατο νούμερο ένα της στο Billboard 200 με το Confessions II, που κυκλοφόρησε στις 3 Ιουλίου ως συνέχεια του Confessions on a Dance Floor του 2005. Άνοιξε με 134.000 equivalent album units, η καλύτερη εβδομάδα σε streaming της καριέρας της και το μεγαλύτερο άνοιγμα για dance άλμπουμ μέσα στη χρονιά.",
+        "Νωρίτερα τον Ιούλιο, οι Ateez πήραν το τρίτο τους νούμερο ένα στο Billboard 200 με το Golden Hour: Part.5."
+      ],
+      "tags": ["Εξωτερικό", "Billboard", "Pop"],
+      "image": "",
+      "sources": [
+        { "name": "Billboard", "url": "https://www.billboard.com/lists/madonna-confessions-ii-number-one-billboard-200-chart/" }
+      ]
+    }
+  ]
+}

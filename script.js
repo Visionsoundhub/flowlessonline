@@ -88,6 +88,7 @@ const STRINGS = {
     nav_release: 'Release',
     nav_roster: 'Roster',
     nav_playlist: 'Playlist',
+    nav_news: 'News',
     nav_merch: 'Merch',
     nav_contact: 'Contact',
     hero_eyebrow: 'Independent label · Greece',
@@ -103,6 +104,10 @@ const STRINGS = {
     console_hint: 'SOLO = open channel',
     playlist_title: 'All our tracks',
     playlist_soon: 'The label Spotify playlist drops here soon.',
+    news_label: 'Music news',
+    news_title: "What's playing",
+    news_all: 'All news',
+    news_empty: 'Nothing yet.',
     contact_label: 'Contact',
     contact_title: 'Work with us?',
     contact_note: 'Beats, features, booking — email us or hit the socials.',
@@ -468,10 +473,36 @@ const io = new IntersectionObserver(entries => {
 }, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
+/* ---------- Homepage News (latest 3) ---------- */
+function renderNews() {
+  const grid = document.getElementById('newsGrid');
+  if (!grid) return;
+  fetch('news.json?_=' + Date.now())
+    .then(r => r.json())
+    .then(data => {
+      const posts = (data.posts || []).sort((a, b) => (a.date < b.date ? 1 : -1)).slice(0, 3);
+      if (!posts.length) { grid.innerHTML = `<p class="news-empty">${STRINGS[lang].news_empty || ''}</p>`; return; }
+      grid.innerHTML = posts.map(p => {
+        const img = p.image ? `<div class="news-thumb"><img src="${p.image}" alt="" loading="lazy"></div>` : '';
+        const region = p.region === 'gr' ? 'Ελλάδα' : p.region === 'intl' ? 'Εξωτερικό' : '';
+        return `<a class="news-card" href="news.html">
+          ${img}
+          <div class="news-card-body">
+            <span class="news-region">${region}</span>
+            <h3 class="news-card-title">${p.title}</h3>
+            <p class="news-card-sum">${p.summary || ''}</p>
+          </div>
+        </a>`;
+      }).join('');
+    })
+    .catch(() => { grid.innerHTML = ''; });
+}
+
 /* ---------- App Entry Point ---------- */
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 applyLang();
+renderNews();
 
 console.log(
   String.raw`%c
