@@ -183,6 +183,22 @@ if (toggleBtn) toggleBtn.addEventListener('click', () => {
   applyLang();
 });
 
+/* ---------- Mobile Burger Menu ---------- */
+const navBurger = document.getElementById('navBurger');
+const navLinks = document.getElementById('navLinks');
+if (navBurger && navLinks) {
+  const closeMenu = () => {
+    navLinks.classList.remove('open');
+    navBurger.setAttribute('aria-expanded', 'false');
+  };
+  navBurger.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    navBurger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+}
+
 /* ---------- Roster Console Strip Logic ---------- */
 let soloId = null;
 const meterTimers = [];
