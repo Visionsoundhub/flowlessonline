@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://flowlessmusic.gr/sitemap.xml
+Sitemap: https://flowlessmusic.gr/news-sitemap.xml

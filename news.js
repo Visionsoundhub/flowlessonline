@@ -10,26 +10,22 @@ function fmtDate(iso) {
 }
 
 function postCard(p) {
+  const href = p.slug ? `news/${p.slug}.html` : 'news.html';
   const img = p.image
-    ? `<div class="news-thumb"><img src="${p.image}" alt="" loading="lazy"></div>`
+    ? `<a href="${href}" class="news-thumb"><img src="${p.image}" alt="${p.title}" loading="lazy"></a>`
     : '';
   const tags = (p.tags || []).map(t => `<span class="tag">${t}</span>`).join('');
-  const body = (p.body || []).map(par => `<p>${par}</p>`).join('');
-  const sources = (p.sources || []).length
-    ? `<div class="news-sources"><span>Πηγές:</span> ${p.sources.map(s => `<a href="${s.url}" target="_blank" rel="noopener">${s.name}</a>`).join(' · ')}</div>`
-    : '';
   return `<article class="news-item" data-region="${p.region || ''}">
     ${img}
     <div class="news-item-body">
       <div class="news-meta">
         <span class="news-region">${REGION_LABEL[p.region] || ''}</span>
-        <span class="news-date">${fmtDate(p.date)}</span>
+        <time class="news-date" datetime="${p.date}">${fmtDate(p.date)}</time>
       </div>
-      ${p.author ? `<p class="news-byline">Γράφει ο ${p.author}</p>` : ''}
-      <h3 class="news-item-title">${p.title}</h3>
+      <h2 class="news-item-title"><a href="${href}">${p.title}</a></h2>
       <div class="artist-tags">${tags}</div>
-      ${body}
-      ${sources}
+      <p class="news-sum">${p.summary || ''}</p>
+      <p class="news-readmore"><a href="${href}">Διάβασε το άρθρο →</a></p>
     </div>
   </article>`;
 }

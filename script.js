@@ -499,9 +499,10 @@ function renderNews() {
       const posts = (data.posts || []).sort((a, b) => (a.date < b.date ? 1 : -1)).slice(0, 3);
       if (!posts.length) { grid.innerHTML = `<p class="news-empty">${STRINGS[lang].news_empty || ''}</p>`; return; }
       grid.innerHTML = posts.map(p => {
-        const img = p.image ? `<div class="news-thumb"><img src="${p.image}" alt="" loading="lazy"></div>` : '';
+        const img = p.image ? `<div class="news-thumb"><img src="${p.image}" alt="${p.title}" loading="lazy"></div>` : '';
         const region = p.region === 'gr' ? 'Ελλάδα' : p.region === 'intl' ? 'Εξωτερικό' : '';
-        return `<a class="news-card" href="news.html">
+        const href = p.slug ? `news/${p.slug}.html` : 'news.html';
+        return `<a class="news-card" href="${href}">
           ${img}
           <div class="news-card-body">
             <span class="news-region">${region}</span>
