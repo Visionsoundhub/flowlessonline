@@ -45,7 +45,9 @@ function authorBox(ed) {
     `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`).join('');
   return `
   <aside class="author-box">
-    <div class="author-avatar" aria-hidden="true">${esc((ed.alias || ed.name).charAt(0))}</div>
+    ${ed.photo
+      ? `<img class="author-avatar" src="../${esc(ed.photo)}" alt="${esc(ed.name)} (${esc(ed.alias)})" width="72" height="72" loading="lazy">`
+      : `<div class="author-avatar" aria-hidden="true">${esc((ed.alias || ed.name).charAt(0))}</div>`}
     <div class="author-info">
       <p class="author-label">Γράφτηκε και επιμελήθηκε από</p>
       <h2 class="author-name"><a href="${esc(ed.url)}">${esc(ed.name)} <span class="author-alias">(${esc(ed.alias)})</span></a></h2>
@@ -85,8 +87,10 @@ function articlePage(p, prev, next, ed) {
       alternateName: ed.alias,
       jobTitle: ed.role,
       description: ed.bio,
-      url: ed.url,
-      sameAs: (ed.socials || []).map(s => s.url),
+      url: ed.website || ed.url,
+      ...(ed.photo ? { image: `${SITE}/${ed.photo}` } : {}),
+      mainEntityOfPage: ed.url,
+      sameAs: [...new Set([...(ed.socials || []).map(s => s.url), ed.website, ed.url].filter(Boolean))],
       worksFor: { '@type': 'Organization', name: 'Flowless Music', url: SITE }
     } : { '@type': 'Organization', name: 'Flowless Music', url: SITE },
     publisher: {

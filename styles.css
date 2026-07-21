@@ -674,3 +674,7 @@ a.news-thumb{display:block}
   .author-avatar{width:60px;height:60px;font-size:1.6rem}
 }
 .author-alias{color:var(--blood);font-weight:600}
+img.author-avatar{object-fit:cover;border-radius:50%}
+.artist-portrait{max-width:220px;border-radius:16px;overflow:hidden;
+  border:1px solid var(--line);margin:18px 0 6px}
+.artist-portrait img{width:100%;height:auto;object-fit:cover}

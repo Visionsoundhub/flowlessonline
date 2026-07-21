@@ -4,6 +4,8 @@
     "alias": "Black Vybez",
     "role": "Ιδρυτής και επιμελητής, Flowless Music",
     "url": "https://flowlessmusic.gr/artists/blackvybez.html",
+    "photo": "assets/blackvybez.jpg",
+    "website": "https://blackvybez.gr",
     "bio": "Ο Θοδωρής Παρασχάκης Νταμάς, γνωστός ως Black Vybez, είναι ράπερ και παραγωγός, ιδρυτικό μέλος της ανεξάρτητης Flowless Music. Κινείται στην ελληνική hip hop σκηνή από το 2008, ξεκινώντας από τη Λάρισα, και το 2018 συνίδρυσε τη Landing Mind Records. Γεννημένος στο Μεξικό και μεγαλωμένος στην Ελλάδα, γράφει ελληνικό rap και trap αλλά κινείται και στο latin urban, με reggaeton, dembow, bachata trap και salsa rap. Μέσα από τη μουσική και τη δημόσια παρουσία του δίνει φωνή στη νευροδιαφορετικότητα. Επιμελείται καθημερινά τη στήλη μουσικών νέων του label, με έμφαση στα νούμερα και τα γεγονότα της σκηνής.",
     "socials": [
       { "label": "Instagram", "url": "https://www.instagram.com/blackvybez_" },
@@ -21,6 +23,8 @@
       "realName": "Θοδωρής Παρασχάκης Νταμάς",
       "alias": "VYBEZMADETHIS",
       "alternateNames": ["Vybezmadethis", "Μπλακ Βάιμπζ", "Black Vybez"],
+      "photo": "assets/blackvybez.jpg",
+      "website": "https://blackvybez.gr",
       "role": { "el": "Artist & Producer", "en": "Artist & Producer" },
       "genres": ["Ελληνικό hip hop", "Rap", "Trap", "Latin urban", "Reggaeton", "Dembow", "Bachata trap", "Salsa rap", "Beats"],
       "tags": ["Πολλά στυλ", "Beats"],

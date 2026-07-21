@@ -33,8 +33,12 @@ function page(a, all) {
     description: bio,
     genre: a.genres || [],
     foundingLocation: a.origin ? { '@type': 'Place', name: a.origin } : undefined,
-    url,
-    ...(sameAs.length ? { sameAs } : {}),
+    url: a.website || url,
+    mainEntityOfPage: url,
+    ...(a.photo ? { image: `${SITE}/${a.photo}` } : {}),
+    ...(sameAs.length || a.website
+      ? { sameAs: [...new Set([...sameAs, a.website].filter(Boolean))] }
+      : {}),
     memberOf: {
       '@type': 'MusicGroup',
       name: 'Flowless Music',
@@ -111,8 +115,11 @@ function page(a, all) {
 
   <div class="artist-tags">${(a.genres || []).map(g => `<span class="tag">${esc(g)}</span>`).join('')}</div>
 
+  ${a.photo ? `<div class="artist-portrait"><img src="../${esc(a.photo)}" alt="${esc(a.displayName || a.name)}" width="447" height="447"></div>` : ''}
+
   <div class="article-body">
     <p>${esc(bio)}</p>
+    ${a.website ? `<p>Επίσημη ιστοσελίδα: <a href="${esc(a.website)}" target="_blank" rel="noopener">${esc(a.website.replace(/^https?:\/\//, ''))}</a></p>` : ''}
     ${alsoKnown.length ? `<p>Έχει εμφανιστεί και ως ${alsoKnown.map(esc).join(', ')}.</p>` : ''}
     <p>Ο ${esc(a.displayName || a.name)} ανήκει στο roster της Flowless Music, ανεξάρτητου ελληνικού μουσικού label με έδρα τη Λάρισα${a.origin ? `. Βάση του είναι ${esc(a.origin)}` : ''}. Κινείται σε ${(a.genres || []).slice(0, -1).map(esc).join(', ')}${(a.genres || []).length > 1 ? ' και ' + esc(a.genres[a.genres.length - 1]) : ''}.</p>
   </div>
