@@ -114,7 +114,7 @@ function page(a, all) {
   <div class="article-body">
     <p>${esc(bio)}</p>
     ${alsoKnown.length ? `<p>Έχει εμφανιστεί και ως ${alsoKnown.map(esc).join(', ')}.</p>` : ''}
-    <p>Ο ${esc(a.displayName || a.name)} ανήκει στο roster της Flowless Music, ανεξάρτητου ελληνικού μουσικού label με έδρα τη Λάρισα. Το είδος του κινείται στο ελληνικό hip hop και rap${a.origin ? `, με βάση ${esc(a.origin)}` : ''}.</p>
+    <p>Ο ${esc(a.displayName || a.name)} ανήκει στο roster της Flowless Music, ανεξάρτητου ελληνικού μουσικού label με έδρα τη Λάρισα${a.origin ? `. Βάση του είναι ${esc(a.origin)}` : ''}. Κινείται σε ${(a.genres || []).slice(0, -1).map(esc).join(', ')}${(a.genres || []).length > 1 ? ' και ' + esc(a.genres[a.genres.length - 1]) : ''}.</p>
   </div>
 
   ${socials}

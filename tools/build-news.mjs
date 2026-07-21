@@ -48,8 +48,8 @@ function authorBox(ed) {
     <div class="author-avatar" aria-hidden="true">${esc((ed.alias || ed.name).charAt(0))}</div>
     <div class="author-info">
       <p class="author-label">Γράφτηκε και επιμελήθηκε από</p>
-      <h2 class="author-name"><a href="${esc(ed.url)}">${esc(ed.name)}</a></h2>
-      <p class="author-role">${esc(ed.alias)} · ${esc(ed.role)}</p>
+      <h2 class="author-name"><a href="${esc(ed.url)}">${esc(ed.name)} <span class="author-alias">(${esc(ed.alias)})</span></a></h2>
+      <p class="author-role">${esc(ed.role)}</p>
       <p class="author-bio">${esc(ed.bio)}</p>
       <div class="author-socials">${socials}</div>
     </div>

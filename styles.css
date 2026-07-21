@@ -673,3 +673,4 @@ a.news-thumb{display:block}
   .author-box{grid-template-columns:1fr;gap:16px;padding:22px}
   .author-avatar{width:60px;height:60px;font-size:1.6rem}
 }
+.author-alias{color:var(--blood);font-weight:600}
