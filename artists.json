@@ -6,7 +6,7 @@
     "url": "https://flowlessmusic.gr/artists/blackvybez.html",
     "photo": "assets/blackvybez.jpg",
     "website": "https://blackvybez.gr",
-    "bio": "Ο Θοδωρής Παρασχάκης Νταμάς, γνωστός ως Black Vybez, είναι ράπερ και παραγωγός, ιδρυτικό μέλος της ανεξάρτητης Flowless Music. Κινείται στην ελληνική hip hop σκηνή από το 2008, ξεκινώντας από τη Λάρισα, και το 2018 συνίδρυσε τη Landing Mind Records. Γεννημένος στο Μεξικό και μεγαλωμένος στην Ελλάδα, γράφει ελληνικό rap και trap αλλά κινείται και στο latin urban, με reggaeton, dembow, bachata trap και salsa rap. Μέσα από τη μουσική και τη δημόσια παρουσία του δίνει φωνή στη νευροδιαφορετικότητα. Επιμελείται καθημερινά τη στήλη μουσικών νέων του label, με έμφαση στα νούμερα και τα γεγονότα της σκηνής.",
+    "bio": "Ο Θοδωρής Παρασχάκης Νταμάς, γνωστός ως Black Vybez, είναι ράπερ και παραγωγός, ιδρυτικό μέλος του ανεξάρτητου label Flowless Music. Κινείται στην ελληνική hip hop σκηνή από το 2008, ξεκινώντας από τη Λάρισα. Το 2021 συνίδρυσε την Palmundo Music και λίγα χρόνια αργότερα τη Landing Mind Records. Γεννημένος στο Μεξικό και μεγαλωμένος στην Ελλάδα, είναι πολυδιάστατος καλλιτέχνης και κινείται σε ευρεία γκάμα μουσικών ειδών, από ελληνικό rap και trap μέχρι latin urban, με reggaeton, dembow, bachata trap και salsa rap. Μέσα από τη μουσική και τη δημόσια παρουσία του δίνει φωνή στη νευροδιαφορετικότητα, με περισσότερα στο blackvybez.gr. Επιμελείται καθημερινά τη στήλη μουσικών νέων του label, με έμφαση στα νούμερα και τα γεγονότα της σκηνής, διατηρώντας ουδέτερη στάση και αντικειμενικότητα απέναντι στη μουσική σκηνή.",
     "socials": [
       { "label": "Instagram", "url": "https://www.instagram.com/blackvybez_" },
       { "label": "Spotify", "url": "https://open.spotify.com/artist/6I1CYhPF8JMoaCh2zIeGe3" },
@@ -22,7 +22,7 @@
       "displayName": "Black Vybez",
       "realName": "Θοδωρής Παρασχάκης Νταμάς",
       "alias": "VYBEZMADETHIS",
-      "alternateNames": ["Vybezmadethis", "Μπλακ Βάιμπζ", "Black Vybez"],
+      "alternateNames": ["Vybezmadethis", "Μπλακ Βάιμπζ", "Black Vybez", "Palmundo Music"],
       "photo": "assets/blackvybez.jpg",
       "website": "https://blackvybez.gr",
       "role": { "el": "Artist & Producer", "en": "Artist & Producer" },
