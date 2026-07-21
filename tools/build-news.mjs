@@ -39,7 +39,24 @@ function fmtDate(iso) {
 const REGION = { gr: 'Ελλάδα', intl: 'Εξωτερικό' };
 
 /* ---------- Template σελίδας άρθρου ---------- */
-function articlePage(p, prev, next) {
+function authorBox(ed) {
+  if (!ed) return '';
+  const socials = (ed.socials || []).map(s =>
+    `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`).join('');
+  return `
+  <aside class="author-box">
+    <div class="author-avatar" aria-hidden="true">${esc((ed.alias || ed.name).charAt(0))}</div>
+    <div class="author-info">
+      <p class="author-label">Γράφτηκε και επιμελήθηκε από</p>
+      <h2 class="author-name"><a href="${esc(ed.url)}">${esc(ed.name)}</a></h2>
+      <p class="author-role">${esc(ed.alias)} · ${esc(ed.role)}</p>
+      <p class="author-bio">${esc(ed.bio)}</p>
+      <div class="author-socials">${socials}</div>
+    </div>
+  </aside>`;
+}
+
+function articlePage(p, prev, next, ed) {
   const url = `${SITE}/news/${p.slug}.html`;
   const img = p.image ? `${SITE}/${p.image}` : `${SITE}/assets/evoid-2a1ps.jpg`;
   const desc = p.summary || (p.body || [])[0] || '';
@@ -62,7 +79,16 @@ function articlePage(p, prev, next) {
     keywords: (p.tags || []).join(', '),
     image: [img],
     mainEntityOfPage: { '@type': 'WebPage', '@id': url },
-    author: { '@type': 'Organization', name: 'Flowless Music', url: SITE },
+    author: ed ? {
+      '@type': 'Person',
+      name: ed.name,
+      alternateName: ed.alias,
+      jobTitle: ed.role,
+      description: ed.bio,
+      url: ed.url,
+      sameAs: (ed.socials || []).map(s => s.url),
+      worksFor: { '@type': 'Organization', name: 'Flowless Music', url: SITE }
+    } : { '@type': 'Organization', name: 'Flowless Music', url: SITE },
     publisher: {
       '@type': 'Organization', name: 'Flowless Music', url: SITE,
       logo: { '@type': 'ImageObject', url: `${SITE}/assets/evoid-2a1ps.jpg` }
@@ -143,6 +169,7 @@ ${body}
   </div>
 
   ${sources}
+${authorBox(ed)}
 
   <div class="article-nav">
     ${prev ? `<a href="${prev.slug}.html">← ${esc(prev.title)}</a>` : '<span></span>'}
@@ -184,8 +211,13 @@ async function main() {
     if (!used.has(f.replace(/\.html$/, ''))) await unlink(path.join(NEWS_DIR, f));
   }
 
+  let editor = null;
+  try {
+    editor = JSON.parse(await readFile(path.join(ROOT, 'artists.json'), 'utf8')).editor || null;
+  } catch {}
+
   for (let i = 0; i < posts.length; i++) {
-    const html = articlePage(posts[i], posts[i + 1], posts[i - 1]);
+    const html = articlePage(posts[i], posts[i + 1], posts[i - 1], editor);
     await writeFile(path.join(NEWS_DIR, posts[i].slug + '.html'), html);
   }
 
