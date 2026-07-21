@@ -275,6 +275,7 @@ function renderDetail() {
       <p class="artist-bio">${a.bio[lang]}</p>
       <div class="artist-socials">
         ${a.socials.map(s => `<a href="${s.url}" target="_blank" rel="noopener">${s.label}</a>`).join('')}
+        <a href="artists/${a.id}.html" class="artist-page-link">Προφίλ →</a>
       </div>
     </div>`;
 }

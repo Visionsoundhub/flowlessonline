@@ -637,3 +637,6 @@ a.news-thumb{display:block}
   .article-nav{flex-direction:column;gap:12px}
   .article-nav a{max-width:100%}
 }
+.roster-links a{color:var(--blood)}
+.roster-links a:hover{text-decoration:underline}
+.artist-page-link{color:var(--blood)!important;border-color:rgba(224,43,56,.4)!important}

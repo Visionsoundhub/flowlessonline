@@ -195,9 +195,16 @@ async function main() {
     { loc: SITE + '/news.html', freq: 'daily', pri: '0.9' },
     { loc: SITE + '/merch.html', freq: 'monthly', pri: '0.6' }
   ];
+  let artistUrls = [];
+  try {
+    const ad = JSON.parse(await readFile(path.join(ROOT, 'artists.json'), 'utf8'));
+    artistUrls = (ad.artists || []).map(a => `  <url><loc>${SITE}/artists/${a.id}.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>`);
+  } catch {}
+
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${staticUrls.map(u => `  <url><loc>${u.loc}</loc><changefreq>${u.freq}</changefreq><priority>${u.pri}</priority></url>`).join('\n')}
+${artistUrls.join('\n')}
 ${posts.map(p => `  <url><loc>${SITE}/news/${p.slug}.html</loc><lastmod>${p.date}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>`).join('\n')}
 </urlset>
 `;

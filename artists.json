@@ -1,0 +1,91 @@
+{
+  "artists": [
+    {
+      "id": "blackvybez",
+      "name": "BLACK VYBEZ",
+      "displayName": "Black Vybez",
+      "realName": "Θοδωρής Παρασχάκης Νταμάς",
+      "alias": "VYBEZMADETHIS",
+      "alternateNames": ["Vybezmadethis", "Μπλακ Βάιμπζ", "Black Vybez"],
+      "role": { "el": "Artist & Producer", "en": "Artist & Producer" },
+      "genres": ["Ελληνικό hip hop", "Rap", "Trap", "Beats"],
+      "tags": ["Πολλά στυλ", "Beats"],
+      "tagsEn": ["Many styles", "Beats"],
+      "origin": "Λάρισα, Ελλάδα",
+      "bio": {
+        "el": "Ο Black Vybez (Θοδωρής Παρασχάκης Νταμάς) γεννήθηκε στο Μεξικό και μεγάλωσε στην Ελλάδα. Μέσα από τη μουσική και τη δημόσια παρουσία του, δίνει φωνή στη νευροδιαφορετικότητα. Η πορεία του ξεκίνησε το 2008 από τη Λάρισα (ΑΨ, Στιχουργική Αναμέτρηση, LaCoast, 2410 Squad). Το 2018 στράφηκε στη σόλο πορεία, συνίδρυσε τη Landing Mind Records και σήμερα ηγείται της ανεξάρτητης Flowless Music μαζί με τον Evoid.",
+        "en": "Black Vybez (Thodoris Paraschakis Ntamas) was born in Mexico and raised in Greece. Through his music and public presence he gives voice to neurodivergence. His journey began in 2008 in Larissa; in 2018 he went solo, co-founded Landing Mind Records, and today leads independent label Flowless Music alongside Evoid."
+      },
+      "socials": [
+        { "label": "Instagram", "url": "https://www.instagram.com/blackvybez_" },
+        { "label": "Spotify", "url": "https://open.spotify.com/artist/6I1CYhPF8JMoaCh2zIeGe3" },
+        { "label": "TikTok", "url": "https://www.tiktok.com/@blackvybez" },
+        { "label": "Apple Music", "url": "https://music.apple.com/gr/artist/black-vybez/1510069891" },
+        { "label": "Website", "url": "https://blackvybez.gr" }
+      ]
+    },
+    {
+      "id": "evoid",
+      "name": "E VOID",
+      "displayName": "E-Void",
+      "alternateNames": ["Seib", "E Void", "EVOID"],
+      "role": { "el": "Artist", "en": "Artist" },
+      "genres": ["Boom Bap", "Trap", "Drill"],
+      "tags": ["Boom Bap", "Trap", "Drill"],
+      "origin": "Λάρισα, Ελλάδα",
+      "bio": {
+        "el": "Γνωστός στο παρελθόν ως Seib, ο Evoid εκπροσωπεί τη σκηνή της Λάρισας με έναν ιδιαίτερο, σκοτεινό ήχο και ευθύ στίχο. Μετά από χρόνια παρουσίας στην τοπική underground σκηνή και συμμετοχής σε διάφορα σχήματα, σήμερα συνεργάζεται στενά με τον Black Vybez ως συνιδρυτής της Flowless Music. Η μουσική του χαρακτηρίζεται από ωμό, αφιλτράριστο ρεαλισμό και στίχους χωρίς συμβιβασμούς.",
+        "en": "Formerly known as Seib, Evoid represents the Larissa scene with a dark, distinctive sound and direct lyrics. Co-founder of Flowless Music alongside Black Vybez, his music is raw, unfiltered and uncompromising."
+      },
+      "socials": [
+        { "label": "Spotify", "url": "https://open.spotify.com/album/3j6VCQ3hmB8iJKgDDRQQuG" },
+        { "label": "Apple Music", "url": "https://music.apple.com/us/artist/e-void/1739868404" }
+      ]
+    },
+    {
+      "id": "diem",
+      "name": "DIEM",
+      "displayName": "Diem",
+      "alternateNames": ["Μάριος ΑΦ", "Marios AF"],
+      "role": { "el": "Artist", "en": "Artist" },
+      "genres": ["Newschool Trap", "Dancehall"],
+      "tags": ["Newschool Trap", "Dancehall"],
+      "origin": "Αθήνα, Ελλάδα",
+      "bio": {
+        "el": "Με μακρά πορεία στον χώρο, ο Diem έγινε αρχικά γνωστός ως Μάριος ΑΦ μέσα από το σχήμα Απρόσμενες Φωνές, μια ομάδα που έγραψε τα δικά της χιλιόμετρα στην underground σκηνή της Λάρισας. Σήμερα δραστηριοποιείται καλλιτεχνικά στην Αθήνα, ενσωματώνοντας κινηματογραφικές εικόνες και ατμοσφαιρικά στοιχεία στη μουσική του.",
+        "en": "With a long journey in the scene, Diem first became known as Marios AF through the group Aprosmenes Fones in Larissa's underground scene. Now based in Athens, he blends cinematic imagery and atmosphere into his music."
+      },
+      "socials": []
+    },
+    {
+      "id": "bigg",
+      "name": "BIG G",
+      "displayName": "Big G",
+      "alternateNames": ["BigG"],
+      "role": { "el": "Artist", "en": "Artist" },
+      "genres": ["Trap", "Drill", "Boom Bap"],
+      "tags": ["Trap", "Drill", "Boom Bap"],
+      "origin": "Λάρισα, Ελλάδα",
+      "bio": {
+        "el": "Εκπροσωπώντας τη Λάρισα, ο Big G ξεχωρίζει για την αμεσότητα και τη δύναμη του στίχου του. Φέρνει έναν δυναμικό χαρακτήρα στη Flowless Music, με κοφτερό flow και στίχους που εστιάζουν στην ουσία.",
+        "en": "Representing Larissa, Big G stands out for his directness and lyrical power, a dynamic voice on Flowless Music with sharp flow and no filler bars."
+      },
+      "socials": []
+    },
+    {
+      "id": "span",
+      "name": "SPAN",
+      "displayName": "Span",
+      "alternateNames": [],
+      "role": { "el": "Producer", "en": "Producer" },
+      "genres": ["Beats", "Hip Hop"],
+      "tags": ["Beats"],
+      "origin": "Ελλάδα",
+      "bio": {
+        "el": "Παραγωγός της Flowless Music. Υπογράφει beats για όλο το roster του label.",
+        "en": "Producer at Flowless Music. Provides beats for the entire label roster."
+      },
+      "socials": []
+    }
+  ]
+}
