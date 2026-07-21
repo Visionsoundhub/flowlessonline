@@ -85,6 +85,7 @@ const PLAYLIST_URL = 'https://open.spotify.com/playlist/766LR1ZtOxjvZ8fiRQLkMz?s
 /* ---------- Internationalization (i18n) ---------- */
 const STRINGS = {
   en: {
+    nav_home: 'Home',
     nav_release: 'Release',
     nav_roster: 'Roster',
     nav_playlist: 'Playlist',

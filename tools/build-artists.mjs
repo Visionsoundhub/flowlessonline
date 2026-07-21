@@ -94,6 +94,7 @@ function page(a, all) {
 <nav class="nav">
   <a href="../index.html#top" class="nav-logo">FLOWLESS<span class="nav-logo-dot">.</span></a>
   <div class="nav-links">
+    <a href="../index.html#top">Αρχική</a>
     <a href="../index.html#release">Release</a>
     <a href="../index.html#roster">Roster</a>
     <a href="../index.html#playlist">Playlist</a>
