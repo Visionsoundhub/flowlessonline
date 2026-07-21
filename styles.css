@@ -678,3 +678,26 @@ img.author-avatar{object-fit:cover;border-radius:50%}
 .artist-portrait{max-width:220px;border-radius:16px;overflow:hidden;
   border:1px solid var(--line);margin:18px 0 6px}
 .artist-portrait img{width:100%;height:auto;object-fit:cover}
+
+/* ---------- ROSTER STATIC (crawlable, complements the console) ---------- */
+.roster-static{
+  margin-top:28px;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;
+}
+.roster-static-card{
+  background:var(--smoke);border:1px solid var(--line);border-radius:14px;
+  padding:20px;transition:border-color .2s;
+}
+.roster-static-card:hover{border-color:rgba(224,43,56,.4)}
+.roster-static-card h3{font-family:var(--body);font-weight:900;font-size:1.05rem;margin-bottom:4px}
+.roster-static-card h3 a:hover{color:var(--blood)}
+.roster-static-role{
+  font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--blood);margin-bottom:10px;
+}
+.roster-static-card p:not(.roster-static-role){font-size:.88rem;line-height:1.6;color:var(--ash)}
+.roster-static-link{
+  display:inline-block;margin-top:10px;font-family:var(--mono);font-size:.7rem;
+  letter-spacing:.06em;color:var(--blood);
+}
+.roster-static-link:hover{text-decoration:underline}
