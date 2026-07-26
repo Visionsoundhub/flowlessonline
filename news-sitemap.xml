@@ -1,27 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://flowlessmusic.gr/news/2026-07-26-san-simera-epta-chronia-apo-to-nteboyto-almpoym-toy-cordae.html</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-07-26</news:publication_date>
+      <news:title>Σαν σήμερα: επτά χρόνια από το ντεμπούτο άλμπουμ του Cordae</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-07-26-to-love-rack-toy-rack-katalamvanei-epta-theseis-sto-elliniko.html</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-07-26</news:publication_date>
+      <news:title>Το Love, Rack. του RACK καταλαμβάνει επτά θέσεις στο ελληνικό Top 20</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-07-26-ta-megala-releases-tis-vdomadas-a-pop-tis-tyla-kai-reality-a.html</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-07-26</news:publication_date>
+      <news:title>Τα μεγάλα releases της βδομάδας: A*POP της Tyla και Reality Awaits των Strokes</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://flowlessmusic.gr/news/2026-07-25-o-lelo-apo-to-ntitroit-anerchomenos-kallitechnis-toy-mina-st.html</loc>
     <news:news>
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
       <news:publication_date>2026-07-25</news:publication_date>
       <news:title>Ο Lelo από το Ντιτρόιτ, ανερχόμενος καλλιτέχνης του μήνα στο Billboard</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-07-24-se-alla-nea-epistrofi-gia-to-koukla-toy-sicario-alma-gia-to-.html</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-07-24</news:publication_date>
-      <news:title>Σε άλλα νέα: επιστροφή για το KOUKLA του Sicario, άλμα για το Lete Lete του SNIK και τρία νέα singles</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-07-24-to-the-real-me-toy-future-fernei-to-12o-no1-almpoym-tis-kari.html</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-07-24</news:publication_date>
-      <news:title>Το The Real Me του Future φέρνει το 12ο Νο1 άλμπουμ της καριέρας του στο Billboard 200 με 131.000 μονάδες</news:title>
     </news:news>
   </url>
   <url>
@@ -33,27 +41,27 @@
     </news:news>
   </url>
   <url>
-    <loc>https://flowlessmusic.gr/news/2026-07-23-o-light-topothetei-pente-tragoydia-toy-romeo-ii-sto-proto-25.html</loc>
+    <loc>https://flowlessmusic.gr/news/2026-07-24-to-the-real-me-toy-future-fernei-to-12o-no1-almpoym-tis-kari.html</loc>
     <news:news>
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-07-23</news:publication_date>
-      <news:title>Ο Light τοποθετεί πέντε τραγούδια του Romeo II στο πρώτο 25αρι του ελληνικού chart</news:title>
+      <news:publication_date>2026-07-24</news:publication_date>
+      <news:title>Το The Real Me του Future φέρνει το 12ο Νο1 άλμπουμ της καριέρας του στο Billboard 200 με 131.000 μονάδες</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://flowlessmusic.gr/news/2026-07-23-to-confessions-ii-tis-madonna-fernei-to-dekato-no1-almpoym-t.html</loc>
+    <loc>https://flowlessmusic.gr/news/2026-07-24-se-alla-nea-epistrofi-gia-to-koukla-toy-sicario-alma-gia-to-.html</loc>
     <news:news>
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-07-23</news:publication_date>
-      <news:title>Το Confessions II της Madonna φέρνει το δέκατο Νο1 άλμπουμ της καριέρας της στο Billboard 200</news:title>
+      <news:publication_date>2026-07-24</news:publication_date>
+      <news:title>Σε άλλα νέα: επιστροφή για το KOUKLA του Sicario, άλμα για το Lete Lete του SNIK και τρία νέα singles</news:title>
     </news:news>
   </url>
   <url>
-    <loc>https://flowlessmusic.gr/news/2026-07-23-se-alla-nea-anodos-gia-to-banana-o-ivan-greko-mpainei-sto-ch.html</loc>
+    <loc>https://flowlessmusic.gr/news/2026-07-24-to-ole-ole-ole-fernei-to-kalokairino-banger-tis-flowless-mu.html</loc>
     <news:news>
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-07-23</news:publication_date>
-      <news:title>Σε άλλα νέα: άνοδος για το BANANA, ο Ivan Greko μπαίνει στο chart και το Boston της Stella Lefty στο αμερικανικό Νο6</news:title>
+      <news:publication_date>2026-07-24</news:publication_date>
+      <news:title>Το OLE OLE OLE φέρνει το καλοκαιρινό banger της Flowless Music</news:title>
     </news:news>
   </url>
 </urlset>
