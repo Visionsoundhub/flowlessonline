@@ -2,6 +2,31 @@
   "updated": "2026-07-26",
   "posts": [
     {
+      "id": "2026-07-26-ole-ole-ole",
+      "date": "2026-07-24",
+      "author": "Flowless Music",
+      "region": "gr",
+      "title": "Το OLE OLE OLE φέρνει το καλοκαιρινό banger της Flowless Music",
+      "summary": "Οι DieM και E Void ενώνονται σε ένα afrotrap κομμάτι με υπογραφή του Vybezmadethis στην παραγωγή.",
+      "body": [
+        "Η Flowless Music κυκλοφόρησε το OLE OLE OLE, νέο single των DieM και E Void σε παραγωγή του Vybezmadethis, μέσω Landing Mind Records υπό αποκλειστική άδεια στο label. Το κομμάτι κινείται σε afrotrap ήχο, με το ρεφρέν Ολε Ολε Ολε να λειτουργεί σαν κεντρικό hook, φτιαγμένο για να τραγουδιέται παντού μέσα στο καλοκαίρι.",
+        "Η υπογραφή του Vybezmadethis στην παραγωγή δίνει στο κομμάτι τον χαρακτήρα που θέλει να συνδέσει το label με τη φετινή σεζόν, ανάμεσα σε afrobeat ρυθμούς και trap δομή. Το OLE OLE OLE είναι πλέον διαθέσιμο σε streaming."
+      ],
+      "tags": [
+        "Ελλάδα",
+        "Κυκλοφορίες",
+        "Flowless Music"
+      ],
+      "image": "",
+      "sources": [
+        {
+          "name": "Spotify",
+          "url": "https://open.spotify.com/album/6znHqzCylO326mCuLT9vrJ"
+        }
+      ],
+      "slug": "2026-07-24-to-ole-ole-ole-fernei-to-kalokairino-banger-tis-flowless-mu"
+    },
+    {
       "id": "2026-07-26-tyla-strokes-releases",
       "date": "2026-07-26",
       "author": "Νίκος Στοϊκος",
@@ -824,31 +849,6 @@
         }
       ],
       "slug": "2026-07-17-i-olivia-rodrigo-proti-me-485-000-units"
-    },
-    {
-      "id": "2026-07-17-lives-releases",
-      "date": "2026-07-17",
-      "author": "Flowless Music",
-      "region": "gr",
-      "title": "Lives και κυκλοφορίες μέσα στον Ιούλιο",
-      "summary": "Ταφ Λάθος και Κάτοχος στην Τεχνόπολη, νέα δουλειά από XRS και Aeon.",
-      "body": [
-        "Ο Ταφ Λάθος έδωσε συναυλία στην Τεχνόπολη στην Αθήνα στις 10 Ιουλίου, μαζί με τον εορτασμό των 30 χρόνων της Innersense Productions. Στην ίδια περίοδο ο Κάτοχος παρουσίασε νέο άλμπουμ σε live στην Τεχνόπολη στις 1 Ιουλίου, το πρώτο του κεφάλαιο μετά την τριλογία Baby Steph που έκλεισε τον Ιανουάριο του 2025.",
-        "Στις κυκλοφορίες, ο XRS έβγαλε το single ΜΑΝΙΑ και ο Aeon παρουσίασε το EP Χύμα Ραπ Project 2 με πέντε κομμάτια."
-      ],
-      "tags": [
-        "Ελλάδα",
-        "Live",
-        "Κυκλοφορίες"
-      ],
-      "image": "",
-      "sources": [
-        {
-          "name": "Rapnroll",
-          "url": "https://www.rapnroll.gr/category/news/hip_hop_elinikh_skinh_news/"
-        }
-      ],
-      "slug": "2026-07-17-lives-kai-kyklofories-mesa-ston-ioylio"
     }
   ]
 }
