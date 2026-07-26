@@ -58,6 +58,19 @@ function authorBox(ed) {
   </aside>`;
 }
 
+function shareRow(url, title) {
+  const u = encodeURIComponent(url);
+  const t = encodeURIComponent(title);
+  return `
+  <div class="share-row">
+    <span class="share-label">Μοιράσου το</span>
+    <a class="share-btn" href="https://www.facebook.com/sharer/sharer.php?u=${u}" target="_blank" rel="noopener">Facebook</a>
+    <a class="share-btn" href="https://twitter.com/intent/tweet?url=${u}&text=${t}" target="_blank" rel="noopener">X</a>
+    <a class="share-btn" href="https://api.whatsapp.com/send?text=${t}%20${u}" target="_blank" rel="noopener">WhatsApp</a>
+    <button class="share-btn" type="button" onclick="navigator.clipboard.writeText('${esc(url)}');this.textContent='Αντιγράφηκε ✓';">Copy link</button>
+  </div>`;
+}
+
 function articlePage(p, prev, next, ed) {
   const url = `${SITE}/news/${p.slug}.html`;
   const img = p.image ? `${SITE}/${p.image}` : `${SITE}/assets/evoid-2a1ps.jpg`;
@@ -165,7 +178,7 @@ function articlePage(p, prev, next, ed) {
     <time class="news-date" datetime="${p.date}">${fmtDate(p.date)}</time>
   </div>
   <h1 class="article-title">${esc(p.title)}</h1>
-  <p class="news-byline">${esc(p.author || 'Flowless Music')}</p>
+  <p class="news-byline">${esc((ed && ed.name) || p.author || 'Flowless Music')}</p>
 ${p.image ? `  <div class="article-hero"><img src="../${esc(p.image)}" alt="${esc(p.title)}" width="1200" height="675"></div>` : ''}
   <div class="artist-tags">${tags}</div>
 
@@ -174,6 +187,7 @@ ${body}
   </div>
 
   ${sources}
+${shareRow(url, p.title)}
 ${authorBox(ed)}
 
   <div class="article-nav">

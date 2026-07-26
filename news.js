@@ -64,7 +64,7 @@ function injectSeo(posts) {
       headline: p.title,
       datePublished: p.date,
       articleSection: p.region === 'intl' ? 'Διεθνή' : 'Ελλάδα',
-      author: { '@type': 'Person', name: p.author || 'Flowless Music' },
+      author: { '@type': 'Person', name: 'Θοδωρής Παρασχάκης Νταμάς' },
       publisher: { '@type': 'Organization', name: 'Flowless Music' },
       description: p.summary || '',
       ...(p.image ? { image: 'https://flowlessmusic.gr/' + p.image } : {}),
