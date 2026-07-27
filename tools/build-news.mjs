@@ -58,6 +58,17 @@ function authorBox(ed) {
   </aside>`;
 }
 
+function streamingBlock(list) {
+  if (!list || !list.length) return '';
+  return `
+  <div class="listen-now">
+    <p class="listen-now-label">Άκουσέ το τώρα στην αγαπημένη σου πλατφόρμα</p>
+    <div class="listen-now-links">
+      ${list.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener" class="btn btn-primary">${esc(s.name)}</a>`).join('')}
+    </div>
+  </div>`;
+}
+
 function shareRow(url, title) {
   const u = encodeURIComponent(url);
   const t = encodeURIComponent(title);
@@ -185,7 +196,7 @@ ${p.image ? `  <div class="article-hero"><img src="../${esc(p.image)}" alt="${es
   <div class="article-body">
 ${body}
   </div>
-
+${streamingBlock(p.streaming)}
   ${sources}
 ${shareRow(url, p.title)}
 ${authorBox(ed)}
