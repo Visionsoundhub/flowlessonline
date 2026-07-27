@@ -69,16 +69,15 @@ const ARTISTS = [
 
 /* ---------- Latest Release Registry ---------- */
 const LATEST_RELEASE = {
-  artist: 'E-VOID',
-  title: '2 Αλήθειες & 1 Ψέμα',
+  artist: 'DIEM & E-VOID',
+  title: 'OLE OLE OLE',
   desc: {
-    el: 'Η νέα κυκλοφορία του E-Void σε παραγωγή Vybezmadethis.',
-    en: 'The new E-Void release, produced by Vybezmadethis.'
+    el: 'Το νέο καλοκαιρινό single της Flowless Music, σε παραγωγή Vybezmadethis aka Black Vybez.',
+    en: 'The new summer single from Flowless Music, produced by Vybezmadethis aka Black Vybez.'
   },
-  cover: 'assets/evoid-2a1ps.jpg',
-  spotify: 'https://open.spotify.com/album/3j6VCQ3hmB8iJKgDDRQQuG?si=-zlevQl9TL--yfvqUJm0Nw',
-  youtube: 'https://www.youtube.com/watch?v=6epLhvZjmWk',
-  appleMusic: 'https://music.apple.com/us/artist/e-void/1739868404'
+  cover: 'assets/news/2026-07-24-ole-ole-ole.jpg',
+  spotify: 'https://open.spotify.com/track/5FM4eld1tkru2zxYlnQWXJ?si=de798376d8fa4da3',
+  appleMusic: 'https://music.apple.com/us/song/ole-ole-ole/6794306631'
 };
 const PLAYLIST_URL = 'https://open.spotify.com/playlist/766LR1ZtOxjvZ8fiRQLkMz?si=40bdc0412e1743f6';
 
