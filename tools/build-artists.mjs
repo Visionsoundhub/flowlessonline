@@ -19,7 +19,7 @@ const esc = s => String(s ?? '')
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 function page(a, all) {
-  const url = `${SITE}/artists/${a.id}.html`;
+  const url = `${SITE}/artists/${a.id}`;
   const bio = a.bio.el;
   const sameAs = (a.socials || []).map(s => s.url);
   const others = all.filter(x => x.id !== a.id);
@@ -52,7 +52,7 @@ function page(a, all) {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Αρχική', item: SITE + '/' },
-      { '@type': 'ListItem', position: 2, name: 'Roster', item: `${SITE}/index.html#roster` },
+      { '@type': 'ListItem', position: 2, name: 'Roster', item: `${SITE}/#roster` },
       { '@type': 'ListItem', position: 3, name: a.displayName || a.name, item: url }
     ]
   };
@@ -92,22 +92,22 @@ function page(a, all) {
 <body>
 
 <nav class="nav">
-  <a href="../index.html#top" class="nav-logo">FLOWLESS<span class="nav-logo-dot">.</span></a>
+  <a href="/#top" class="nav-logo">FLOWLESS<span class="nav-logo-dot">.</span></a>
   <div class="nav-links">
-    <a href="../index.html#top">Αρχική</a>
-    <a href="../index.html#release">Release</a>
-    <a href="../index.html#roster">Roster</a>
-    <a href="../index.html#playlist">Playlist</a>
-    <a href="../news.html">News</a>
-    <a href="../merch.html">Merch</a>
-    <a href="../index.html#contact">Επικοινωνία</a>
+    <a href="/#top">Αρχική</a>
+    <a href="/#release">Release</a>
+    <a href="/#roster">Roster</a>
+    <a href="/#playlist">Playlist</a>
+    <a href="/news">News</a>
+    <a href="/merch">Merch</a>
+    <a href="/#contact">Επικοινωνία</a>
   </div>
 </nav>
 
 <main>
 <article class="section article-page">
   <nav class="crumbs" aria-label="Breadcrumb">
-    <a href="../index.html">Αρχική</a> <span>/</span> <a href="../index.html#roster">Roster</a>
+    <a href="/">Αρχική</a> <span>/</span> <a href="/#roster">Roster</a>
   </nav>
 
   <p class="section-label">${esc(a.role.el)} · Flowless Music</p>
@@ -130,10 +130,10 @@ function page(a, all) {
   <div class="article-body" style="margin-top:38px">
     <h2 class="news-item-title">Υπόλοιπο roster</h2>
     <p class="roster-links">${others.map(o =>
-      `<a href="${o.id}.html">${esc(o.displayName || o.name)}</a>`).join(' · ')}</p>
+      `<a href="${o.id}">${esc(o.displayName || o.name)}</a>`).join(' · ')}</p>
   </div>
 
-  <p class="article-back"><a href="../index.html#roster" class="btn btn-primary">Όλο το roster</a></p>
+  <p class="article-back"><a href="/#roster" class="btn btn-primary">Όλο το roster</a></p>
 </article>
 </main>
 

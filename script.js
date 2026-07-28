@@ -275,7 +275,7 @@ function renderDetail() {
       <p class="artist-bio">${a.bio[lang]}</p>
       <div class="artist-socials">
         ${a.socials.map(s => `<a href="${s.url}" target="_blank" rel="noopener">${s.label}</a>`).join('')}
-        <a href="artists/${a.id}.html" class="artist-page-link">Προφίλ →</a>
+        <a href="/artists/${a.id}" class="artist-page-link">Προφίλ →</a>
       </div>
     </div>`;
 }
@@ -502,7 +502,7 @@ function renderNews() {
       grid.innerHTML = posts.map(p => {
         const img = p.image ? `<div class="news-thumb"><img src="${p.image}" alt="${p.title}" loading="lazy"></div>` : '';
         const region = p.region === 'gr' ? 'Ελλάδα' : p.region === 'intl' ? 'Εξωτερικό' : '';
-        const href = p.slug ? `news/${p.slug}.html` : 'news.html';
+        const href = p.slug ? `/news/${p.slug}` : '/news';
         return `<a class="news-card" href="${href}">
           ${img}
           <div class="news-card-body">

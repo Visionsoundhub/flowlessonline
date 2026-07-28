@@ -10,7 +10,7 @@ function fmtDate(iso) {
 }
 
 function postCard(p) {
-  const href = p.slug ? `news/${p.slug}.html` : 'news.html';
+  const href = p.slug ? `/news/${p.slug}` : '/news';
   const img = p.image
     ? `<a href="${href}" class="news-thumb"><img src="${p.image}" alt="${p.title}" loading="lazy"></a>`
     : '';
@@ -55,7 +55,7 @@ fetch('news.json?_=' + Date.now())
 
 /* SEO: JSON-LD structured data (Article list) for Google */
 function injectSeo(posts) {
-  const base = 'https://flowlessmusic.gr/news.html';
+  const base = 'https://flowlessmusic.gr/news';
   const items = posts.slice(0, 20).map((p, i) => ({
     '@type': 'ListItem',
     position: i + 1,

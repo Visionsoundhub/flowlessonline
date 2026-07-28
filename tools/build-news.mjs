@@ -83,7 +83,7 @@ function shareRow(url, title) {
 }
 
 function articlePage(p, prev, next, ed) {
-  const url = `${SITE}/news/${p.slug}.html`;
+  const url = `${SITE}/news/${p.slug}`;
   const img = p.image ? `${SITE}/${p.image}` : `${SITE}/assets/evoid-2a1ps.jpg`;
   const desc = p.summary || (p.body || [])[0] || '';
   const body = (p.body || []).map(t => `      <p>${esc(t)}</p>`).join('\n');
@@ -127,7 +127,7 @@ function articlePage(p, prev, next, ed) {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Αρχική', item: SITE + '/' },
-      { '@type': 'ListItem', position: 2, name: 'Νέα', item: `${SITE}/news.html` },
+      { '@type': 'ListItem', position: 2, name: 'Νέα', item: `${SITE}/news` },
       { '@type': 'ListItem', position: 3, name: p.title, item: url }
     ]
   };
@@ -166,22 +166,22 @@ function articlePage(p, prev, next, ed) {
 <body>
 
 <nav class="nav">
-  <a href="../index.html#top" class="nav-logo">FLOWLESS<span class="nav-logo-dot">.</span></a>
+  <a href="/#top" class="nav-logo">FLOWLESS<span class="nav-logo-dot">.</span></a>
   <div class="nav-links">
-    <a href="../index.html#top">Αρχική</a>
-    <a href="../index.html#release">Release</a>
-    <a href="../index.html#roster">Roster</a>
-    <a href="../index.html#playlist">Playlist</a>
-    <a href="../news.html">News</a>
-    <a href="../merch.html">Merch</a>
-    <a href="../index.html#contact">Επικοινωνία</a>
+    <a href="/#top">Αρχική</a>
+    <a href="/#release">Release</a>
+    <a href="/#roster">Roster</a>
+    <a href="/#playlist">Playlist</a>
+    <a href="/news">News</a>
+    <a href="/merch">Merch</a>
+    <a href="/#contact">Επικοινωνία</a>
   </div>
 </nav>
 
 <main>
 <article class="section article-page">
   <nav class="crumbs" aria-label="Breadcrumb">
-    <a href="../index.html">Αρχική</a> <span>/</span> <a href="../news.html">Νέα</a>
+    <a href="/">Αρχική</a> <span>/</span> <a href="/news">Νέα</a>
   </nav>
 
   <div class="news-meta">
@@ -202,10 +202,10 @@ ${shareRow(url, p.title)}
 ${authorBox(ed)}
 
   <div class="article-nav">
-    ${prev ? `<a href="${prev.slug}.html">← ${esc(prev.title)}</a>` : '<span></span>'}
-    ${next ? `<a href="${next.slug}.html">${esc(next.title)} →</a>` : '<span></span>'}
+    ${prev ? `<a href="${prev.slug}">← ${esc(prev.title)}</a>` : '<span></span>'}
+    ${next ? `<a href="${next.slug}">${esc(next.title)} →</a>` : '<span></span>'}
   </div>
-  <p class="article-back"><a href="../news.html" class="btn btn-primary">Όλα τα νέα</a></p>
+  <p class="article-back"><a href="/news" class="btn btn-primary">Όλα τα νέα</a></p>
 </article>
 </main>
 
@@ -254,20 +254,20 @@ async function main() {
   // sitemap.xml
   const staticUrls = [
     { loc: SITE + '/', freq: 'weekly', pri: '1.0' },
-    { loc: SITE + '/news.html', freq: 'daily', pri: '0.9' },
-    { loc: SITE + '/merch.html', freq: 'monthly', pri: '0.6' }
+    { loc: SITE + '/news', freq: 'daily', pri: '0.9' },
+    { loc: SITE + '/merch', freq: 'monthly', pri: '0.6' }
   ];
   let artistUrls = [];
   try {
     const ad = JSON.parse(await readFile(path.join(ROOT, 'artists.json'), 'utf8'));
-    artistUrls = (ad.artists || []).map(a => `  <url><loc>${SITE}/artists/${a.id}.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>`);
+    artistUrls = (ad.artists || []).map(a => `  <url><loc>${SITE}/artists/${a.id}</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>`);
   } catch {}
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${staticUrls.map(u => `  <url><loc>${u.loc}</loc><changefreq>${u.freq}</changefreq><priority>${u.pri}</priority></url>`).join('\n')}
 ${artistUrls.join('\n')}
-${posts.map(p => `  <url><loc>${SITE}/news/${p.slug}.html</loc><lastmod>${p.date}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>`).join('\n')}
+${posts.map(p => `  <url><loc>${SITE}/news/${p.slug}</loc><lastmod>${p.date}</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>`).join('\n')}
 </urlset>
 `;
   await writeFile(path.join(ROOT, 'sitemap.xml'), sitemap);
@@ -278,7 +278,7 @@ ${posts.map(p => `  <url><loc>${SITE}/news/${p.slug}.html</loc><lastmod>${p.date
   const newsSitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
 ${recent.map(p => `  <url>
-    <loc>${SITE}/news/${p.slug}.html</loc>
+    <loc>${SITE}/news/${p.slug}</loc>
     <news:news>
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
       <news:publication_date>${p.date}</news:publication_date>
@@ -293,13 +293,13 @@ ${recent.map(p => `  <url>
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"><channel>
 <title>Flowless Music — Μουσικά νέα</title>
-<link>${SITE}/news.html</link>
+<link>${SITE}/news</link>
 <description>Κυκλοφορίες, νούμερα, chart και γεγονότα από Ελλάδα και εξωτερικό.</description>
 <language>el</language>
 ${posts.slice(0, 20).map(p => `<item>
 <title>${esc(p.title)}</title>
-<link>${SITE}/news/${p.slug}.html</link>
-<guid>${SITE}/news/${p.slug}.html</guid>
+<link>${SITE}/news/${p.slug}</link>
+<guid>${SITE}/news/${p.slug}</guid>
 <pubDate>${new Date(p.date + 'T08:00:00Z').toUTCString()}</pubDate>
 <description>${esc(p.summary || '')}</description>
 </item>`).join('\n')}
