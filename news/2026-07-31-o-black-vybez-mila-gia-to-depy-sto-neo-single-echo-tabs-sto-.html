@@ -104,12 +104,23 @@
   </aside>
 
   <div class="article-nav">
-    <a href="2026-07-31-to-mentalite-toy-ivan-greko-ektinassetai-sto-no4-toy-ellinik">← Το MENTALITE του Ivan Greko εκτινάσσεται στο Νο4 του ελληνικού Spotify chart</a>
-    <span></span>
+    <a href="2026-07-30-o-toquel-krata-10-tragoydia-mesa-sto-elliniko-top-40-toy-spo">← Ο TOQUEL κρατά 10 τραγούδια μέσα στο ελληνικό Top 40 του Spotify</a>
+    <a href="2026-07-31-to-mentalite-toy-ivan-greko-ektinassetai-sto-no4-toy-ellinik">Το MENTALITE του Ivan Greko εκτινάσσεται στο Νο4 του ελληνικού Spotify chart →</a>
   </div>
-  <p class="article-back"><a href="/news" class="btn btn-primary">Όλα τα νέα</a></p>
+  <p class="article-back">
+    <a href="/news" class="btn btn-primary">Όλα τα νέα</a>
+    <button class="btn btn-primary" id="notifyBtn" style="background:var(--smoke-2);color:var(--bone);border:1px solid var(--line)">🔔 Ειδοποιήσεις</button>
+  </p>
 </article>
 </main>
+<script>
+  document.getElementById('notifyBtn')?.addEventListener('click', () => {
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function(OneSignal) {
+      await OneSignal.Notifications.requestPermission();
+    });
+  });
+</script>
 
 <footer class="footer">
   <p>FLOWLESS MUSIC © 2026 · flowlessmusic.gr · Powered by <a href="https://flowsites.gr" target="_blank" rel="noopener">flowsites</a></p>

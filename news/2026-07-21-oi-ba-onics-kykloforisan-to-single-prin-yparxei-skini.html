@@ -93,12 +93,23 @@
   </aside>
 
   <div class="article-nav">
-    <a href="2026-07-21-o-aspo-kykloforise-to-single-epanentaksi">← Ο Aspo κυκλοφόρησε το single Epanentaksi</a>
-    <a href="2026-07-21-o-future-pairnei-to-12o-noymero-ena-toy-me-to-the-real-me">Ο Future παίρνει το 12ο νούμερο ένα του με το The Real Me →</a>
+    <a href="2026-07-21-o-future-pairnei-to-12o-noymero-ena-toy-me-to-the-real-me">← Ο Future παίρνει το 12ο νούμερο ένα του με το The Real Me</a>
+    <a href="2026-07-21-o-aspo-kykloforise-to-single-epanentaksi">Ο Aspo κυκλοφόρησε το single Epanentaksi →</a>
   </div>
-  <p class="article-back"><a href="/news" class="btn btn-primary">Όλα τα νέα</a></p>
+  <p class="article-back">
+    <a href="/news" class="btn btn-primary">Όλα τα νέα</a>
+    <button class="btn btn-primary" id="notifyBtn" style="background:var(--smoke-2);color:var(--bone);border:1px solid var(--line)">🔔 Ειδοποιήσεις</button>
+  </p>
 </article>
 </main>
+<script>
+  document.getElementById('notifyBtn')?.addEventListener('click', () => {
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function(OneSignal) {
+      await OneSignal.Notifications.requestPermission();
+    });
+  });
+</script>
 
 <footer class="footer">
   <p>FLOWLESS MUSIC © 2026 · flowlessmusic.gr · Powered by <a href="https://flowsites.gr" target="_blank" rel="noopener">flowsites</a></p>

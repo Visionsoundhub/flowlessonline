@@ -60,6 +60,7 @@
     <button class="news-filter" data-region="intl">Εξωτερικό</button>
   </div>
   <p class="news-updated" id="newsUpdated"></p>
+  <button class="btn btn-primary" id="notifyBtn" style="margin-bottom:24px">🔔 Ειδοποιήσεις για νέα άρθρα</button>
   <div class="news-list" id="newsList"></div>
 </section>
 </main>
@@ -69,5 +70,13 @@
 </footer>
 
 <script src="news.js"></script>
+<script>
+  document.getElementById('notifyBtn')?.addEventListener('click', () => {
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function(OneSignal) {
+      await OneSignal.Notifications.requestPermission();
+    });
+  });
+</script>
 </body>
 </html>

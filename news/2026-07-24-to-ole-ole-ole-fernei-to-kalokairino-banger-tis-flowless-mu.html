@@ -101,12 +101,23 @@
   </aside>
 
   <div class="article-nav">
-    <a href="2026-07-24-se-alla-nea-epistrofi-gia-to-koukla-toy-sicario-alma-gia-to-">← Σε άλλα νέα: επιστροφή για το KOUKLA του Sicario, άλμα για το Lete Lete του SNIK και τρία νέα singles</a>
-    <a href="2026-07-25-o-lelo-apo-to-ntitroit-anerchomenos-kallitechnis-toy-mina-st">Ο Lelo από το Ντιτρόιτ, ανερχόμενος καλλιτέχνης του μήνα στο Billboard →</a>
+    <a href="2026-07-23-se-alla-nea-anodos-gia-to-banana-o-ivan-greko-mpainei-sto-ch">← Σε άλλα νέα: άνοδος για το BANANA, ο Ivan Greko μπαίνει στο chart και το Boston της Stella Lefty στο αμερικανικό Νο6</a>
+    <a href="2026-07-24-se-alla-nea-epistrofi-gia-to-koukla-toy-sicario-alma-gia-to-">Σε άλλα νέα: επιστροφή για το KOUKLA του Sicario, άλμα για το Lete Lete του SNIK και τρία νέα singles →</a>
   </div>
-  <p class="article-back"><a href="/news" class="btn btn-primary">Όλα τα νέα</a></p>
+  <p class="article-back">
+    <a href="/news" class="btn btn-primary">Όλα τα νέα</a>
+    <button class="btn btn-primary" id="notifyBtn" style="background:var(--smoke-2);color:var(--bone);border:1px solid var(--line)">🔔 Ειδοποιήσεις</button>
+  </p>
 </article>
 </main>
+<script>
+  document.getElementById('notifyBtn')?.addEventListener('click', () => {
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function(OneSignal) {
+      await OneSignal.Notifications.requestPermission();
+    });
+  });
+</script>
 
 <footer class="footer">
   <p>FLOWLESS MUSIC © 2026 · flowlessmusic.gr · Powered by <a href="https://flowsites.gr" target="_blank" rel="noopener">flowsites</a></p>

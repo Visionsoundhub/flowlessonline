@@ -96,12 +96,23 @@
   </aside>
 
   <div class="article-nav">
-    <a href="2026-07-24-to-tetteh-toy-strat-mpainei-no1-sto-elliniko-chart-okto-komm">← Το TETTEH του Strat μπαίνει Νο1 στο ελληνικό chart, οκτώ κομμάτια του RICH BEFORE DEATH μέσα στην πρώτη 50άδα</a>
-    <a href="2026-07-24-se-alla-nea-epistrofi-gia-to-koukla-toy-sicario-alma-gia-to-">Σε άλλα νέα: επιστροφή για το KOUKLA του Sicario, άλμα για το Lete Lete του SNIK και τρία νέα singles →</a>
+    <a href="2026-07-24-se-alla-nea-epistrofi-gia-to-koukla-toy-sicario-alma-gia-to-">← Σε άλλα νέα: επιστροφή για το KOUKLA του Sicario, άλμα για το Lete Lete του SNIK και τρία νέα singles</a>
+    <a href="2026-07-24-to-tetteh-toy-strat-mpainei-no1-sto-elliniko-chart-okto-komm">Το TETTEH του Strat μπαίνει Νο1 στο ελληνικό chart, οκτώ κομμάτια του RICH BEFORE DEATH μέσα στην πρώτη 50άδα →</a>
   </div>
-  <p class="article-back"><a href="/news" class="btn btn-primary">Όλα τα νέα</a></p>
+  <p class="article-back">
+    <a href="/news" class="btn btn-primary">Όλα τα νέα</a>
+    <button class="btn btn-primary" id="notifyBtn" style="background:var(--smoke-2);color:var(--bone);border:1px solid var(--line)">🔔 Ειδοποιήσεις</button>
+  </p>
 </article>
 </main>
+<script>
+  document.getElementById('notifyBtn')?.addEventListener('click', () => {
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function(OneSignal) {
+      await OneSignal.Notifications.requestPermission();
+    });
+  });
+</script>
 
 <footer class="footer">
   <p>FLOWLESS MUSIC © 2026 · flowlessmusic.gr · Powered by <a href="https://flowsites.gr" target="_blank" rel="noopener">flowsites</a></p>

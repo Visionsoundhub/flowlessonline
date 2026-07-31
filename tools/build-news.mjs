@@ -217,9 +217,20 @@ ${authorBox(ed)}
     ${prev ? `<a href="${prev.slug}">← ${esc(prev.title)}</a>` : '<span></span>'}
     ${next ? `<a href="${next.slug}">${esc(next.title)} →</a>` : '<span></span>'}
   </div>
-  <p class="article-back"><a href="/news" class="btn btn-primary">Όλα τα νέα</a></p>
+  <p class="article-back">
+    <a href="/news" class="btn btn-primary">Όλα τα νέα</a>
+    <button class="btn btn-primary" id="notifyBtn" style="background:var(--smoke-2);color:var(--bone);border:1px solid var(--line)">🔔 Ειδοποιήσεις</button>
+  </p>
 </article>
 </main>
+<script>
+  document.getElementById('notifyBtn')?.addEventListener('click', () => {
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function(OneSignal) {
+      await OneSignal.Notifications.requestPermission();
+    });
+  });
+</script>
 
 <footer class="footer">
   <p>FLOWLESS MUSIC © ${new Date().getFullYear()} · flowlessmusic.gr · Powered by <a href="https://flowsites.gr" target="_blank" rel="noopener">flowsites</a></p>

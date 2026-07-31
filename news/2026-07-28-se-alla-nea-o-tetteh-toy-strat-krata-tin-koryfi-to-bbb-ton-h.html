@@ -96,12 +96,23 @@
   </aside>
 
   <div class="article-nav">
-    <a href="2026-07-28-to-choosin-texas-tis-ella-langley-symplironei-15-evdomades-s">← Το Choosin' Texas της Ella Langley συμπληρώνει 15 εβδομάδες στο Νο1 του Billboard Hot 100</a>
-    <a href="2026-07-29-se-alla-nea-o-strat-anevazei-xana-to-tetteh-to-kleidia-toy-s">Σε άλλα νέα: ο Strat ανεβάζει ξανά το TETTEH, το KLEIDIA του SNIK συμπληρώνει 40 μέρες και το Love, Rack. του RACK κρατά τέσσερις θέσεις →</a>
+    <a href="2026-07-27-to-spaste-ta-tis-anastasia-epistrefei-sto-top-15-dyo-mines-m">← Το Σπάστε Τα της Anastasia επιστρέφει στο Top 15 δύο μήνες μετά την κυκλοφορία του</a>
+    <a href="2026-07-28-to-choosin-texas-tis-ella-langley-symplironei-15-evdomades-s">Το Choosin' Texas της Ella Langley συμπληρώνει 15 εβδομάδες στο Νο1 του Billboard Hot 100 →</a>
   </div>
-  <p class="article-back"><a href="/news" class="btn btn-primary">Όλα τα νέα</a></p>
+  <p class="article-back">
+    <a href="/news" class="btn btn-primary">Όλα τα νέα</a>
+    <button class="btn btn-primary" id="notifyBtn" style="background:var(--smoke-2);color:var(--bone);border:1px solid var(--line)">🔔 Ειδοποιήσεις</button>
+  </p>
 </article>
 </main>
+<script>
+  document.getElementById('notifyBtn')?.addEventListener('click', () => {
+    window.OneSignalDeferred = window.OneSignalDeferred || [];
+    OneSignalDeferred.push(async function(OneSignal) {
+      await OneSignal.Notifications.requestPermission();
+    });
+  });
+</script>
 
 <footer class="footer">
   <p>FLOWLESS MUSIC © 2026 · flowlessmusic.gr · Powered by <a href="https://flowsites.gr" target="_blank" rel="noopener">flowsites</a></p>
