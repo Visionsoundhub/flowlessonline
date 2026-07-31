@@ -75,7 +75,7 @@ const LATEST_RELEASE = {
     el: 'Το νέο single του Black Vybez aka Vybezmadethis, ιδρυτή της Flowless Music.',
     en: 'The new single from Black Vybez aka Vybezmadethis, founder of Flowless Music.'
   },
-  cover: 'assets/news/2026-07-30-echo-tabs-sto-mualo.jpg',
+  cover: 'assets/news/2026-07-30-echo-tabs-sto-mualo.webp',
   spotify: 'https://open.spotify.com/track/36wrfPaqdvFryEXvlJHbKP?si=ea40b9d3c9884e08',
   appleMusic: 'https://music.apple.com/gr/song/%CE%AD%CF%87%CF%89-tabs-%CF%83%CF%84%CE%BF-%CE%BC%CF%85%CE%B1%CE%BB%CF%8C/6791818772'
 };
