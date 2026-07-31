@@ -718,3 +718,15 @@ img.author-avatar{object-fit:cover;border-radius:50%}
   color:var(--blood);margin-bottom:14px;
 }
 .listen-now-links{display:flex;gap:12px;flex-wrap:wrap}
+
+/* ---------- ARTICLE CALLOUT (highlighted paragraph) ---------- */
+.article-body p.callout{
+  background:linear-gradient(150deg, rgba(224,43,56,.14), rgba(224,43,56,.05));
+  border-left:3px solid var(--blood);
+  border-radius:0 10px 10px 0;
+  padding:16px 20px;
+  font-weight:600;
+  color:var(--bone);
+  opacity:1;
+}
+.article-body p.callout a{color:var(--blood);text-decoration:underline}
