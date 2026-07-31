@@ -86,7 +86,8 @@ function articlePage(p, prev, next, ed) {
   const url = `${SITE}/news/${p.slug}`;
   const img = p.image ? `${SITE}/${p.image}` : `${SITE}/assets/evoid-2a1ps.jpg`;
   const desc = p.summary || (p.body || [])[0] || '';
-  const body = (p.body || []).map(t => `      <p>${esc(t)}</p>`).join('\n');
+  const body = (p.body || []).map(t => `      <p>${esc(t)}</p>`).join('\n')
+    .replace('__PODCAST_LINK__', '<a href="https://blackvybez.gr/podcasts" target="_blank" rel="noopener">blackvybez.gr/podcasts</a>');
   const tags = (p.tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join('');
   const sources = (p.sources || []).length
     ? `<div class="news-sources"><span>Πηγές:</span> ${p.sources.map(s =>
