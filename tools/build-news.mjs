@@ -167,13 +167,6 @@ function articlePage(p, prev, next, ed) {
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230a0a0c'/><text x='50' y='72' font-size='64' font-family='Arial Black' font-weight='900' fill='%23e02b38' text-anchor='middle'>F</text></svg>">
 <script type="application/ld+json">${JSON.stringify(ld)}</script>
 <script type="application/ld+json">${JSON.stringify(crumbs)}</script>
-<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-<script>
-  window.OneSignalDeferred = window.OneSignalDeferred || [];
-  OneSignalDeferred.push(async function(OneSignal) {
-    await OneSignal.init({ appId: "2a3474b4-7d5d-483a-a23d-12305dd0a9a7" });
-  });
-</script>
 </head>
 <body>
 
@@ -217,20 +210,9 @@ ${authorBox(ed)}
     ${prev ? `<a href="${prev.slug}">← ${esc(prev.title)}</a>` : '<span></span>'}
     ${next ? `<a href="${next.slug}">${esc(next.title)} →</a>` : '<span></span>'}
   </div>
-  <p class="article-back">
-    <a href="/news" class="btn btn-primary">Όλα τα νέα</a>
-    <button class="btn btn-primary" id="notifyBtn" style="background:var(--smoke-2);color:var(--bone);border:1px solid var(--line)">🔔 Ειδοποιήσεις</button>
-  </p>
+  <p class="article-back"><a href="/news" class="btn btn-primary">Όλα τα νέα</a></p>
 </article>
 </main>
-<script>
-  document.getElementById('notifyBtn')?.addEventListener('click', () => {
-    window.OneSignalDeferred = window.OneSignalDeferred || [];
-    OneSignalDeferred.push(async function(OneSignal) {
-      await OneSignal.Notifications.requestPermission();
-    });
-  });
-</script>
 
 <footer class="footer">
   <p>FLOWLESS MUSIC © ${new Date().getFullYear()} · flowlessmusic.gr · Powered by <a href="https://flowsites.gr" target="_blank" rel="noopener">flowsites</a></p>
