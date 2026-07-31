@@ -69,15 +69,15 @@ const ARTISTS = [
 
 /* ---------- Latest Release Registry ---------- */
 const LATEST_RELEASE = {
-  artist: 'DIEM & E-VOID',
-  title: 'OLE OLE OLE',
+  artist: 'BLACK VYBEZ',
+  title: 'Έχω tabs στο μυαλό',
   desc: {
-    el: 'Το νέο καλοκαιρινό single της Flowless Music, σε παραγωγή Vybezmadethis aka Black Vybez.',
-    en: 'The new summer single from Flowless Music, produced by Vybezmadethis aka Black Vybez.'
+    el: 'Το νέο single του Black Vybez aka Vybezmadethis, ιδρυτή της Flowless Music.',
+    en: 'The new single from Black Vybez aka Vybezmadethis, founder of Flowless Music.'
   },
-  cover: 'assets/news/2026-07-24-ole-ole-ole.jpg',
-  spotify: 'https://open.spotify.com/track/5FM4eld1tkru2zxYlnQWXJ?si=de798376d8fa4da3',
-  appleMusic: 'https://music.apple.com/us/song/ole-ole-ole/6794306631'
+  cover: 'assets/news/2026-07-30-echo-tabs-sto-mualo.jpg',
+  spotify: 'https://open.spotify.com/track/36wrfPaqdvFryEXvlJHbKP?si=ea40b9d3c9884e08',
+  appleMusic: 'https://music.apple.com/gr/song/%CE%AD%CF%87%CF%89-tabs-%CF%83%CF%84%CE%BF-%CE%BC%CF%85%CE%B1%CE%BB%CF%8C/6791818772'
 };
 const PLAYLIST_URL = 'https://open.spotify.com/playlist/766LR1ZtOxjvZ8fiRQLkMz?si=40bdc0412e1743f6';
 
