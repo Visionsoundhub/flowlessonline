@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-05-o-belly-gang-kushington-mpainei-sto-billboard-hot-100-me-ti-</loc>
+    <loc>https://flowlessmusic.gr/news/2026-09-06-ti-kykloforise-stin-elliniki-rap-skini-ayto-to-savvatokyriak</loc>
     <news:news>
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-05</news:publication_date>
-      <news:title>Ο Belly Gang Kushington μπαίνει στο Billboard Hot 100 με τη συμμετοχή του 21 Savage</news:title>
+      <news:publication_date>2026-09-06</news:publication_date>
+      <news:title>Τι κυκλοφόρησε στην ελληνική ραπ σκηνή αυτό το Σαββατοκύριακο</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-09-06-ti-kykloforise-sto-exoteriko-ayto-to-savvatokyriako-lisa-kai</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-09-06</news:publication_date>
+      <news:title>Τι κυκλοφόρησε στο εξωτερικό αυτό το Σαββατοκύριακο: LISA και Ellie Goulding</news:title>
     </news:news>
   </url>
   <url>
@@ -17,27 +25,11 @@
     </news:news>
   </url>
   <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-02-to-banana-ton-fly-lo-anevainei-stin-9i-thesi-toy-daily-chart</loc>
+    <loc>https://flowlessmusic.gr/news/2026-09-05-o-belly-gang-kushington-mpainei-sto-billboard-hot-100-me-ti-</loc>
     <news:news>
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-03</news:publication_date>
-      <news:title>Το BANANA των FLY LO ανεβαίνει στην 9η θέση του daily chart Spotify Ελλάδας μετά από 18 εβδομάδες</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-02-o-duane-davis-krithike-enochos-gia-ti-dolofonia-toy-tupac-sh</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-03</news:publication_date>
-      <news:title>Ο Duane Davis κρίθηκε ένοχος για τη δολοφονία του Tupac Shakur το 1996</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-02-se-alla-nea-to-tetteh-toy-strat-exi-evdomades-stin-koryfi-to</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-03</news:publication_date>
-      <news:title>Σε άλλα νέα: το TETTEH του Strat έξι εβδομάδες στην κορυφή, το Street Mode Festival στη Θεσσαλονίκη και η πορεία των Light, RACK και SNIK στα charts</news:title>
+      <news:publication_date>2026-09-05</news:publication_date>
+      <news:title>Ο Belly Gang Kushington μπαίνει στο Billboard Hot 100 με τη συμμετοχή του 21 Savage</news:title>
     </news:news>
   </url>
 </urlset>
