@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-06-ti-kykloforise-stin-elliniki-rap-skini-ayto-to-savvatokyriak</loc>
+    <loc>https://flowlessmusic.gr/news/2026-09-07-se-alla-nea-to-off-the-hook-festival-fernei-ton-skepta-sto-o</loc>
     <news:news>
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-06</news:publication_date>
-      <news:title>Τι κυκλοφόρησε στην ελληνική ραπ σκηνή αυτό το Σαββατοκύριακο</news:title>
+      <news:publication_date>2026-09-07</news:publication_date>
+      <news:title>Σε άλλα νέα: το Off The Hook Festival φέρνει τον Skepta στο ΟΑΚΑ στις 11/9, το Street Mode Festival ετοιμάζεται στη Θεσσαλονίκη και η Κατερίνα Λιόλιου μπαίνει στο Νο7 του chart</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-09-07-french-montana-kai-max-b-etoimazoyn-to-disco-disko-night-to-</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-09-07</news:publication_date>
+      <news:title>French Montana και Max B ετοιμάζουν το disco δίσκο Night To Remember μετά τα 50 εκατομμύρια streams του Ever Since U Left Me</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-09-07-to-aproveitar-toy-snik-anevainei-sto-no1-toy-daily-chart-spo</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-09-07</news:publication_date>
+      <news:title>Το APROVEITAR του SNIK ανεβαίνει στο Νο1 του daily chart Spotify Ελλάδας με 109.078 streams σε τρεις μέρες</news:title>
     </news:news>
   </url>
   <url>
@@ -17,11 +33,11 @@
     </news:news>
   </url>
   <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-05-o-bloody-hawk-apo-tin-xanthi-xekina-to-proto-toy-eyropaiko-t</loc>
+    <loc>https://flowlessmusic.gr/news/2026-09-06-ti-kykloforise-stin-elliniki-rap-skini-ayto-to-savvatokyriak</loc>
     <news:news>
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-05</news:publication_date>
-      <news:title>Ο Bloody Hawk από την Ξάνθη ξεκινά το πρώτο του ευρωπαϊκό tour</news:title>
+      <news:publication_date>2026-09-06</news:publication_date>
+      <news:title>Τι κυκλοφόρησε στην ελληνική ραπ σκηνή αυτό το Σαββατοκύριακο</news:title>
     </news:news>
   </url>
   <url>
@@ -30,6 +46,14 @@
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
       <news:publication_date>2026-09-05</news:publication_date>
       <news:title>Ο Belly Gang Kushington μπαίνει στο Billboard Hot 100 με τη συμμετοχή του 21 Savage</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-09-05-o-bloody-hawk-apo-tin-xanthi-xekina-to-proto-toy-eyropaiko-t</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-09-05</news:publication_date>
+      <news:title>Ο Bloody Hawk από την Ξάνθη ξεκινά το πρώτο του ευρωπαϊκό tour</news:title>
     </news:news>
   </url>
 </urlset>
