@@ -730,3 +730,37 @@ img.author-avatar{object-fit:cover;border-radius:50%}
   opacity:1;
 }
 .article-body p.callout a{color:var(--blood);text-decoration:underline}
+
+/* ---------- SMART LINKS (fan links) ---------- */
+.listen-page{
+  min-height:100svh;display:flex;align-items:center;justify-content:center;
+  padding:40px 20px;background:var(--ink);
+}
+.listen-card{width:100%;max-width:380px;text-align:center}
+.listen-cover{
+  width:100%;aspect-ratio:1;border-radius:20px;object-fit:cover;
+  border:1px solid var(--line);box-shadow:0 20px 60px rgba(0,0,0,.5);
+  margin-bottom:22px;
+}
+.listen-artist{
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--blood);margin-bottom:8px;
+}
+.listen-title{
+  font-family:var(--body);font-weight:900;font-size:1.6rem;line-height:1.15;
+  margin-bottom:28px;
+}
+.listen-buttons{display:flex;flex-direction:column;gap:12px}
+.listen-btn{
+  display:flex;align-items:center;justify-content:center;gap:10px;
+  padding:15px;border-radius:12px;
+  background:var(--smoke);border:1px solid var(--line);
+  color:var(--bone);font-weight:700;font-size:.98rem;
+  transition:border-color .2s, transform .15s;
+}
+.listen-btn:hover{border-color:var(--blood);transform:translateY(-2px)}
+.listen-btn-icon{display:flex;color:var(--blood)}
+.listen-back{
+  display:inline-block;margin-top:36px;
+  font-family:var(--display);font-size:.95rem;letter-spacing:.05em;color:var(--ash);
+}

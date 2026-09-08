@@ -1,0 +1,24 @@
+{
+  "links": [
+    {
+      "slug": "echo-tabs-sto-mualo",
+      "artist": "BLACK VYBEZ",
+      "title": "Έχω tabs στο μυαλό",
+      "cover": "assets/news/2026-07-30-echo-tabs-sto-mualo.webp",
+      "platforms": [
+        { "name": "Spotify", "url": "https://open.spotify.com/track/36wrfPaqdvFryEXvlJHbKP?si=ea40b9d3c9884e08" },
+        { "name": "Apple Music", "url": "https://music.apple.com/gr/song/%CE%AD%CF%87%CF%89-tabs-%CF%83%CF%84%CE%BF-%CE%BC%CF%85%CE%B1%CE%BB%CF%8C/6791818772" }
+      ]
+    },
+    {
+      "slug": "ole-ole-ole",
+      "artist": "DIEM & E-VOID",
+      "title": "OLE OLE OLE",
+      "cover": "assets/news/2026-07-24-ole-ole-ole.jpg",
+      "platforms": [
+        { "name": "Spotify", "url": "https://open.spotify.com/track/5FM4eld1tkru2zxYlnQWXJ?si=de798376d8fa4da3" },
+        { "name": "Apple Music", "url": "https://music.apple.com/us/song/ole-ole-ole/6794306631" }
+      ]
+    }
+  ]
+}
