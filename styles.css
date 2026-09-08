@@ -764,3 +764,17 @@ img.author-avatar{object-fit:cover;border-radius:50%}
   display:inline-block;margin-top:36px;
   font-family:var(--display);font-size:.95rem;letter-spacing:.05em;color:var(--ash);
 }
+
+/* ---------- SMART LINK: coming soon email form ---------- */
+.listen-soon-date{
+  font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;color:var(--blood);
+  margin-bottom:6px;
+}
+.listen-soon-text{color:var(--ash);font-size:.92rem;margin-bottom:22px}
+.listen-form{display:flex;flex-direction:column;gap:12px}
+.listen-form input{
+  padding:15px;border-radius:12px;background:var(--smoke);
+  border:1px solid var(--line);color:var(--bone);font-size:1rem;font-family:var(--body);
+}
+.listen-form input:focus{outline:none;border-color:var(--blood)}
+.listen-form-msg{font-size:.88rem;color:var(--bone)}

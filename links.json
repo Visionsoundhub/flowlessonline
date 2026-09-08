@@ -19,6 +19,22 @@
         { "name": "Spotify", "url": "https://open.spotify.com/track/5FM4eld1tkru2zxYlnQWXJ?si=de798376d8fa4da3" },
         { "name": "Apple Music", "url": "https://music.apple.com/us/song/ole-ole-ole/6794306631" }
       ]
+    },
+    {
+      "slug": "nana",
+      "artist": "DieM, E Void, VybezMadeThis",
+      "title": "Nana",
+      "cover": "assets/news/nana-cover.jpg",
+      "releaseDate": "2026-09-18",
+      "audienceId": ""
+    },
+    {
+      "slug": "ase-me-na-apotycho",
+      "artist": "Black Vybez, VybezMadeThis",
+      "title": "Άσε με να αποτύχω",
+      "cover": "assets/news/ase-me-na-apotycho-cover.jpg",
+      "releaseDate": "2026-09-25",
+      "audienceId": ""
     }
   ]
 }

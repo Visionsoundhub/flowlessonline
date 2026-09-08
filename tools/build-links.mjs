@@ -27,13 +27,64 @@ const PLATFORM_ICON = {
   Deezer: '<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><rect x="2" y="14" width="3" height="5"/><rect x="7" y="10" width="3" height="9"/><rect x="12" y="6" width="3" height="13"/><rect x="17" y="2" width="3" height="17"/></svg>'
 };
 
+function fmtDate(iso) {
+  const d = new Date(iso + 'T00:00:00');
+  return isNaN(d) ? iso : d.toLocaleDateString('el-GR', { day: 'numeric', month: 'long' });
+}
+
 function page(l) {
   const url = `${SITE}/listen/${l.slug}`;
-  const buttons = l.platforms.map(p => `
+  const isComingSoon = !l.platforms || !l.platforms.length;
+
+  const body = isComingSoon
+    ? `
+    <p class="listen-soon-date">Κυκλοφορεί ${esc(fmtDate(l.releaseDate))}</p>
+    <p class="listen-soon-text">Άφησε το email σου, θα σου στείλουμε το link μόλις βγει.</p>
+    <form class="listen-form" data-audience="${esc(l.audienceId || '')}">
+      <input type="email" name="email" placeholder="το email σου" required>
+      <button type="submit" class="btn btn-primary">Ενημέρωσέ με</button>
+      <p class="listen-form-msg" hidden></p>
+    </form>`
+    : `
+    <div class="listen-buttons">${l.platforms.map(p => `
         <a class="listen-btn" href="${esc(p.url)}">
           <span class="listen-btn-icon">${PLATFORM_ICON[p.name] || ''}</span>
           <span>${esc(p.name)}</span>
-        </a>`).join('');
+        </a>`).join('')}
+    </div>`;
+
+  const script = isComingSoon ? `
+<script>
+document.querySelector('.listen-form')?.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const form = e.target;
+  const btn = form.querySelector('button');
+  const msg = form.querySelector('.listen-form-msg');
+  const email = form.email.value;
+  const audienceId = form.dataset.audience;
+  btn.disabled = true; btn.textContent = 'Στέλνεται...';
+  try {
+    const res = await fetch('/api/notify', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ email, audienceId })
+    });
+    const data = await res.json();
+    if (res.ok) {
+      form.email.hidden = true; btn.hidden = true;
+      msg.hidden = false; msg.textContent = 'Έγινες μέλος. Θα σου στείλουμε το link μόλις βγει.';
+    } else {
+      msg.hidden = false; msg.style.color = 'var(--blood)';
+      msg.textContent = data.error || 'Κάτι πήγε στραβά, δοκίμασε ξανά.';
+      btn.disabled = false; btn.textContent = 'Ενημέρωσέ με';
+    }
+  } catch {
+    msg.hidden = false; msg.style.color = 'var(--blood)';
+    msg.textContent = 'Κάτι πήγε στραβά, δοκίμασε ξανά.';
+    btn.disabled = false; btn.textContent = 'Ενημέρωσέ με';
+  }
+});
+</script>` : '';
 
   return `<!DOCTYPE html>
 <html lang="el">
@@ -41,7 +92,7 @@ function page(l) {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>${esc(l.artist)} — ${esc(l.title)}</title>
-<meta name="description" content="Άκουσε ${esc(l.title)} του ${esc(l.artist)} σε όλες τις πλατφόρμες.">
+<meta name="description" content="${isComingSoon ? `Έρχεται σύντομα: ${esc(l.title)} του ${esc(l.artist)}.` : `Άκουσε ${esc(l.title)} του ${esc(l.artist)} σε όλες τις πλατφόρμες.`}">
 <meta name="robots" content="noindex, follow">
 <link rel="canonical" href="${url}">
 <meta property="og:site_name" content="Flowless Music">
@@ -61,12 +112,10 @@ function page(l) {
   <div class="listen-card">
     <img class="listen-cover" src="../${esc(l.cover)}" alt="${esc(l.artist)} — ${esc(l.title)}" width="600" height="600">
     <p class="listen-artist">${esc(l.artist)}</p>
-    <h1 class="listen-title">${esc(l.title)}</h1>
-    <div class="listen-buttons">${buttons}
-    </div>
+    <h1 class="listen-title">${esc(l.title)}</h1>${body}
     <a class="listen-back" href="/">FLOWLESS<span style="color:var(--blood)">.</span> MUSIC</a>
   </div>
-</main>
+</main>${script}
 </body>
 </html>
 `;
