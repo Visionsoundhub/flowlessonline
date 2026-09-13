@@ -42,7 +42,7 @@ function renderList() {
 fetch('news.json?_=' + Date.now())
   .then(r => r.json())
   .then(data => {
-    ALL_POSTS = (data.posts || []).sort((a, b) => (a.date < b.date ? 1 : -1));
+    ALL_POSTS = (data.posts || []).sort((a, b) => (a.date < b.date) - (a.date > b.date));
     const up = document.getElementById('newsUpdated');
     if (up && data.updated) up.textContent = 'Τελευταία ενημέρωση: ' + fmtDate(data.updated);
     injectSeo(ALL_POSTS);

@@ -170,9 +170,9 @@ function articlePage(p, prev, next, ed) {
 </head>
 <body>
 
-<nav class="nav">
+<nav class="nav" id="nav">
   <a href="/#top" class="nav-logo">FLOWLESS<span class="nav-logo-dot">.</span></a>
-  <div class="nav-links">
+  <div class="nav-links" id="navLinks">
     <a href="/#top">Αρχική</a>
     <a href="/#release">Release</a>
     <a href="/#roster">Roster</a>
@@ -181,6 +181,9 @@ function articlePage(p, prev, next, ed) {
     <a href="/merch">Merch</a>
     <a href="/#contact">Επικοινωνία</a>
   </div>
+  <button class="nav-burger" id="navBurger" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
 
 <main>
@@ -217,6 +220,7 @@ ${authorBox(ed)}
 <footer class="footer">
   <p>FLOWLESS MUSIC © ${new Date().getFullYear()} · flowlessmusic.gr · Powered by <a href="https://flowsites.gr" target="_blank" rel="noopener">flowsites</a></p>
 </footer>
+<script src="../script.js"></script>
 </body>
 </html>
 `;
@@ -226,7 +230,7 @@ ${authorBox(ed)}
 async function main() {
   const file = path.join(ROOT, 'news.json');
   const data = JSON.parse(await readFile(file, 'utf8'));
-  const posts = (data.posts || []).sort((a, b) => (a.date < b.date ? 1 : -1));
+  const posts = (data.posts || []).sort((a, b) => (a.date < b.date) - (a.date > b.date));
 
   // Σταθερά slugs
   const used = new Set();

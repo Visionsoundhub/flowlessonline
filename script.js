@@ -1,71 +1,28 @@
 /* ============ FLOWLESS MUSIC ============ */
 
-/* ---------- Artist Roster Data ---------- */
-const ARTISTS = [
-  {
-    id: 'evoid',
-    name: 'E VOID',
-    role: { el: 'Artist', en: 'Artist' },
-    tags: ['Boom Bap', 'Trap', 'Drill'],
-    bio: {
-      el: 'Γνωστός στο παρελθόν ως Seib, ο Evoid εκπροσωπεί τη σκηνή της Λάρισας με έναν ιδιαίτερο, σκοτεινό ήχο και ευθύ στίχο. Μετά από χρόνια παρουσίας στην τοπική underground σκηνή και συμμετοχής σε διάφορα σχήματα, σήμερα συνεργάζεται στενά με τον Black Vybez ως συνιδρυτής της Flowless Music. Η μουσική του χαρακτηρίζεται από ωμό, αφιλτράριστο ρεαλισμό και στίχους χωρίς συμβιβασμούς.',
-      en: 'Formerly known as Seib, Evoid represents the Larissa scene with a dark, distinctive sound and direct lyrics. Co-founder of Flowless Music alongside Black Vybez, his music is raw, unfiltered and uncompromising.'
-    },
-    socials: []
-  },
-  {
-    id: 'blackvybez',
-    name: 'BLACK VYBEZ',
-    alias: 'VYBEZMADETHIS',
-    role: { el: 'Artist & Producer', en: 'Artist & Producer' },
-    tags: ['Πολλά στυλ', 'Beats'],
-    tagsEn: ['Many styles', 'Beats'],
-    bio: {
-      el: 'Ο Black Vybez (Θοδωρής Παρασχάκης Νταμάς) γεννήθηκε στο Μεξικό και μεγάλωσε στην Ελλάδα. Μέσα από τη μουσική και τη δημόσια παρουσία του, δίνει φωνή στη νευροδιαφορετικότητα. Η πορεία του ξεκίνησε το 2008 από τη Λάρισα (ΑΨ, Στιχουργική Αναμέτρηση, LaCoast, 2410 Squad). Το 2018 στράφηκε στη σόλο πορεία, συνίδρυσε τη Landing Mind Records και σήμερα ηγείται της ανεξάρτητης Flowless Music μαζί με τον Evoid.',
-      en: 'Black Vybez (Thodoris Paraschakis Ntamas) was born in Mexico and raised in Greece. Through his music and public presence he gives voice to neurodivergence. His journey began in 2008 in Larissa; in 2018 he went solo, co-founded Landing Mind Records, and today leads independent label Flowless Music alongside Evoid.'
-    },
-    socials: [
-      { label: 'Instagram', url: 'https://www.instagram.com/blackvybez_' },
-      { label: 'Spotify', url: 'https://open.spotify.com/artist/6I1CYhPF8JMoaCh2zIeGe3?si=4DZeUhbXRsCnK5AfYMdSAg' },
-      { label: 'TikTok', url: 'https://www.tiktok.com/@blackvybez' },
-      { label: 'Apple Music', url: 'https://music.apple.com/gr/artist/black-vybez/1510069891?l=el' },
-      { label: 'Website', url: 'https://blackvybez.gr' }
-    ]
-  },
-  {
-    id: 'diem',
-    name: 'DIEM',
-    role: { el: 'Artist', en: 'Artist' },
-    tags: ['Newschool Trap', 'Dancehall'],
-    bio: {
-      el: 'Με μακρά πορεία στον χώρο, ο Diem έγινε αρχικά γνωστός ως Μάριος ΑΦ μέσα από το σχήμα Απρόσμενες Φωνές, μια ομάδα που έγραψε τα δικά της χιλιόμετρα στην underground σκηνή της Λάρισας. Σήμερα δραστηριοποιείται καλλιτεχνικά στην Αθήνα, ενσωματώνοντας κινηματογραφικές εικόνες και ατμοσφαιρικά στοιχεία στη μουσική του.',
-      en: 'With a long journey in the scene, Diem first became known as Marios AF through the group Aprosmenes Fones in Larissa\'s underground scene. Now based in Athens, he blends cinematic imagery and atmosphere into his music.'
-    },
-    socials: []
-  },
-  {
-    id: 'bigg',
-    name: 'BIG G',
-    role: { el: 'Artist', en: 'Artist' },
-    tags: ['Trap', 'Drill', 'Boom Bap'],
-    bio: {
-      el: 'Εκπροσωπώντας τη Λάρισα, ο Big G ξεχωρίζει για την αμεσότητα και τη δύναμη του στίχου του. Φέρνει έναν δυναμικό χαρακτήρα στη Flowless Music, με κοφτερό flow και στίχους που εστιάζουν στην ουσία.',
-      en: 'Representing Larissa, Big G stands out for his directness and lyrical power — a dynamic voice on Flowless Music with sharp flow and no-filler bars.'
-    },
-    socials: []
-  },
-  {
-    id: 'span',
-    name: 'SPAN',
-    role: { el: 'Producer', en: 'Producer' },
-    tags: ['Beats'],
-    bio: {
-      el: 'Beats για όλο το roster — bio σύντομα.',
-      en: 'Beats for the whole roster — bio coming soon.'
-    },
-    socials: []
-  }
-];
+/* ---------- Artist Roster Data ----------
+   Φορτώνεται από το artists.json (ίδια πηγή με τις σελίδες /artists/*),
+   ώστε το bio/socials/tags στο mixer να ταυτίζεται πάντα με το πλήρες προφίλ. */
+let ARTISTS = [];
+
+function loadArtists() {
+  return fetch('/artists.json?_=' + Date.now())
+    .then(r => r.json())
+    .then(data => {
+      ARTISTS = (data.artists || []).map(a => ({
+        id: a.id,
+        name: a.name,
+        alias: a.alias,
+        photo: a.photo,
+        role: a.role || { el: 'Artist', en: 'Artist' },
+        tags: a.tags || [],
+        tagsEn: a.tagsEn || a.tags || [],
+        bio: a.bio || { el: '', en: '' },
+        socials: a.socials || []
+      }));
+    })
+    .catch(() => { ARTISTS = []; });
+}
 
 /* ---------- Latest Release Registry ---------- */
 const LATEST_RELEASE = {
@@ -259,6 +216,36 @@ function toggleSolo(id) {
   renderConsole();
 }
 
+/* Βγάλε το Spotify artist ID από ένα link, μόνο αν είναι πραγματικά artist link (όχι album/track) */
+function spotifyArtistId(url) {
+  const m = String(url || '').match(/open\.spotify\.com\/(?:intl-\w+\/)?artist\/([a-zA-Z0-9]+)/);
+  return m ? m[1] : null;
+}
+
+function discographyHtml(a) {
+  const socials = a.socials || [];
+  const spotify = socials.find(s => /spotify/i.test(s.label));
+  const youtube = socials.find(s => /youtube/i.test(s.label));
+  const apple = socials.find(s => /apple/i.test(s.label));
+  const artistId = spotify ? spotifyArtistId(spotify.url) : null;
+
+  const embed = artistId
+    ? `<div class="discog-embed"><iframe src="https://open.spotify.com/embed/artist/${artistId}?utm_source=generator&theme=0" width="100%" height="352" frameborder="0" allowfullscreen loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>`
+    : '';
+
+  const btns = [];
+  if (!artistId && spotify) btns.push(`<a class="discog-platform-btn" href="${spotify.url}" target="_blank" rel="noopener">▶ Άνοιξε στο Spotify</a>`);
+  if (youtube) btns.push(`<a class="discog-platform-btn" href="${youtube.url}" target="_blank" rel="noopener">▶ Άνοιξε στο YouTube</a>`);
+  if (apple) btns.push(`<a class="discog-platform-btn" href="${apple.url}" target="_blank" rel="noopener">♪ Άνοιξε στο Apple Music</a>`);
+
+  if (!embed && !btns.length) return '';
+  return `<div class="discog-block">
+    <h3 class="news-item-title" style="font-size:1.1rem;margin-bottom:0">Δισκογραφία</h3>
+    ${embed}
+    ${btns.length ? `<div class="discog-platforms">${btns.join('')}</div>` : ''}
+  </div>`;
+}
+
 function renderDetail() {
   const box = document.getElementById('artistDetail');
   if (!box) return;
@@ -267,7 +254,7 @@ function renderDetail() {
   const tags = (lang === 'en' && a.tagsEn) ? a.tagsEn : a.tags;
   box.hidden = false;
   box.innerHTML = `
-    <div class="artist-photo">${a.name.charAt(0)}</div>
+    ${a.photo ? `<img class="artist-photo" src="${a.photo}" alt="${a.name}" loading="lazy">` : `<div class="artist-photo">${a.name.charAt(0)}</div>`}
     <div>
       <h3 class="detail-name">${a.name}</h3>
       ${a.alias ? `<p class="detail-alias">aka ${a.alias}</p>` : ''}
@@ -275,8 +262,9 @@ function renderDetail() {
       <p class="artist-bio">${a.bio[lang]}</p>
       <div class="artist-socials">
         ${a.socials.map(s => `<a href="${s.url}" target="_blank" rel="noopener">${s.label}</a>`).join('')}
-        <a href="/artists/${a.id}" class="artist-page-link">Προφίλ →</a>
+        <a href="/artists/${a.id}" class="artist-page-link">Πλήρες προφίλ →</a>
       </div>
+      ${discographyHtml(a)}
     </div>`;
 }
 
@@ -494,7 +482,7 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 function renderNews() {
   const grid = document.getElementById('newsGrid');
   if (!grid) return;
-  fetch('news.json?_=' + Date.now())
+  fetch('/news.json?_=' + Date.now())
     .then(r => r.json())
     .then(data => {
       const posts = (data.posts || []).sort((a, b) => (a.date < b.date ? 1 : -1)).slice(0, 3);
@@ -519,7 +507,7 @@ function renderNews() {
 /* ---------- App Entry Point ---------- */
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
-applyLang();
+loadArtists().then(applyLang);
 renderNews();
 
 console.log(
