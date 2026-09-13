@@ -36,9 +36,9 @@ function discographySection(a) {
     : '';
 
   const btns = [];
-  if (!artistId && spotify) btns.push(`<a class="discog-platform-btn" href="${esc(spotify.url)}" target="_blank" rel="noopener">Spotify</a>`);
-  if (youtube) btns.push(`<a class="discog-platform-btn" href="${esc(youtube.url)}" target="_blank" rel="noopener">YouTube</a>`);
-  if (apple) btns.push(`<a class="discog-platform-btn" href="${esc(apple.url)}" target="_blank" rel="noopener">Apple Music</a>`);
+  if (!artistId && spotify) btns.push(`<a class="discog-platform-btn" href="${esc(spotify.url)}" target="_blank" rel="noopener">▶ Άκου μας στο Spotify</a>`);
+  if (youtube) btns.push(`<a class="discog-platform-btn" href="${esc(youtube.url)}" target="_blank" rel="noopener">▶ Δες μας στο YouTube</a>`);
+  if (apple) btns.push(`<a class="discog-platform-btn" href="${esc(apple.url)}" target="_blank" rel="noopener">♪ Άκου μας στο Apple Music</a>`);
 
   if (!embed && !btns.length) {
     return `<div class="discog-block"><h2 class="news-item-title">Δισκογραφία</h2><p class="discog-empty">Έρχονται σύντομα τα links δισκογραφίας.</p></div>`;
@@ -46,6 +46,7 @@ function discographySection(a) {
 
   return `<div class="discog-block">
     <h2 class="news-item-title">Δισκογραφία</h2>
+    <p class="discog-intro">Βρες όλη τη δισκογραφία εδώ, ή άκου/δες μας και στις παρακάτω πλατφόρμες.</p>
     ${embed}
     ${btns.length ? `<div class="discog-platforms">${btns.join('')}</div>` : ''}
   </div>`;
@@ -151,16 +152,20 @@ function page(a, all) {
 
   ${a.photo ? `<div class="artist-portrait"><img src="../${esc(a.photo)}" alt="${esc(a.displayName || a.name)}" width="447" height="447"></div>` : ''}
 
-  <div class="article-body">
-    <p>${esc(bio)}</p>
-    ${a.website ? `<p>Επίσημη ιστοσελίδα: <a href="${esc(a.website)}" target="_blank" rel="noopener">${esc(a.website.replace(/^https?:\/\//, ''))}</a></p>` : ''}
-    ${alsoKnown.length ? `<p>Έχει εμφανιστεί και ως ${alsoKnown.map(esc).join(', ')}.</p>` : ''}
-    <p>Ο ${esc(a.displayName || a.name)} ανήκει στο roster της Flowless Music, ανεξάρτητου ελληνικού μουσικού label με έδρα τη Λάρισα${a.origin ? `. Βάση του είναι ${esc(a.origin)}` : ''}. Κινείται σε ${(a.genres || []).slice(0, -1).map(esc).join(', ')}${(a.genres || []).length > 1 ? ' και ' + esc(a.genres[a.genres.length - 1]) : ''}.</p>
+  <div class="artist-content">
+    <div class="artist-info">
+      <div class="article-body">
+        <p>${esc(bio)}</p>
+        ${a.website ? `<p>Επίσημη ιστοσελίδα: <a href="${esc(a.website)}" target="_blank" rel="noopener">${esc(a.website.replace(/^https?:\/\//, ''))}</a></p>` : ''}
+        ${alsoKnown.length ? `<p>Έχει εμφανιστεί και ως ${alsoKnown.map(esc).join(', ')}.</p>` : ''}
+        <p>Ο ${esc(a.displayName || a.name)} ανήκει στο roster της Flowless Music, ανεξάρτητου ελληνικού μουσικού label με έδρα τη Λάρισα${a.origin ? `. Βάση του είναι ${esc(a.origin)}` : ''}. Κινείται σε ${(a.genres || []).slice(0, -1).map(esc).join(', ')}${(a.genres || []).length > 1 ? ' και ' + esc(a.genres[a.genres.length - 1]) : ''}.</p>
+      </div>
+
+      ${socials}
+    </div>
+
+    ${discographySection(a)}
   </div>
-
-  ${socials}
-
-  ${discographySection(a)}
 
   <div class="article-body" style="margin-top:38px">
     <h2 class="news-item-title">Υπόλοιπο roster</h2>
