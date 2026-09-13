@@ -220,7 +220,7 @@ ${authorBox(ed)}
 <footer class="footer">
   <p>FLOWLESS MUSIC © ${new Date().getFullYear()} · flowlessmusic.gr · Powered by <a href="https://flowsites.gr" target="_blank" rel="noopener">flowsites</a></p>
 </footer>
-<script src="../script.js"></script>
+<script src="../script.js?v=2"></script>
 </body>
 </html>
 `;
