@@ -366,7 +366,7 @@ img.artist-photo{object-fit:cover;width:100%;filter:none}
   border:1px solid var(--ember);color:var(--blood);
 }
 .artist-bio{color:var(--ash);max-width:560px;margin-bottom:18px}
-.artist-socials{display:flex;gap:14px}
+.artist-socials{display:flex;flex-wrap:wrap;gap:14px}
 .artist-socials a{
   color:var(--ash);font-size:.72rem;font-weight:600;
   letter-spacing:.12em;text-transform:uppercase;
