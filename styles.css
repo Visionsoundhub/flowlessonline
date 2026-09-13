@@ -659,7 +659,7 @@ a.news-thumb{display:block}
   letter-spacing:.05em;color:#fff;border:1px solid var(--blood);border-radius:8px;
   padding:11px 18px;background:var(--blood);transition:background .2s,border-color .2s,transform .15s;
 }
-.discog-platform-btn:hover{background:var(--ember);border-color:var(--ember);transform:translateY(-1px)}
+.discog-platform-btn:hover{background:#fff;border-color:#fff;color:var(--blood);transform:translateY(-1px)}
 .discog-empty{font-family:var(--mono);font-size:.78rem;color:var(--ash);margin-top:12px}
 
 @media(max-width:820px){
