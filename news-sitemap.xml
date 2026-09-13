@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-12-anerchomenos-tis-vdomadas-o-h3adband-metatrepei-to-boo-se-vi</loc>
+    <loc>https://flowlessmusic.gr/news/2026-09-13-ti-kykloforise-sto-exoteriko-ayto-to-savvatokyriako-jhen-aik</loc>
     <news:news>
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-12</news:publication_date>
-      <news:title>Ανερχόμενος της βδομάδας: ο H3adband μετατρέπει το Boo σε viral φαινόμενο του TikTok</news:title>
+      <news:publication_date>2026-09-13</news:publication_date>
+      <news:title>Τι κυκλοφόρησε στο εξωτερικό αυτό το Σαββατοκύριακο: Jhené Aiko και Bloc Party</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-09-13-ti-kykloforise-stin-elliniki-rap-skini-ayti-ti-vdomada</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-09-13</news:publication_date>
+      <news:title>Τι κυκλοφόρησε στην ελληνική ραπ σκηνή αυτή τη βδομάδα</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-09-13-san-simera-30-chronia-apo-ton-thanato-toy-tupac-shakur</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-09-13</news:publication_date>
+      <news:title>Σαν σήμερα: 30 χρόνια από τον θάνατο του Tupac Shakur</news:title>
     </news:news>
   </url>
   <url>
@@ -17,27 +33,11 @@
     </news:news>
   </url>
   <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-10-to-metallo-toy-sadam-me-ton-dof-twogee-anevainei-stin-koryfi</loc>
+    <loc>https://flowlessmusic.gr/news/2026-09-12-anerchomenos-tis-vdomadas-o-h3adband-metatrepei-to-boo-se-vi</loc>
     <news:news>
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-10</news:publication_date>
-      <news:title>Το Metallo του Sadam με τον Dof Twogee ανεβαίνει στην κορυφή του daily chart Spotify Ελλάδας</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-10-o-drake-dinei-imerominia-15-septemvrioy-sto-mystiriodes-proj</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-10</news:publication_date>
-      <news:title>Ο Drake δίνει ημερομηνία 15 Σεπτεμβρίου στο μυστηριώδες project FOMO</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-10-se-alla-nea-to-ores-toy-saske-sti-2i-thesi-toy-chart-neo-sin</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-10</news:publication_date>
-      <news:title>Σε άλλα νέα: το ORES του Saske στη 2η θέση του chart, νέο single Σεπτέμβρης από τους Λόγος Τιμής και το 14th Street Mode Festival επιστρέφει στη Θεσσαλονίκη</news:title>
+      <news:publication_date>2026-09-12</news:publication_date>
+      <news:title>Ανερχόμενος της βδομάδας: ο H3adband μετατρέπει το Boo σε viral φαινόμενο του TikTok</news:title>
     </news:news>
   </url>
 </urlset>
