@@ -647,6 +647,19 @@ a.news-thumb{display:block}
 .roster-links a:hover{text-decoration:underline}
 .artist-page-link{color:var(--blood)!important;border-color:rgba(224,43,56,.4)!important}
 
+/* ---------- DISCOGRAPHY ---------- */
+.discog-block{margin-top:38px}
+.discog-embed{margin-top:14px;border-radius:14px;overflow:hidden;border:1px solid var(--line)}
+.discog-embed iframe{display:block;width:100%;border:0}
+.discog-platforms{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+.discog-platform-btn{
+  display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:.78rem;
+  letter-spacing:.05em;color:var(--bone);border:1px solid var(--line);border-radius:8px;
+  padding:10px 16px;background:var(--smoke-2);transition:border-color .2s,color .2s;
+}
+.discog-platform-btn:hover{border-color:var(--blood);color:var(--blood)}
+.discog-empty{font-family:var(--mono);font-size:.78rem;color:var(--ash);margin-top:12px}
+
 /* ---------- AUTHOR BOX ---------- */
 .author-box{
   display:grid;grid-template-columns:72px 1fr;gap:22px;align-items:start;

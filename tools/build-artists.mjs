@@ -18,6 +18,39 @@ const OUT = path.join(ROOT, 'artists');
 const esc = s => String(s ?? '')
   .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
+/* Βγάλε το Spotify artist ID από ένα link, μόνο αν είναι πραγματικά artist link (όχι album/track) */
+function spotifyArtistId(url) {
+  const m = String(url || '').match(/open\.spotify\.com\/(?:intl-\w+\/)?artist\/([a-zA-Z0-9]+)/);
+  return m ? m[1] : null;
+}
+
+function discographySection(a) {
+  const socials = a.socials || [];
+  const spotify = socials.find(s => /spotify/i.test(s.label));
+  const youtube = socials.find(s => /youtube/i.test(s.label));
+  const apple = socials.find(s => /apple/i.test(s.label));
+  const artistId = spotify ? spotifyArtistId(spotify.url) : null;
+
+  const embed = artistId
+    ? `<div class="discog-embed"><iframe src="https://open.spotify.com/embed/artist/${artistId}?utm_source=generator&theme=0" width="100%" height="352" frameborder="0" allowfullscreen loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></div>`
+    : '';
+
+  const btns = [];
+  if (!artistId && spotify) btns.push(`<a class="discog-platform-btn" href="${esc(spotify.url)}" target="_blank" rel="noopener">Spotify</a>`);
+  if (youtube) btns.push(`<a class="discog-platform-btn" href="${esc(youtube.url)}" target="_blank" rel="noopener">YouTube</a>`);
+  if (apple) btns.push(`<a class="discog-platform-btn" href="${esc(apple.url)}" target="_blank" rel="noopener">Apple Music</a>`);
+
+  if (!embed && !btns.length) {
+    return `<div class="discog-block"><h2 class="news-item-title">Δισκογραφία</h2><p class="discog-empty">Έρχονται σύντομα τα links δισκογραφίας.</p></div>`;
+  }
+
+  return `<div class="discog-block">
+    <h2 class="news-item-title">Δισκογραφία</h2>
+    ${embed}
+    ${btns.length ? `<div class="discog-platforms">${btns.join('')}</div>` : ''}
+  </div>`;
+}
+
 function page(a, all) {
   const url = `${SITE}/artists/${a.id}`;
   const bio = a.bio.el;
@@ -126,6 +159,8 @@ function page(a, all) {
   </div>
 
   ${socials}
+
+  ${discographySection(a)}
 
   <div class="article-body" style="margin-top:38px">
     <h2 class="news-item-title">Υπόλοιπο roster</h2>
