@@ -497,7 +497,6 @@ img{max-width:100%;display:block}
   .strip .fader-track{height:80px}
   .strip-name{font-size:.68rem}
   .strip-role{display:none}
-  .roster-static{display:none}
 }
 @media(max-width:680px){
   .nav-burger{display:flex}
@@ -728,6 +727,11 @@ img.author-avatar{object-fit:cover;border-radius:50%}
   letter-spacing:.06em;color:var(--blood);
 }
 .roster-static-link:hover{text-decoration:underline}
+
+@media(max-width:820px){
+  /* Στο κινητό η στατική λίστα κρύβεται· μόνο ο soloed καλλιτέχνης εμφανίζεται (#artistDetail) */
+  .roster-static{display:none}
+}
 
 /* ---------- LISTEN NOW (streaming CTA on release articles) ---------- */
 .listen-now{
