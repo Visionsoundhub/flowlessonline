@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://flowlessmusic.gr/news/2026-09-14-se-alla-nea-to-off-the-hook-festival-efere-ton-skepta-sto-oa</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-09-14</news:publication_date>
+      <news:title>Σε άλλα νέα: το Off The Hook Festival έφερε τον Skepta στο ΟΑΚΑ, οι Rationalistas στην Τεχνόπολη και δύο νέες είσοδοι στο top 15 του chart</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-09-14-o-lil-durk-athoonetai-se-oles-tis-katigories-sti-diki-gia-ti</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-09-14</news:publication_date>
+      <news:title>Ο Lil Durk αθωώνεται σε όλες τις κατηγορίες στη δίκη για τη δολοφονία στο Beverly Center</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-09-14-12-tragoydia-toy-giorgoy-mazonaki-sto-top-15-toy-daily-chart</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-09-14</news:publication_date>
+      <news:title>12 τραγούδια του Γιώργου Μαζωνάκη στο top 15 του daily chart Spotify Ελλάδας μετά τον θάνατό του</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://flowlessmusic.gr/news/2026-09-13-ti-kykloforise-sto-exoteriko-ayto-to-savvatokyriako-jhen-aik</loc>
     <news:news>
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
