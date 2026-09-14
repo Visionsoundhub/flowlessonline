@@ -94,6 +94,3 @@ document.getElementById('newsFilters')?.addEventListener('click', e => {
   document.querySelectorAll('.news-filter').forEach(b => b.classList.toggle('is-active', b === btn));
   renderList();
 });
-
-const yearEl = document.getElementById('year');
-if (yearEl) yearEl.textContent = new Date().getFullYear();
