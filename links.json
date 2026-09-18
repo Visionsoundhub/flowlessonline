@@ -22,11 +22,12 @@
     },
     {
       "slug": "nana",
-      "artist": "DieM, E Void, VybezMadeThis",
+      "artist": "DIEM, E VOID & VYBEZMADETHIS",
       "title": "Nana",
       "cover": "assets/news/nana-cover.jpg",
-      "releaseDate": "2026-09-18",
-      "audienceId": ""
+      "platforms": [
+        { "name": "Spotify", "url": "https://open.spotify.com/track/1uIGa3C42ltxIIIRsAhlTw" }
+      ]
     },
     {
       "slug": "ase-me-na-apotycho",

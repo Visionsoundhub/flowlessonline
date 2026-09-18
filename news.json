@@ -2,6 +2,34 @@
   "updated": "2026-09-18",
   "posts": [
     {
+      "id": "2026-09-18-nana-flowless-release",
+      "date": "2026-09-18",
+      "author": "Flowless Music",
+      "region": "gr",
+      "title": "Η Flowless Music κυκλοφόρησε το Nana με DieM, E Void και Vybezmadethis",
+      "summary": "Νέο single του label, με τους DieM και E Void στη φωνή και παραγωγή του Vybezmadethis aka Black Vybez.",
+      "body": [
+        "Η Flowless Music κυκλοφόρησε σήμερα το Nana, νέο single των DieM και E Void, σε παραγωγή του Vybezmadethis aka Black Vybez, ιδρυτή του label.",
+        "Το κομμάτι έρχεται λίγες βδομάδες μετά το OLE OLE OLE των ίδιων καλλιτεχνών και συνεχίζει τη συνεργασία τους μέσα στο 2026, με τον Vybezmadethis να υπογράφει την παραγωγή και στα δύο.",
+        "Η Flowless Music συνεχίζει το 2026 με σταθερό ρυθμό κυκλοφοριών, φέρνοντας μαζί το roster της σε νέα κομμάτια αντί για μεμονωμένες δουλειές.",
+        "Το Nana είναι διαθέσιμο τώρα σε streaming."
+      ],
+      "tags": [
+        "Ελλάδα",
+        "Κυκλοφορίες",
+        "Flowless Music"
+      ],
+      "image": "assets/news/nana-cover.jpg",
+      "streaming": [
+        {
+          "name": "Spotify",
+          "url": "https://open.spotify.com/track/1uIGa3C42ltxIIIRsAhlTw"
+        }
+      ],
+      "sources": [],
+      "slug": "2026-09-18-i-flowless-music-kykloforise-to-nana-me-diem-e-void-kai-vybe"
+    },
+    {
       "id": "2026-09-18-gr-tsaki-dof-twogee-skgotham",
       "date": "2026-09-18",
       "author": "Flowless Music",

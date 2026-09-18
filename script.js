@@ -26,15 +26,14 @@ function loadArtists() {
 
 /* ---------- Latest Release Registry ---------- */
 const LATEST_RELEASE = {
-  artist: 'BLACK VYBEZ',
-  title: 'Έχω tabs στο μυαλό',
+  artist: 'DIEM, E VOID & VYBEZMADETHIS',
+  title: 'Nana',
   desc: {
-    el: 'Το νέο single του Black Vybez aka Vybezmadethis, ιδρυτή της Flowless Music.',
-    en: 'The new single from Black Vybez aka Vybezmadethis, founder of Flowless Music.'
+    el: 'Το νέο single της Flowless Music, παραγωγή Vybezmadethis aka Black Vybez.',
+    en: 'The new single from Flowless Music, produced by Vybezmadethis aka Black Vybez.'
   },
-  cover: 'assets/news/2026-07-30-echo-tabs-sto-mualo.webp',
-  spotify: 'https://open.spotify.com/track/36wrfPaqdvFryEXvlJHbKP?si=ea40b9d3c9884e08',
-  appleMusic: 'https://music.apple.com/gr/song/%CE%AD%CF%87%CF%89-tabs-%CF%83%CF%84%CE%BF-%CE%BC%CF%85%CE%B1%CE%BB%CF%8C/6791818772'
+  cover: 'assets/news/nana-cover.jpg',
+  spotify: 'https://open.spotify.com/track/1uIGa3C42ltxIIIRsAhlTw'
 };
 const PLAYLIST_URL = 'https://open.spotify.com/playlist/766LR1ZtOxjvZ8fiRQLkMz?si=40bdc0412e1743f6';
 

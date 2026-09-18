@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DieM, E Void, VybezMadeThis — Nana</title>
-<meta name="description" content="Έρχεται σύντομα: Nana του DieM, E Void, VybezMadeThis.">
+<title>DIEM, E VOID &amp; VYBEZMADETHIS — Nana</title>
+<meta name="description" content="Άκουσε Nana του DIEM, E VOID &amp; VYBEZMADETHIS σε όλες τις πλατφόρμες.">
 <meta name="robots" content="noindex, follow">
 <link rel="canonical" href="https://flowlessmusic.gr/listen/nana">
 <meta property="og:site_name" content="Flowless Music">
-<meta property="og:title" content="DieM, E Void, VybezMadeThis — Nana">
+<meta property="og:title" content="DIEM, E VOID &amp; VYBEZMADETHIS — Nana">
 <meta property="og:description" content="Άκουσε το κομμάτι τώρα.">
 <meta property="og:image" content="https://flowlessmusic.gr/assets/news/nana-cover.jpg">
 <meta property="og:url" content="https://flowlessmusic.gr/listen/nana">
@@ -22,49 +22,17 @@
 <body>
 <main class="listen-page">
   <div class="listen-card">
-    <img class="listen-cover" src="../assets/news/nana-cover.jpg" alt="DieM, E Void, VybezMadeThis — Nana" width="600" height="600">
-    <p class="listen-artist">DieM, E Void, VybezMadeThis</p>
+    <img class="listen-cover" src="../assets/news/nana-cover.jpg" alt="DIEM, E VOID &amp; VYBEZMADETHIS — Nana" width="600" height="600">
+    <p class="listen-artist">DIEM, E VOID &amp; VYBEZMADETHIS</p>
     <h1 class="listen-title">Nana</h1>
-    <p class="listen-soon-date">Κυκλοφορεί 18 Σεπτεμβρίου</p>
-    <p class="listen-soon-text">Άφησε το email σου, θα σου στείλουμε το link μόλις βγει.</p>
-    <form class="listen-form" data-audience="">
-      <input type="email" name="email" placeholder="το email σου" required>
-      <button type="submit" class="btn btn-primary">Ενημέρωσέ με</button>
-      <p class="listen-form-msg" hidden></p>
-    </form>
+    <div class="listen-buttons">
+        <a class="listen-btn" href="https://open.spotify.com/track/1uIGa3C42ltxIIIRsAhlTw">
+          <span class="listen-btn-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M7 9.5c3.5-1 7-.5 9.5 1M7.5 12.5c3-.8 5.8-.4 8 .9M8 15.3c2.4-.6 4.6-.3 6.4.8"/></svg></span>
+          <span>Spotify</span>
+        </a>
+    </div>
     <a class="listen-back" href="/">FLOWLESS<span style="color:var(--blood)">.</span> MUSIC</a>
   </div>
 </main>
-<script>
-document.querySelector('.listen-form')?.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const form = e.target;
-  const btn = form.querySelector('button');
-  const msg = form.querySelector('.listen-form-msg');
-  const email = form.email.value;
-  const audienceId = form.dataset.audience;
-  btn.disabled = true; btn.textContent = 'Στέλνεται...';
-  try {
-    const res = await fetch('/api/notify', {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ email, audienceId })
-    });
-    const data = await res.json();
-    if (res.ok) {
-      form.email.hidden = true; btn.hidden = true;
-      msg.hidden = false; msg.textContent = 'Έγινες μέλος. Θα σου στείλουμε το link μόλις βγει.';
-    } else {
-      msg.hidden = false; msg.style.color = 'var(--blood)';
-      msg.textContent = data.error || 'Κάτι πήγε στραβά, δοκίμασε ξανά.';
-      btn.disabled = false; btn.textContent = 'Ενημέρωσέ με';
-    }
-  } catch {
-    msg.hidden = false; msg.style.color = 'var(--blood)';
-    msg.textContent = 'Κάτι πήγε στραβά, δοκίμασε ξανά.';
-    btn.disabled = false; btn.textContent = 'Ενημέρωσέ με';
-  }
-});
-</script>
 </body>
 </html>
