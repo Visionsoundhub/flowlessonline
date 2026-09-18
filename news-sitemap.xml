@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://flowlessmusic.gr/news/2026-09-18-to-nana-ton-diem-e-void-kai-vybezmadethis-kykloforise-apo-ti</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-09-18</news:publication_date>
+      <news:title>Το Nana των DIEM, E VOID και VYBEZMADETHIS κυκλοφόρησε από τη Flowless Music</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://flowlessmusic.gr/news/2026-09-18-i-flowless-music-kykloforise-to-nana-me-diem-e-void-kai-vybe</loc>
     <news:news>
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>

@@ -2,6 +2,33 @@
   "updated": "2026-09-18",
   "posts": [
     {
+      "id": "2026-09-18-gr-nana-diem-e-void-vybezmadethis",
+      "date": "2026-09-18",
+      "author": "Flowless Music",
+      "region": "gr",
+      "title": "Το Nana των DIEM, E VOID και VYBEZMADETHIS κυκλοφόρησε από τη Flowless Music",
+      "summary": "Νέα κυκλοφορία από τη Flowless Music, με τους DIEM, E VOID και VYBEZMADETHIS στο Nana.",
+      "body": [
+        "Το Nana είναι εδώ. Οι DIEM και E VOID ενώνουν φωνές πάνω σε παραγωγή του VYBEZMADETHIS, ιδρυτή της Flowless Music, σε ένα κομμάτι που κρατάει ένταση χωρίς να φωνάζει.",
+        "Το Nana κυκλοφορεί μέσα από τη Flowless Music και είναι ήδη διαθέσιμο για streaming.",
+        "Ο VYBEZMADETHIS aka Black Vybez συνεχίζει να χτίζει τον ήχο του label πάνω σε συνεργασίες που φέρνουν κοντά διαφορετικές φωνές, και το Nana είναι η πιο πρόσφατη απόδειξη αυτής της κατεύθυνσης.",
+        "Το κομμάτι είναι διαθέσιμο τώρα στο Spotify."
+      ],
+      "tags": [
+        "Flowless Music",
+        "Κυκλοφορία"
+      ],
+      "image": "assets/news/nana-cover.jpg",
+      "streaming": [
+        {
+          "name": "Spotify",
+          "url": "https://open.spotify.com/track/1uIGa3C42ltxIIIRsAhlTw"
+        }
+      ],
+      "sources": [],
+      "slug": "2026-09-18-to-nana-ton-diem-e-void-kai-vybezmadethis-kykloforise-apo-ti"
+    },
+    {
       "id": "2026-09-18-nana-flowless-release",
       "date": "2026-09-18",
       "author": "Flowless Music",
