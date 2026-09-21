@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://flowlessmusic.gr/news/2026-09-21-to-pablona-toy-light-sti-2i-thesi-toy-daily-chart-spotify-el</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-09-21</news:publication_date>
+      <news:title>Το Pablona του Light στη 2η θέση του daily chart Spotify Ελλάδας με 161.053 streams</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-09-21-to-dandelion-tis-ella-langley-epestrepse-sto-no1-toy-billboa</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-09-21</news:publication_date>
+      <news:title>Το Dandelion της Ella Langley επέστρεψε στο Νο1 του Billboard 200 με 67.000 μονάδες</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-09-21-se-alla-nea-rafa-kai-ricta-nosfer-kai-katohos-zontani-paroys</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-09-21</news:publication_date>
+      <news:title>Σε άλλα νέα: Rafa και RICTA, Nosfer και Katohos, ζωντανή παρουσίαση των Tsaki και Dof Twogee</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://flowlessmusic.gr/news/2026-09-20-san-simera-to-1975-to-fame-toy-david-bowie-eftase-sto-no-1-s</loc>
     <news:news>
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
@@ -30,46 +54,6 @@
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
       <news:publication_date>2026-09-19</news:publication_date>
       <news:title>Ανερχόμενος της βδομάδας: η Adéla κάνει τη Nicole Kidman viral επιτυχία στο Billboard</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-18-to-nana-ton-diem-e-void-kai-vybezmadethis-kykloforise-apo-ti</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-18</news:publication_date>
-      <news:title>Το Nana των DIEM, E VOID και VYBEZMADETHIS κυκλοφόρησε από τη Flowless Music</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-18-i-flowless-music-kykloforise-to-nana-me-diem-e-void-kai-vybe</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-18</news:publication_date>
-      <news:title>Η Flowless Music κυκλοφόρησε το Nana με DieM, E Void και Vybezmadethis</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-18-to-skgotham-ton-tsaki-kai-dof-twogee-kykloforise-me-11-komma</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-18</news:publication_date>
-      <news:title>Το SKGOTHAM των Tsaki και Dof Twogee κυκλοφόρησε με 11 κομμάτια μέσα από τη Stay Independent</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-18-to-dont-look-down-toy-rod-wave-mpike-proto-sto-billboard-200</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-18</news:publication_date>
-      <news:title>Το Dont Look Down του Rod Wave μπήκε πρώτο στο Billboard 200 με 99.000 μονάδες</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-18-se-alla-nea-rafa-kai-ricta-nosfer-me-katohos-chri-kai-entaxi</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-18</news:publication_date>
-      <news:title>Σε άλλα νέα: Rafa και RICTA, Nosfer με Katohos, CHRI$ και ένταξη της HERMES στην IMPALA</news:title>
     </news:news>
   </url>
 </urlset>
