@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://flowlessmusic.gr/news/2026-09-22-to-pablona-toy-light-anevike-sto-no1-toy-daily-chart-spotify-el</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-09-22</news:publication_date>
+      <news:title>Το Pablona του Light ανέβηκε στο Νο1 του daily chart Spotify Ελλάδας τέταρτη μέρα κυκλοφορίας</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-09-22-to-choosin-texas-tis-ella-langley-eftase-tis-22-evdomades-sto-no1</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-09-22</news:publication_date>
+      <news:title>Το Choosin' Texas της Ella Langley έφτασε τις 22 εβδομάδες στο Νο1 του Billboard Hot 100, ισοφαρίζοντας ρεκόρ</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-09-22-se-alla-nea-sold-out-i-synaylia-rapsodoy-filologoy-kai-zografoy</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-09-22</news:publication_date>
+      <news:title>Σε άλλα νέα: sold out η συναυλία Ραψωδού Φιλόλογου και Ζωγράφου, κινήσεις στο daily chart</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://flowlessmusic.gr/news/2026-09-21-to-pablona-toy-light-sti-2i-thesi-toy-daily-chart-spotify-el</loc>
     <news:news>
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
@@ -46,14 +70,6 @@
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
       <news:publication_date>2026-09-20</news:publication_date>
       <news:title>Τι κυκλοφόρησε στο εξωτερικό: η Miley επιστρέφει με το Bass Persuades, νέο άλμπουμ και για την Carly Rae Jepsen</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-19-anerchomenos-tis-vdomadas-i-ad-la-kanei-ti-nicole-kidman-vir</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-19</news:publication_date>
-      <news:title>Ανερχόμενος της βδομάδας: η Adéla κάνει τη Nicole Kidman viral επιτυχία στο Billboard</news:title>
     </news:news>
   </url>
 </urlset>
