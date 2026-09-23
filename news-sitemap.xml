@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://flowlessmusic.gr/news/2026-09-23-i-hermes-entachthike-sto-eyropaiko-diktyo-tis-impala-me-13-i</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-09-23</news:publication_date>
+      <news:title>Η HERMES εντάχθηκε στο ευρωπαϊκό δίκτυο της IMPALA με 13 ιδρυτικά μέλη</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-09-23-to-choosin-texas-tis-ella-langley-espase-mono-toy-to-rekor-m</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-09-23</news:publication_date>
+      <news:title>Το Choosin' Texas της Ella Langley έσπασε μόνο του το ρεκόρ με 23 εβδομάδες στο Νο1 του Billboard Hot 100</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-09-23-se-alla-nea-to-bijo-bijo-ton-rafa-kai-ricta-mpike-sto-daily-</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-09-23</news:publication_date>
+      <news:title>Σε άλλα νέα: το Bijo Bijo των Rafa και RICTA μπήκε στο daily chart, ανακοινώσεις για Ζήνωνα και Γιούλη</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://flowlessmusic.gr/news/2026-09-22-to-pablona-toy-light-anevike-sto-no1-toy-daily-chart-spotify-el</loc>
     <news:news>
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
@@ -46,30 +70,6 @@
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
       <news:publication_date>2026-09-21</news:publication_date>
       <news:title>Σε άλλα νέα: Rafa και RICTA, Nosfer και Katohos, ζωντανή παρουσίαση των Tsaki και Dof Twogee</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-20-san-simera-to-1975-to-fame-toy-david-bowie-eftase-sto-no-1-s</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-20</news:publication_date>
-      <news:title>Σαν σήμερα το 1975: το Fame του David Bowie έφτασε στο Νο.1 στην Αμερική</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-20-ti-kykloforise-to-sk-to-skgotham-ton-tsaki-kai-dof-twogee-xe</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-20</news:publication_date>
-      <news:title>Τι κυκλοφόρησε το ΣΚ: το SKGOTHAM των Tsaki και Dof Twogee ξεχωρίζει στην ελληνική σκηνή</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-20-ti-kykloforise-sto-exoteriko-i-miley-epistrefei-me-to-bass-p</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-20</news:publication_date>
-      <news:title>Τι κυκλοφόρησε στο εξωτερικό: η Miley επιστρέφει με το Bass Persuades, νέο άλμπουμ και για την Carly Rae Jepsen</news:title>
     </news:news>
   </url>
 </urlset>
