@@ -6,8 +6,14 @@
       "title": "Έχω tabs στο μυαλό",
       "cover": "assets/news/2026-07-30-echo-tabs-sto-mualo.webp",
       "platforms": [
-        { "name": "Spotify", "url": "https://open.spotify.com/track/36wrfPaqdvFryEXvlJHbKP?si=ea40b9d3c9884e08" },
-        { "name": "Apple Music", "url": "https://music.apple.com/gr/song/%CE%AD%CF%87%CF%89-tabs-%CF%83%CF%84%CE%BF-%CE%BC%CF%85%CE%B1%CE%BB%CF%8C/6791818772" }
+        {
+          "name": "Spotify",
+          "url": "https://open.spotify.com/track/36wrfPaqdvFryEXvlJHbKP?si=ea40b9d3c9884e08"
+        },
+        {
+          "name": "Apple Music",
+          "url": "https://music.apple.com/gr/song/%CE%AD%CF%87%CF%89-tabs-%CF%83%CF%84%CE%BF-%CE%BC%CF%85%CE%B1%CE%BB%CF%8C/6791818772"
+        }
       ]
     },
     {
@@ -16,8 +22,14 @@
       "title": "OLE OLE OLE",
       "cover": "assets/news/2026-07-24-ole-ole-ole.jpg",
       "platforms": [
-        { "name": "Spotify", "url": "https://open.spotify.com/track/5FM4eld1tkru2zxYlnQWXJ?si=de798376d8fa4da3" },
-        { "name": "Apple Music", "url": "https://music.apple.com/us/song/ole-ole-ole/6794306631" }
+        {
+          "name": "Spotify",
+          "url": "https://open.spotify.com/track/5FM4eld1tkru2zxYlnQWXJ?si=de798376d8fa4da3"
+        },
+        {
+          "name": "Apple Music",
+          "url": "https://music.apple.com/us/song/ole-ole-ole/6794306631"
+        }
       ]
     },
     {
@@ -26,7 +38,10 @@
       "title": "Nana",
       "cover": "assets/news/nana-cover.jpg",
       "platforms": [
-        { "name": "Spotify", "url": "https://open.spotify.com/track/1uIGa3C42ltxIIIRsAhlTw" }
+        {
+          "name": "Spotify",
+          "url": "https://open.spotify.com/track/1uIGa3C42ltxIIIRsAhlTw"
+        }
       ]
     },
     {
@@ -35,7 +50,18 @@
       "title": "Άσε με να αποτύχω",
       "cover": "assets/news/ase-me-na-apotycho-cover.jpg",
       "releaseDate": "2026-09-25",
-      "audienceId": ""
+      "audienceId": "",
+      "hubId": "BLACK_VYBEZ:asemena",
+      "platforms": [
+        {
+          "name": "Spotify",
+          "url": "https://open.spotify.com/album/1GBdafSJGfmF5IGbA2DjFA"
+        },
+        {
+          "name": "YouTube",
+          "url": "https://www.youtube.com/watch?v=B0XbqmYdtMg"
+        }
+      ]
     }
   ]
 }
