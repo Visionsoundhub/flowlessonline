@@ -106,6 +106,7 @@ function page(a, all) {
 <title>${esc(a.displayName || a.name)} — Flowless Music</title>
 <meta name="description" content="${esc(bio).slice(0, 160)}">
 <meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="canonical" href="${url}">
 <meta property="og:site_name" content="Flowless Music">
 <meta property="og:type" content="profile">

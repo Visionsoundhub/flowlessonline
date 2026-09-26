@@ -145,6 +145,7 @@ function articlePage(p, prev, next, ed) {
 <title>${esc(p.title)} — Flowless Music</title>
 <meta name="description" content="${esc(desc).slice(0, 160)}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="canonical" href="${url}">
 <meta property="og:site_name" content="Flowless Music">
 <meta property="og:type" content="article">

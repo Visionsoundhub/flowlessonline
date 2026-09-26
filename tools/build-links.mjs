@@ -94,6 +94,7 @@ document.querySelector('.listen-form')?.addEventListener('submit', async (e) => 
 <title>${esc(l.artist)} — ${esc(l.title)}</title>
 <meta name="description" content="${isComingSoon ? `Έρχεται σύντομα: ${esc(l.title)} του ${esc(l.artist)}.` : `Άκουσε ${esc(l.title)} του ${esc(l.artist)} σε όλες τις πλατφόρμες.`}">
 <meta name="robots" content="noindex, follow">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="canonical" href="${url}">
 <meta property="og:site_name" content="Flowless Music">
 <meta property="og:title" content="${esc(l.artist)} — ${esc(l.title)}">
