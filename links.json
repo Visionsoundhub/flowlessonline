@@ -42,7 +42,9 @@
           "name": "Spotify",
           "url": "https://open.spotify.com/track/1uIGa3C42ltxIIIRsAhlTw"
         }
-      ]
+      ],
+      "hubId": "FLOWLESS_MUSIC:nana",
+      "releaseDate": "2026-09-19"
     },
     {
       "slug": "ase-me-na-apotycho",
