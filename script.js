@@ -117,7 +117,7 @@ function renderPlaylist() {
     const m = PLAYLIST_URL.match(/playlist\/([a-zA-Z0-9]+)/);
     const id = m ? m[1] : null;
     box.innerHTML = id
-      ? `<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/${id}?theme=0" width="100%" height="420" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`
+      ? `<iframe title="Flowless Music playlist στο Spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/${id}?theme=0" width="100%" height="420" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>`
       : `<a href="${PLAYLIST_URL}" target="_blank" rel="noopener" class="btn btn-primary">Spotify Playlist</a>`;
   } else {
     box.innerHTML = `<div class="playlist-placeholder"><p data-i18n="playlist_soon">${STRINGS[lang].playlist_soon || ''}</p></div>`;
