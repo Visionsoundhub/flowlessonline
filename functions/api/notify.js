@@ -65,3 +65,8 @@ export async function onRequestOptions() {
     }
   });
 }
+
+// Έλεγχος υγείας για το Κέντρο (δεν γράφει τίποτα): υπάρχει κλειδί;
+export async function onRequestGet({ env }) {
+  return json({ ok: true, key: Boolean(env.RESEND_API_KEY) });
+}
