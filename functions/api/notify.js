@@ -30,7 +30,8 @@ export async function onRequestPost(context) {
   }
 
   const email = String(body.email || '').trim().toLowerCase();
-  const audienceId = String(body.audienceId || '').trim();
+  // audience της σελίδας ή, αν λείπει, το γενικό audience της Flowless (RESEND_AUDIENCE_ID)
+  const audienceId = String(body.audienceId || env.RESEND_AUDIENCE_ID || '').trim();
 
   if (!EMAIL_RE.test(email)) return json({ error: 'Μη έγκυρο email' }, 400);
   if (!audienceId) return json({ error: 'Λείπει το audienceId' }, 400);
@@ -68,5 +69,5 @@ export async function onRequestOptions() {
 
 // Έλεγχος υγείας για το Κέντρο (δεν γράφει τίποτα): υπάρχει κλειδί;
 export async function onRequestGet({ env }) {
-  return json({ ok: true, key: Boolean(env.RESEND_API_KEY) });
+  return json({ ok: true, key: Boolean(env.RESEND_API_KEY), audience: Boolean(env.RESEND_AUDIENCE_ID) });
 }
