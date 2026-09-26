@@ -1,6 +1,101 @@
 {
-  "updated": "2026-09-25",
+  "updated": "2026-09-27",
   "posts": [
+    {
+      "id": "2026-09-27-intl-san-simera-sams-town-20-xronia",
+      "date": "2026-09-27",
+      "author": "Θοδωρής Παρασχάκης Νταμάς",
+      "region": "intl",
+      "title": "Σαν σήμερα: 20 χρόνια από το Sam's Town των Killers",
+      "summary": "Στις 27 Σεπτεμβρίου 2006 οι Killers κυκλοφόρησαν το Sam's Town, το άλμπουμ που αρχικά διχάστηκε αλλά σήμερα θεωρείται από τα πιο παρεξηγημένα κλασικά της δεκαετίας.",
+      "body": [
+        "Στις 27 Σεπτεμβρίου 2006, ακριβώς 20 χρόνια πριν, οι Killers κυκλοφόρησαν μέσω Island Records το δεύτερο άλμπουμ τους, το Sam's Town. Ο Brandon Flowers είχε πει τότε πως ήθελε ένας δίσκος που να αποτυπώνει χρονολογικά όλα όσα τον έφεραν ως εκεί που βρισκόταν. Το άλμπουμ μπήκε στη 2η θέση του Billboard 200 στις ΗΠΑ με 315.000 πωλήσεις την πρώτη εβδομάδα και στο Νο1 του UK Albums Chart με 268.946 πωλήσεις, ενώ έφτασε στην κορυφή και σε Καναδά, Ιρλανδία, Αυστραλία και Νέα Ζηλανδία.",
+        "Singles όπως το When You Were Young, το Bones, το Read My Mind και το For Reasons Unknown έχτισαν σταδιακά την πορεία του δίσκου, που πούλησε σχεδόν 5 εκατομμύρια αντίτυπα παγκοσμίως και πιστοποιήθηκε πλατινένιο σε ΗΠΑ, Ηνωμένο Βασίλειο, Αυστραλία, Καναδά και Ιρλανδία. Οι αρχικές κριτικές ήταν μοιρασμένες, με το Metacritic στο 64 στα 100, όμως η αποτίμηση άλλαξε με τον καιρό. Το 2009 οι αναγνώστες του Rolling Stone το ψήφισαν πιο παρεξηγημένο άλμπουμ της δεκαετίας, ενώ το Q το κατέταξε 11ο ανάμεσα στα καλύτερα άλμπουμ του 21ου αιώνα."
+      ],
+      "tags": [
+        "Εξωτερικό",
+        "Σαν σήμερα",
+        "The Killers"
+      ],
+      "image": "assets/news/2026-09-27-killers-sams-town-20-years.jpg",
+      "streaming": [],
+      "sources": [
+        {
+          "name": "Wikipedia - Sam's Town",
+          "url": "https://en.wikipedia.org/wiki/Sam%27s_Town"
+        }
+      ],
+      "slug": "2026-09-27-san-simera-20-xronia-apo-to-sams-town-ton-killers"
+    },
+    {
+      "id": "2026-09-27-gr-se-alla-nea-savvatokyriako",
+      "date": "2026-09-27",
+      "author": "Θοδωρής Παρασχάκης Νταμάς",
+      "region": "gr",
+      "title": "Τι κυκλοφόρησε το Σαββατοκύριακο: Σπείρα και KK, Half Quickie, INKA και SLVG",
+      "summary": "Τρία νέα singles έπιασαν το ελληνικό Spotify το βράδυ του Σαββάτου, από τη σκηνή του underground rap.",
+      "body": [
+        "Οι Σπείρα και KK κυκλοφόρησαν το single Δίπολο, με παραγωγή του KK και διάθεση μέσω Pineline Music Lab. Το κομμάτι είναι διαθέσιμο στο Spotify από το βράδυ του Σαββάτου.",
+        "Ο Half Quickie κυκλοφόρησε το WTF!?, με παραγωγή του Kaist και διάθεση μέσω Stay Independent, ενώ οι INKA και SLVG έβγαλαν το SHORYUKEN, με παραγωγή των SLVG και Vapp, ηχογράφηση από τον Πιλοτήριο και τον Αποστόλη Ταντή, μίξη και mastering από τον Cenobite και εξώφυλλο του WAKE UP. Και τα δύο κομμάτια κυκλοφόρησαν το ίδιο βράδυ, μαζί με το Δίπολο."
+      ],
+      "tags": [
+        "Ελλάδα",
+        "Κυκλοφορίες",
+        "Hip Hop"
+      ],
+      "image": "assets/news/2026-09-27-se-alla-nea-gr.jpg",
+      "streaming": [],
+      "sources": [
+        {
+          "name": "Rapnroll.gr",
+          "url": "https://www.rapnroll.gr/speira_kai_kk_kykloforisan_neo_single_me_titlo_dipolo/"
+        },
+        {
+          "name": "Rapnroll.gr",
+          "url": "https://www.rapnroll.gr/neo_single_apo_ton_half_quickie_me_titlo_wtf/"
+        },
+        {
+          "name": "Rapnroll.gr",
+          "url": "https://www.rapnroll.gr/inka_kai_slvg_kykloforisan_neo_single_me_titlo_shoryuken/"
+        }
+      ],
+      "slug": "2026-09-27-ti-kykloforise-to-savvatokyriako-speira-kai-kk-half-quickie-inka-kai-slvg"
+    },
+    {
+      "id": "2026-09-27-intl-u2-carnaval-de-luz-nothing-but-thieves",
+      "date": "2026-09-27",
+      "author": "Θοδωρής Παρασχάκης Νταμάς",
+      "region": "intl",
+      "title": "Τι κυκλοφόρησε στο εξωτερικό: οι U2 ανακοίνωσαν το Carnaval De Luz με την τελευταία φωνή της Dolly Parton, οι Nothing But Thieves κυκλοφόρησαν το Stray Dogs",
+      "summary": "Οι U2 ανακοίνωσαν το πρώτο τους άλμπουμ μετά από εννιά χρόνια, με ντουέτο του Bono με τη Dolly Parton, ενώ οι Nothing But Thieves κυκλοφόρησαν το πέμπτο τους άλμπουμ, Stray Dogs.",
+      "body": [
+        "Οι U2 ανακοίνωσαν το 16ο studio άλμπουμ τους, το Carnaval De Luz, που κυκλοφορεί στις 13 Νοεμβρίου, μέσα στη χρονιά που συμπληρώνουν 50 χρόνια από τη σύστασή τους. Είναι το πρώτο τους άλμπουμ πρωτότυπου υλικού μετά από εννιά χρόνια, από το Songs of Experience του 2017. Ο δίσκος έχει 12 κομμάτια και κλείνει με το Torn, ντουέτο του Bono με τη Dolly Parton, στην τελευταία ηχογραφημένη φωνή της τραγουδίστριας, με pedal steel του Daniel Lanois. Στη δημιουργία συμμετέχουν επίσης ο Brian Eno σε σύνθεση και synthesizers σε τρία κομμάτια, ο Martin Garrix στη συνθεση του Glorify και ο Ryan Tedder σε πρόσθετη παραγωγή στο Silencio, το δεύτερο single του άλμπουμ που κυκλοφόρησε στις 24 Σεπτεμβρίου, μετά το Street of Dreams τον Ιούλιο. Ο Edge περιέγραψε τον δίσκο ως ένα ακατάστατο και ιεροτελεστικό σύνολο τραγουδιών, ενώ ο Bono τον σχολίασε με τη γνωστή του θεατρικότητα, καλωσορίζοντας τον κόσμο σε έναν θίασο με σπασμένες καρδιές.",
+        "Οι Nothing But Thieves κυκλοφόρησαν το πέμπτο studio άλμπουμ τους, το Stray Dogs, τρία χρόνια μετά το Dead Club City του 2023 που είχε φτάσει στο Νο1 του βρετανικού chart. Ο νέος δίσκος έχει 12 κομμάτια, ανάμεσά τους τα Evolution, Baby Kool (Evelyn), American Confidence και το ομώνυμο Stray Dogs, και κινείται ανάμεσα σε garage rock, soul, blues και dream pop, με επιρροές από Queens of the Stone Age, Muse και Smashing Pumpkins. Το θέμα του άλμπουμ είναι η κοινότητα και η ανάγκη για ανθρώπους που νιώθουν στο περιθώριο να βρουν έναν χώρο να ανήκουν. Στο ίδιο σαββατοκύριακο κυκλοφόρησε και το Danceteria, νέο remix της Madonna σε συνεργασία με την Charli xcx, η πρώτη τους μουσική συνεργασία."
+      ],
+      "tags": [
+        "Εξωτερικό",
+        "Κυκλοφορίες",
+        "U2",
+        "Rock"
+      ],
+      "image": "assets/news/2026-09-27-se-alla-nea-intl.jpg",
+      "streaming": [],
+      "sources": [
+        {
+          "name": "U2.com",
+          "url": "https://www.u2.com/blogs/news/carnaval-de-luz-new-album-coming-in-november"
+        },
+        {
+          "name": "Billboard",
+          "url": "https://www.billboard.com/music/rock/u2-carnaval-de-luz-dolly-parton-final-vocal-rosalia-track-list-1236346332/"
+        },
+        {
+          "name": "Official Charts",
+          "url": "https://www.officialcharts.com/chart-news/new-music-friday-25-september-2026/"
+        }
+      ],
+      "slug": "2026-09-27-ti-kykloforise-sto-exoteriko-u2-carnaval-de-luz-nothing-but-thieves-stray-dogs"
+    },
     {
       "id": "2026-09-25-gr-ase-me-na-apotycho-black-vybez",
       "date": "2026-09-25",
@@ -876,677 +971,6 @@
         }
       ],
       "slug": "2026-09-17-proin-manager-minyei-ton-lucki-gia-pano-apo-1-5-ekatommyrio-"
-    },
-    {
-      "id": "2026-09-17-gr-alla-nea",
-      "date": "2026-09-17",
-      "author": "Flowless Music",
-      "region": "gr",
-      "title": "Σε άλλα νέα: νέο single των Λόγος Τιμής, χειμωνιάτικη περιοδεία των FANN και το 14th Street Mode Festival",
-      "summary": "Σύντομα νέα από την ελληνική σκηνή αυτή τη βδομάδα.",
-      "body": [
-        "Οι Λόγος Τιμής κυκλοφόρησαν νέο single με τίτλο Σεπτέμβρης στις 4 Σεπτεμβρίου, με παραγωγή από τον Sativa και διανομή μέσω της Stay Independent. Το κομμάτι είναι διαθέσιμο σε όλες τις πλατφόρμες.",
-        "Οι FANN ανακοίνωσαν χειμωνιάτικη περιοδεία για το 2026, που αναμένεται να είναι ένα από τα πιο δυνατά live events της σεζόν για το συγκρότημα.",
-        "Το 14th Street Mode Festival, μία από τις μεγαλύτερες γιορτές street culture στην Ελλάδα, πραγματοποιήθηκε στις 12 και 13 Σεπτεμβρίου στη Θεσσαλονίκη.",
-        "Ο Trannos δουλεύει παράλληλα στο άλμπουμ Bad Boy 3 και στην ανάπτυξη του label του No Cap, μέσα από το οποίο προωθεί νέα ονόματα από την underground σκηνή.",
-        "Στο daily chart Spotify Ελλάδας, το Kontakies του Ivan Greko ανέβηκε δύο θέσεις στη 10η θέση και το Ores του Saske ανέβηκε τέσσερις θέσεις στην 11η, ενδείξεις ότι υπάρχει κίνηση και πέρα από τα τραγούδια του Μαζωνάκη στην κορυφή."
-      ],
-      "tags": [
-        "Ελλάδα",
-        "Νέα"
-      ],
-      "image": "",
-      "sources": [
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/oi_logos_timis_kykloforisan_neo_single_me_titlo_septemvris/"
-        },
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/fann_winter_tour_2026/"
-        },
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/14th_street_mode_festival_2026_stin_thessaloniki_12_9_kai_13_9/"
-        }
-      ],
-      "slug": "2026-09-17-se-alla-nea-neo-single-ton-logos-timis-cheimoniatiki-periode"
-    },
-    {
-      "id": "2026-09-16-gr-chris-loropiana",
-      "date": "2026-09-16",
-      "author": "Flowless Music",
-      "region": "gr",
-      "title": "Ο CHRI$ κυκλοφόρησε το single LOROPIANA στις 12 Σεπτεμβρίου",
-      "summary": "Ο CHRI$ κυκλοφόρησε το νέο του single LOROPIANA στις 12 Σεπτεμβρίου, ένα trap κομμάτι με σκοτεινή ατμόσφαιρα και μελωδικά στοιχεία που σηματοδοτεί νέα φάση στην καριέρα του.",
-      "body": [
-        "Ο Έλληνας καλλιτέχνης CHRI$ κυκλοφόρησε στις 12 Σεπτεμβρίου το νέο του single με τίτλο LOROPIANA, διαθέσιμο σε όλες τις πλατφόρμες μέσω Spotify. Το κομμάτι κινείται στα όρια του σύγχρονου trap με σκοτεινή, ατμοσφαιρική παραγωγή.",
-        "Η παραγωγή στηρίζεται σε έντονα drums και ατμοσφαιρικά στοιχεία, με χαρακτηριστική φωνητική προσέγγιση που συνδυάζει σύγχρονο trap με πιο μελωδικές γραμμές. Ο ίδιος ο CHRI$ περιγράφει το τραγούδι ως προσπάθεια να μεταφέρει στον ακροατή την ενέργεια, την ένταση και τη νοοτροπία που χαρακτηρίζουν τη νέα του μουσική περίοδο.",
-        "Ο CHRI$ κινείται εδώ και καιρό στην ελληνική urban σκηνή, χτίζοντας σταδιακά παρουσία μέσα από κυκλοφορίες και συνεργασίες. Το LOROPIANA παρουσιάζεται ως πιο ώριμο και ξεχωριστό δείγμα του καλλιτεχνικού του χαρακτήρα σε σχέση με προηγούμενο υλικό.",
-        "Η κυκλοφορία έρχεται μέσα σε μια ζωντανή περίοδο για την ελληνική trap σκηνή, με τον Ivan Greko να παραμένει στο top 15 του daily chart Spotify Ελλάδας με το KONTAKIES και αρκετούς νεότερους καλλιτέχνες να διεκδικούν χώρο στο ίδιο ηχητικό τοπίο.",
-        "Ως label που παρακολουθεί στενά το σκηνικό της ελληνικής trap, βλέπουμε στο LOROPIANA ένα ακόμα δείγμα της στροφής προς πιο σκοτεινές, ατμοσφαιρικές παραγωγές, μια κατεύθυνση που θεωρούμε υγιή για την ποικιλομορφία του ήχου στη χώρα.",
-        "Δεν έχουν ανακοινωθεί προς το παρόν ζωντανές εμφανίσεις του CHRI$ σε σχέση με το νέο single, ούτε περαιτέρω κυκλοφορίες."
-      ],
-      "tags": [
-        "Trap",
-        "Ελλάδα"
-      ],
-      "image": "assets/news/2026-09-16-gr-chris-loropiana.jpg",
-      "streaming": [],
-      "sources": [
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/o_chris_kikloforhse_neo_singe_me_titlo_loropiana/"
-        }
-      ],
-      "slug": "2026-09-16-o-chri-kykloforise-to-single-loropiana-stis-12-septemvrioy"
-    },
-    {
-      "id": "2026-09-16-intl-future-metro-gta6",
-      "date": "2026-09-16",
-      "author": "Flowless Music",
-      "region": "intl",
-      "title": "Οι Future και Metro Boomin επιβεβαιώθηκαν για το GTA VI που κυκλοφορεί στις 19 Νοεμβρίου",
-      "summary": "Οι Future και Metro Boomin επιβεβαίωσαν τη συμμετοχή τους στο soundtrack του GTA VI, του βιντεοπαιχνιδιού που κυκλοφορεί στις 19 Νοεμβρίου, 13 χρόνια μετά το GTA V.",
-      "body": [
-        "Οι Future και Metro Boomin επιβεβαίωσαν τη συμμετοχή τους στο GTA VI, χωρίς να έχει διευκρινιστεί ακόμα ο ακριβής ρόλος τους. Το παιχνίδι της Rockstar Games κυκλοφορεί στις 19 Νοεμβρίου, 13 χρόνια μετά το GTA V, και περιγράφεται ως το πιο αναμενόμενο βιντεοπαιχνίδι όλων των εποχών.",
-        "Σύμφωνα με τις πρώτες πληροφορίες, οι δύο καλλιτέχνες θα έχουν τουλάχιστον τραγούδια τους μέσα στο παιχνίδι, ακολουθώντας το μοτίβο άλλων ήδη επιβεβαιωμένων ονομάτων. Το soundtrack αναμένεται να περιλαμβάνει δύο βασικούς ραδιοφωνικούς σταθμούς hip hop, έναν με σύγχρονο υλικό και έναν αφιερωμένο σε κλασικά κομμάτια της δεκαετίας του 90 και των αρχών του 2000, στο πνεύμα του λεγόμενου Dirty South.",
-        "Στη λίστα των ήδη επιβεβαιωμένων καλλιτεχνών βρίσκονται επίσης ο Travis Scott, με εμπλοκή στο εικονικό strip club Jack of Hearts, οι Sexyy Red, Kodak Black και Lil Wayne με τραγούδια τους στο παιχνίδι, ενώ αναφέρεται και πιθανή συμμετοχή του Freddie Gibbs.",
-        "Η Rockstar Games έχει ιστορικό βαρύ σε ό,τι αφορά την επιμέλεια soundtrack, με τα Vice City και San Andreas να θεωρούνται σημεία αναφοράς στον τρόπο που ένα βιντεοπαιχνίδι μπορεί να λειτουργήσει ως μουσικό αρχείο μιας εποχής.",
-        "Ως label βλέπουμε τη συμμετοχή σε soundtrack μεγάλων παραγωγών σαν το GTA VI ως έναν από τους πιο ισχυρούς τρόπους έκθεσης ενός καλλιτέχνη hip hop σε τεράστιο κοινό, πέρα από τα παραδοσιακά κανάλια streaming, κάτι που θεωρούμε ότι θα συνεχίσει να κερδίζει βάρος και στην ελληνική σκηνή τα επόμενα χρόνια.",
-        "Μέχρι την κυκλοφορία στις 19 Νοεμβρίου αναμένονται περισσότερες επιβεβαιώσεις καλλιτεχνών και λεπτομέρειες για τον ακριβή ρόλο των Future και Metro Boomin στο παιχνίδι."
-      ],
-      "tags": [
-        "Hip Hop",
-        "Διεθνή",
-        "Gaming"
-      ],
-      "image": "assets/news/2026-09-16-intl-future-metro-boomin-gta-vi.jpg",
-      "streaming": [],
-      "sources": [
-        {
-          "name": "HotNewHipHop",
-          "url": "https://www.hotnewhiphop.com/1009779-future-metro-boomin-gta-vi"
-        }
-      ],
-      "slug": "2026-09-16-oi-future-kai-metro-boomin-epivevaiothikan-gia-to-gta-vi-poy"
-    },
-    {
-      "id": "2026-09-16-gr-alla-nea",
-      "date": "2026-09-16",
-      "author": "Flowless Music",
-      "region": "gr",
-      "title": "Σε άλλα νέα: 4 ζωντανές εμφανίσεις των RICTA, Ζήνωνα, Jaul και ΚΑΤΟΧΟΥ στη Θεσσαλονίκη",
-      "summary": "Οι RICTA, ο Ζήνων με τη Bad Blood Orchestra, ο Jaul και ο ΚΑΤΟΧΟΣ ανακοίνωσαν ζωντανές εμφανίσεις στη Θεσσαλονίκη μέσα στις επόμενες εβδομάδες.",
-      "body": [
-        "Ο ΚΑΤΟΧΟΣ παρουσιάζει το νέο του άλμπουμ Κουκουβάγιες στις 17 Σεπτεμβρίου στο WE SKG στη Θεσσαλονίκη, με τα decks να αναλαμβάνουν οι Nosfer και Mr. Storm, με πόρτες στις 20:00.",
-        "Ο RICTA ανεβαίνει στη σκηνή του WE στη Θεσσαλονίκη το Σάββατο 10 Οκτωβρίου, με πόρτες στις 20:30. Το σετ υπόσχεται συνδυασμό νέου υλικού και αγαπημένων τραγουδιών, με διοργάνωση από τη Lit Clothing. Προπώληση 12 ευρώ, στην πόρτα 15 ευρώ.",
-        "Ο Ζήνων εμφανίζεται ζωντανά μαζί με τη Bad Blood Orchestra στο WE Θεσσαλονίκης την Παρασκευή 23 Οκτωβρίου, με support από τον Vale2310 και dj set από τον Squeezy Anks. Διοργάνωση από τη Dynasty Group, με προπώληση 12 ευρώ και στην πόρτα 15 ευρώ.",
-        "Ο Jaul (2X2X) παρουσιάζει το άλμπουμ του IN FLUX ζωντανά στο WE Θεσσαλονίκης την Παρασκευή 6 Νοεμβρίου, με decks από τους Unwound και KK και εμφάνιση του Grut επί σκηνής.",
-        "Οι τέσσερις εμφανίσεις δείχνουν πόσο ζωντανή παραμένει η σκηνή ζωντανών εμφανίσεων στη Θεσσαλονίκη το φθινόπωρο, με το WE να συγκεντρώνει το μεγαλύτερο μέρος της κίνησης."
-      ],
-      "tags": [
-        "Ελλάδα",
-        "Νέα",
-        "Συναυλίες"
-      ],
-      "image": "",
-      "streaming": [],
-      "sources": [
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/ta_hip_hop_events_tou_septembriou_pou_den_prepei_na_xaseis_2/"
-        },
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/o_ricta_zwntana_stin_thessaloniki_10_10/"
-        },
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/zinon_kai_bad_blood_orchestra_zwntana_stin_thessaloniki_23_10/"
-        },
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/jaul_parousiasi_diskou_in_flux_zwntana_stin_thessaloniki_6_11/"
-        }
-      ],
-      "slug": "2026-09-16-se-alla-nea-4-zontanes-emfaniseis-ton-ricta-zinona-jaul-kai-"
-    },
-    {
-      "id": "2026-09-14-gr-alla-nea",
-      "date": "2026-09-14",
-      "author": "Flowless Music",
-      "region": "gr",
-      "title": "Σε άλλα νέα: το Off The Hook Festival έφερε τον Skepta στο ΟΑΚΑ, οι Rationalistas στην Τεχνόπολη και δύο νέες είσοδοι στο top 15 του chart",
-      "summary": "Το Off The Hook Festival πραγματοποιήθηκε στο ΟΑΚΑ με headliner τον Skepta, ο FANN ανακοίνωσε χειμερινή περιοδεία, οι Rationalistas ανέβηκαν στην Τεχνόπολη και τα KONTAKIES του Ivan Greko και ALL EYES ON ME του Kidd μπήκαν στο top 15 του daily chart Spotify Ελλάδας.",
-      "body": [
-        "Το Off The Hook Festival πραγματοποιήθηκε στις 11 Σεπτεμβρίου στο ΟΑΚΑ με headliner τον Skepta, ένα από τα μεγαλύτερα ονόματα που έχουν περάσει ποτέ από το φεστιβάλ. Την εγχώρια σκηνή εκπροσώπησαν οι Toquel, Εθισμός, Vlospa, Gxhan και Lunar.",
-        "Ο FANN ανακοίνωσε νέα χειμερινή περιοδεία σε επιλεγμένες πόλεις της Ελλάδας, με setlist που συνδυάζει παλιό υλικό από τα άλμπουμ Λίλιθ Τέιπ, 2x15 και Κύριος Νεκρικός Part I και II με πιο πρόσφατες κυκλοφορίες.",
-        "Οι Rationalistas ανέβηκαν στη σκηνή της Τεχνόπολης στις 14 Σεπτεμβρίου, λίγο πριν συμπληρώσουν δύο δεκαετίες συνεχούς παρουσίας, με πρόγραμμα από όλη τη δισκογραφία τους.",
-        "Το KONTAKIES του Ivan Greko έκανε είσοδο στην 11η θέση του daily chart Spotify Ελλάδας στις 12 Σεπτεμβρίου, με 78.821 streams.",
-        "Το ALL EYES ON ME του Kidd μπήκε στη 15η θέση του ίδιου chart με 72.725 streams."
-      ],
-      "tags": [
-        "Ελλάδα",
-        "Νέα"
-      ],
-      "image": "",
-      "streaming": [],
-      "sources": [
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/off_the_hook_festival_2026_stin_athina_11_9/"
-        },
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/fann_winter_tour_2026/"
-        },
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/oi_rationalistas_zwntana_stin_athina_14_9/"
-        },
-        {
-          "name": "kworb.net",
-          "url": "https://kworb.net/spotify/country/gr_daily.html"
-        }
-      ],
-      "slug": "2026-09-14-se-alla-nea-to-off-the-hook-festival-efere-ton-skepta-sto-oa"
-    },
-    {
-      "id": "2026-09-14-intl-lil-durk-acquitted",
-      "date": "2026-09-14",
-      "author": "Flowless Music",
-      "region": "intl",
-      "title": "Ο Lil Durk αθωώνεται σε όλες τις κατηγορίες στη δίκη για τη δολοφονία στο Beverly Center",
-      "summary": "Ομοσπονδιακοί ένορκοι στο Λος Άντζελες έκριναν τον Lil Durk αθώο σε όλες τις κατηγορίες συνωμοσίας, παρακολούθησης και ενοικίασης δολοφόνου για τον θάνατο της Saviay'a Robinson το 2022.",
-      "body": [
-        "Ο ράπερ Lil Durk κρίθηκε αθώος σε όλες τις κατηγορίες στη δίκη του στο ομοσπονδιακό δικαστήριο του Λος Άντζελες, μετά από τριήμερη διαβούλευση των ενόρκων. Οι κατηγορίες αφορούσαν συνωμοσία, παρακολούθηση με αποτέλεσμα θάνατο και ενοικίαση δολοφόνου, σε σχέση με τη δολοφονία της Saviay'a Robinson το 2022.",
-        "Η υπόθεση αφορούσε τη δολοφονία της Saviay'a Robinson, ξαδέλφης του ράπερ Quando Rondo, τον Αύγουστο του 2022 στο Beverly Center του Λος Άντζελες. Σύμφωνα με την εισαγγελία, τρεις ένοπλοι πυροβόλησαν 18 φορές εναντίον του οχήματος στο οποίο επέβαιναν ο Quando Rondo και η Robinson, σε επίθεση που φέρεται να οργανώθηκε ως αντίποινα για τον θάνατο του King Von το 2020.",
-        "Δύο ακόμη κατηγορούμενοι, ο Deandre Wilson και ο David Lindsey, καταδικάστηκαν για συνωμοσία παρακολούθησης και παρακολούθηση με χρήση επικίνδυνου όπλου, αθωώθηκαν όμως στις κατηγορίες ενοικίασης δολοφόνου. Η εισαγγελία στηρίχθηκε κυρίως σε τρεις συνεργαζόμενους μάρτυρες, τον Kacey Hester, τον Keith Jones και τον πρώην βοηθό του Lil Durk, Kavon Grant, ενώ η υπεράσπιση υποστήριξε ότι την επίθεση παρήγγειλε ο ίδιος ο Grant.",
-        "Παρακολουθούμε την υπόθεση από την αρχή γιατί αφορά άμεσα ένα κομμάτι της σκηνής που μας επηρεάζει, τη σχέση ανάμεσα σε ένοπλη βία και hip hop κουλτούρα στις ΗΠΑ. Η αθώωση δεν κλείνει το θέμα, δείχνει όμως πόσο δύσκολο είναι να στοιχειοθετηθεί ποινική ευθύνη καλλιτέχνη με βάση μόνο μαρτυρίες συνεργαζόμενων κατηγορουμένων.",
-        "Ο Lil Durk παραμένει υπό κράτηση, καθώς αντιμετωπίζει ξεχωριστή ομοσπονδιακή δίκη για κατηγορίες οργανωμένου εγκλήματος, η οποία αναμένεται να ξεκινήσει στις 5 Οκτωβρίου."
-      ],
-      "tags": [
-        "Hip Hop",
-        "Διεθνή",
-        "Δικαστήριο"
-      ],
-      "image": "assets/news/2026-09-14-intl-lil-durk-acquitted.jpg",
-      "streaming": [],
-      "sources": [
-        {
-          "name": "Variety",
-          "url": "https://variety.com/2026/music/news/lil-durk-acquitted-murder-for-hire-trial-1236859311/"
-        },
-        {
-          "name": "TMZ",
-          "url": "https://www.tmz.com/2026/09/11/lil-durk-found-not-guilty/"
-        },
-        {
-          "name": "US News",
-          "url": "https://www.usnews.com/news/us/articles/2026-09-11/rapper-lil-durk-acquitted-of-murder-for-hire-at-los-angeles-trial"
-        }
-      ],
-      "slug": "2026-09-14-o-lil-durk-athoonetai-se-oles-tis-katigories-sti-diki-gia-ti"
-    },
-    {
-      "id": "2026-09-14-gr-mazonakis-chart",
-      "date": "2026-09-14",
-      "author": "Flowless Music",
-      "region": "gr",
-      "title": "12 τραγούδια του Γιώργου Μαζωνάκη στο top 15 του daily chart Spotify Ελλάδας μετά τον θάνατό του",
-      "summary": "Μετά τον θάνατο του Γιώργου Μαζωνάκη στις 9 Σεπτεμβρίου, 12 από τα 15 πρώτα τραγούδια του daily chart Spotify Ελλάδας ανήκαν στον ίδιο καλλιτέχνη, με το Ώρες Μικρές στην κορυφή.",
-      "body": [
-        "Ο Γιώργος Μαζωνάκης πέθανε στις 9 Σεπτεμβρίου σε ηλικία 54 ετών από ανακοπή καρδιάς, και μέσα σε τρεις μέρες τα τραγούδια του κατέκλυσαν το daily chart Spotify Ελλάδας. Στις 12 Σεπτεμβρίου, 12 από τα 15 πρώτα τραγούδια του chart ανήκαν στον ίδιο καλλιτέχνη, με το Ώρες Μικρές στην κορυφή.",
-        "Το Ώρες Μικρές βρισκόταν στη θέση 170 του daily chart στις 7 Σεπτεμβρίου, δύο μέρες πριν τον θάνατο του τραγουδιστή, με 11.705 streams. Στις 12 Σεπτεμβρίου είχε ανέβει στην κορυφή με 220.400 streams μέσα σε μία ημέρα και συνολικά πάνω από 20,9 εκατομμύρια streams στο Spotify, ενώ το επίσημο video στο YouTube μετράει περίπου 37 εκατομμύρια προβολές.",
-        "Ακολουθούν στο ίδιο chart τα Οινόπνευμα Φτηνό με 139.600 streams, Αγάπο Σημαίνει με 129.450, Ανήκω Σε Μένα με 125.741 και Τέσσερις Πήγε με 120.062, όλα δικά του. Στη 10η θέση βρίσκεται το ORES του Saske με 79.054 streams, το μοναδικό τραγούδι εκτός Μαζωνάκη στην πρώτη δεκάδα του chart εκείνη την ημέρα.",
-        "Ο Μαζωνάκης υπέστη ανακοπή σε ιατρείο στο Κολωνάκι και διακομίστηκε στο νοσοκομείο Ελπίς, όπου η καρδιοπνευμονική αναζωογόνηση δεν είχε επιτυχή έκβαση.",
-        "Ως label που παρακολουθεί καθημερινά τα charts, καταγράφουμε το φαινόμενο χωρίς να το σχολιάζουμε μουσικά, καθώς ο Μαζωνάκης ανήκε σε διαφορετικό είδος από αυτό που εκπροσωπούμε. Η ταχύτητα με την οποία ένα chart μπορεί να ανατραπεί μέσα σε 48 ώρες δείχνει πόσο άμεσα αντιδρά το κοινό στο Spotify σε είδηση αυτού του μεγέθους, κάτι που αξίζει να καταγράφεται ως δεδομένο της πλατφόρμας, ανεξάρτητα από genre.",
-        "Η παρουσία του Μαζωνάκη στο chart αναμένεται να συνεχιστεί τις επόμενες μέρες, με πιθανά αφιερώματα και tribute events να προστεθούν στο πρόγραμμα των επόμενων εβδομάδων."
-      ],
-      "tags": [
-        "Ελλάδα",
-        "Chart",
-        "Λαϊκό"
-      ],
-      "image": "assets/news/2026-09-14-gr-mazonakis-chart.jpg",
-      "streaming": [],
-      "sources": [
-        {
-          "name": "kworb.net",
-          "url": "https://kworb.net/spotify/country/gr_daily.html"
-        },
-        {
-          "name": "Newsbomb",
-          "url": "https://www.newsbomb.gr/politismos/story/1762622/giorgos-mazonakis-ta-tragoydia-tou-saronoun-sto-spotify-sto-no1-oi-ores-mikres"
-        },
-        {
-          "name": "ΣΚΑΪ",
-          "url": "https://www.skai.gr/news/greece/pethane-o-giorgos-mazonakis-apo-anakopi-kardias"
-        }
-      ],
-      "slug": "2026-09-14-12-tragoydia-toy-giorgoy-mazonaki-sto-top-15-toy-daily-chart"
-    },
-    {
-      "id": "2026-09-13-intl-releases-roundup",
-      "date": "2026-09-13",
-      "author": "Θοδωρής Παρασχάκης Νταμάς",
-      "region": "intl",
-      "title": "Τι κυκλοφόρησε στο εξωτερικό αυτό το Σαββατοκύριακο: Jhené Aiko και Bloc Party",
-      "summary": "Η Jhené Aiko κυκλοφόρησε το πρώτο της άλμπουμ μετά από έξι χρόνια, το «Westside Whimsy» με τον Kendrick Lamar, ενώ οι Bloc Party επέστρεψαν με το πιο προσωπικό τους άλμπουμ, το «Anatomy of a Brief Romance».",
-      "body": [
-        "Η Jhené Aiko κυκλοφόρησε στις 11 Σεπτεμβρίου το «Westside Whimsy» μέσω ArtClub International και Def Jam Recordings, το πρώτο της άλμπουμ έπειτα από έξι χρόνια, μετά το «Chilombo» του 2020. Ο δίσκος έχει είκοσι κομμάτια εμπνευσμένα από τη ζωή της στο Λος Άντζελες και περιλαμβάνει συνεργασίες με τον Kendrick Lamar στο «So Good», τον Ab-Soul στο «Love Bomb» και τον Larry June στο «Neighbors».",
-        "Την ίδια μέρα οι Bloc Party κυκλοφόρησαν το «Anatomy of a Brief Romance», δίσκο δεκατεσσάρων τραγουδιών σε συνεργασία με τον παραγωγό Trevor Horn. Ο τραγουδιστής Kele Okereke το περιέγραψε ως το πιο προσωπικό άλμπουμ της καριέρας του, μια χρονολογική αφήγηση μιας σχέσης από την αρχή μέχρι το τέλος, με στίχους βασισμένους αποκλειστικά σε πραγματικά του βιώματα."
-      ],
-      "tags": [
-        "Εξωτερικό",
-        "Κυκλοφορίες",
-        "Jhené Aiko",
-        "Bloc Party"
-      ],
-      "image": "assets/news/2026-09-13-intl-releases-roundup.jpg",
-      "streaming": [],
-      "sources": [
-        {
-          "name": "Complex",
-          "url": "https://www.complex.com/music/a/dimassanfiorenzo/jhene-aiko-westside-whimsy-tracklist-features-producers"
-        },
-        {
-          "name": "Stereogum",
-          "url": "https://stereogum.com/2511106/jhene-aiko-shares-new-album-westwide-whimsy-feat-kendrick-lamar-ab-soul-larry-june-more/music"
-        },
-        {
-          "name": "Far Out Magazine",
-          "url": "https://faroutmagazine.co.uk/bloc-party-announce-new-album-anatomy-of-a-brief-romance/"
-        }
-      ],
-      "slug": "2026-09-13-ti-kykloforise-sto-exoteriko-ayto-to-savvatokyriako-jhen-aik"
-    },
-    {
-      "id": "2026-09-13-gr-releases-roundup",
-      "date": "2026-09-13",
-      "author": "Θοδωρής Παρασχάκης Νταμάς",
-      "region": "gr",
-      "title": "Τι κυκλοφόρησε στην ελληνική ραπ σκηνή αυτή τη βδομάδα",
-      "summary": "Ο CHRI$ κυκλοφόρησε το single «LOROPIANA», η Γιούλη το «Στοίχημα» και ο Ένορκος 8 το EP «Keep it Raw», ενώ ο TNT και ο Λόγος Απειλή έβγαλαν το κοινό τους EP «BOOM».",
-      "body": [
-        "Ο CHRI$ κυκλοφόρησε το νέο single «LOROPIANA», ένα trap κομμάτι με σκοτεινή ατμόσφαιρα και πιο ώριμο ήχο σε σχέση με τις προηγούμενες δουλειές του. Την ίδια μέρα η Γιούλη έβγαλε το «Στοίχημα», με μουσική παραγωγή, μίξη και mastering από τον Δημήτρη Κουφουδάκη και ηχοληψία στο Groove Studio από τον Γιάννη Πρατικάκη.",
-        "Ο Ένορκος 8 κυκλοφόρησε το EP «Keep it Raw», πέντε κομμάτια σε παραγωγή του Spec με πικαπίσματα από τον The Black Origami, ηχογραφημένα στο Audiolize It studio από τον Aksepe. Λίγες μέρες νωρίτερα, ο TNT των Rationalistas και ο Λόγος Απειλή κυκλοφόρησαν το κοινό τους EP «BOOM» μέσω Stay Independent, πέντε τραγούδια σε παραγωγή των ManyMiles98, DJ Gzas και του ίδιου του Λόγου Απειλή, ο οποίος ανέλαβε και τον προγραμματισμό, τη μίξη και το mastering."
-      ],
-      "tags": [
-        "Ελλάδα",
-        "Κυκλοφορίες",
-        "CHRI$",
-        "Γιούλη"
-      ],
-      "image": "assets/news/2026-09-13-gr-releases-roundup.jpg",
-      "streaming": [],
-      "sources": [
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/o_chris_kikloforhse_neo_singe_me_titlo_loropiana/"
-        },
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/h_giouli_kikloforhse_neo_single_me_titlo_stoixhma/"
-        },
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/o_enorkos_8_kikloforhse_neo_ep_me_titlo_keep_it_raw/"
-        },
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/tnt_kai_logos_apeili_kykloforisan_neo_ep_me_titlo_boom/"
-        }
-      ],
-      "slug": "2026-09-13-ti-kykloforise-stin-elliniki-rap-skini-ayti-ti-vdomada"
-    },
-    {
-      "id": "2026-09-13-intl-tupac-30-chronia",
-      "date": "2026-09-13",
-      "author": "Θοδωρής Παρασχάκης Νταμάς",
-      "region": "intl",
-      "title": "Σαν σήμερα: 30 χρόνια από τον θάνατο του Tupac Shakur",
-      "summary": "Στις 13 Σεπτεμβρίου 1996 πέθανε ο Tupac Shakur, έξι μέρες μετά τον πυροβολισμό στο Λας Βέγκας, με φέτος την επέτειο να βρίσκει την υπόθεση επιτέλους κλεισμένη νομικά μετά την καταδίκη του Duane Keffe D Davis.",
-      "body": [
-        "Στις 13 Σεπτεμβρίου 1996, ο Tupac Amaru Shakur πέθανε στο University Medical Center του Λας Βέγκας, έξι μέρες μετά τον πυροβολισμό που δέχθηκε μέσα σε αυτοκίνητο κοντά στο Las Vegas Strip. Ήταν 25 ετών, με το «All Eyez on Me» να έχει κυκλοφορήσει μόλις επτά μήνες νωρίτερα και να τον έχει καθιερώσει ως μία από τις πιο σημαντικές φωνές του δυτικοακτίου χιπ χοπ.",
-        "Φέτος η επέτειος βρίσκει την υπόθεση επιτέλους κλεισμένη νομικά. Στις 31 Αυγούστου 2026 ένορκοι στο Κλαρκ Κάουντι έκριναν ένοχο τον Duane Keffe D Davis για ανθρωποκτονία πρώτου βαθμού με χρήση όπλου, τριάντα χρόνια μετά τη δολοφονία που έμενε ανεξιχνίαστη για δεκαετίες. Τριάντα χρόνια μετά τον θάνατό του, ο Tupac παραμένει σημείο αναφοράς για ολόκληρη τη hip hop βιομηχανία, με τους δίσκους του να συνεχίζουν να ακούγονται και να επηρεάζουν καλλιτέχνες σε όλο τον κόσμο."
-      ],
-      "tags": [
-        "Εξωτερικό",
-        "Σαν σήμερα",
-        "Tupac Shakur"
-      ],
-      "image": "assets/news/2026-09-13-intl-tupac-30-chronia.jpg",
-      "streaming": [],
-      "sources": [
-        {
-          "name": "History.com",
-          "url": "https://www.history.com/this-day-in-history/september-13/tupac-shakur-dies"
-        },
-        {
-          "name": "Fox5 Vegas",
-          "url": "https://www.fox5vegas.com/2026/09/07/thirty-years-later-anniversary-tupac-shakurs-tragic-death-met-with-historic-justice/"
-        },
-        {
-          "name": "CNN",
-          "url": "https://www.cnn.com/2026/08/31/us/live-news/tupac-duane-davis-trial"
-        }
-      ],
-      "slug": "2026-09-13-san-simera-30-chronia-apo-ton-thanato-toy-tupac-shakur"
-    },
-    {
-      "id": "2026-09-12-gr-gxhan-anerchomenos",
-      "date": "2026-09-12",
-      "author": "Θοδωρής Παρασχάκης Νταμάς",
-      "region": "gr",
-      "title": "Ανερχόμενος της βδομάδας: ο GXHAN φέρνει τη δική του «Άποψη» στην ελληνική ραπ",
-      "summary": "Ο 21χρονος GXHAN κυκλοφόρησε το ντεμπούτο άλμπουμ του Άποψη μέσω Stay Independent, με φόρο τιμής στον Τάκι Τσαν, και βρέθηκε σε sold out συναυλίες σε Αθήνα, Πάτρα και Θεσσαλονίκη.",
-      "body": [
-        "Ο GXHAN είναι 21 χρονών και μέλος του συλλόγου Wake and Bake, με πορεία που ξεκίνησε στα 16 του, μέσα στο δεύτερο lockdown της πανδημίας το 2021, με το single Xans. Πέντε χρόνια αργότερα κυκλοφόρησε το ντεμπούτο του άλμπουμ Άποψη μέσω της Stay Independent, ένδεκα κομμάτια που συνδυάζουν παλιό σχολείο ραπ με synth leads, hardbass και ηλεκτρονικά στοιχεία. Το εξώφυλλο είναι φόρος τιμής στο θρυλικό Ρίμα για Χρήμα του Τάκι Τσαν από το 1999, με τον GXHAN να αναδημιουργεί ακόμα και την ιστορική συνέντευξη του Τάκι Τσαν με τον Χρήστο Φερεντίνο.",
-        "Στο Άποψη συμμετέχουν οι Saske, Kidd, DDS, Twelvee, $ulee και Mikros Kleftis, με την παραγωγή να μοιράζονται οι Stolou, XIX, Κώστας Σακαλής, Tony Fragment, Gkwgoat, Jay Chris και Nous. Μετά την κυκλοφορία ο GXHAN βρέθηκε σε sold out συναυλίες στο Gagarin 205 στην Αθήνα, στην Πάτρα και στη Θεσσαλονίκη, ξεκινώντας περιοδεία μέσα στο 2026. Ο ίδιος έχει πει πως ήθελε να πουλήσει «άποψη» επειδή αυτό θεωρεί πως λείπει σήμερα από το ελληνικό ραπ, και η ανταπόκριση του κοινού δείχνει πως κάτι από αυτό πιάνει τόπο."
-      ],
-      "tags": [
-        "Ελλάδα",
-        "Ανερχόμενος",
-        "GXHAN"
-      ],
-      "image": "assets/news/2026-09-12-gr-gxhan-apopsi.jpg",
-      "streaming": [],
-      "sources": [
-        {
-          "name": "LiFO",
-          "url": "https://www.lifo.gr/culture/music/gxhan-me-apopsi-ithela-na-poyliso-apopsi"
-        },
-        {
-          "name": "Stay Independent",
-          "url": "https://stayindependent.gr/gxhan-debut-album-apopsi/"
-        },
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/o_gxhan_kykloforise_neo_album_me_titlo_apopsi/"
-        }
-      ],
-      "slug": "2026-09-12-anerchomenos-tis-vdomadas-o-gxhan-fernei-ti-diki-toy-apopsi-"
-    },
-    {
-      "id": "2026-09-12-intl-h3adband-anerchomenos",
-      "date": "2026-09-12",
-      "author": "Θοδωρής Παρασχάκης Νταμάς",
-      "region": "intl",
-      "title": "Ανερχόμενος της βδομάδας: ο H3adband μετατρέπει το Boo σε viral φαινόμενο του TikTok",
-      "summary": "Ο ράπερ από το Baton Rouge είδε το τραγούδι του Boo να ξεπερνά τα 20 εκατομμύρια streams και να μπαίνει στο Billboard Hot 100 μέσα από ένα viral trend χορού.",
-      "body": [
-        "Ο H3adband, με πραγματικό όνομα Jordan Randall, είναι ράπερ από το Baton Rouge της Λουιζιάνα και πρώην παίκτης μπάσκετ στο Baton Rouge Community College. Το κομμάτι του Boo, με σκοτεινά synth και έντονο λουιζιανέζικο ήχο, έγινε viral στο TikTok στα τέλη Οκτωβρίου 2025 μέσα από ένα trend χορού που έγινε γνωστό ως Boo Challenge, στο οποίο συμμετείχαν μεταξύ άλλων η Savannah James, ο DaBaby και ο Valentin Chmerkovskiy.",
-        "Το Boo έχει ξεπεράσει τα 20 εκατομμύρια streams και έφτασε μέχρι τη θέση 90 του Billboard Hot 100, η πρώτη φορά που ο H3adband μπαίνει στο chart. Η επιτυχία του τραγουδιού τον οδήγησε στο Boo Tour, περιοδεία δώδεκα πόλεων στον Νότο και στην Ανατολική Ακτή των ΗΠΑ από τις 17 Ιανουαρίου έως τις 7 Φεβρουαρίου, δείχνοντας πως το viral μομέντουμ στο TikTok μπορεί πλέον να μεταφραστεί άμεσα σε γεμάτες αίθουσες."
-      ],
-      "tags": [
-        "Εξωτερικό",
-        "Ανερχόμενος",
-        "H3adband"
-      ],
-      "image": "assets/news/2026-09-12-intl-h3adband-boo.jpg",
-      "streaming": [],
-      "sources": [
-        {
-          "name": "Yahoo Entertainment",
-          "url": "https://www.yahoo.com/entertainment/music/articles/meet-baton-rouge-artist-behind-163738681.html"
-        },
-        {
-          "name": "Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/H3adband"
-        }
-      ],
-      "slug": "2026-09-12-anerchomenos-tis-vdomadas-o-h3adband-metatrepei-to-boo-se-vi"
-    },
-    {
-      "id": "2026-09-10-gr-alla-nea",
-      "date": "2026-09-10",
-      "author": "Flowless Music",
-      "region": "gr",
-      "title": "Σε άλλα νέα: το ORES του Saske στη 2η θέση του chart, νέο single Σεπτέμβρης από τους Λόγος Τιμής και το 14th Street Mode Festival επιστρέφει στη Θεσσαλονίκη",
-      "summary": "Το ORES του Saske ανέβηκε στη 2η θέση του daily chart Spotify Ελλάδας, οι Λόγος Τιμής κυκλοφόρησαν το single Σεπτέμβρης, το 14th Street Mode Festival επιστρέφει στη Θεσσαλονίκη 12 και 13 Σεπτεμβρίου και οι Rationalistas ανεβαίνουν στην Τεχνόπολη στις 14 Σεπτεμβρίου.",
-      "body": [
-        "Το ORES του Saske ανέβηκε στη 2η θέση του daily chart Spotify Ελλάδας με 95.689 streams, πίσω μόνο από το Metallo του Sadam.",
-        "Οι Λόγος Τιμής κυκλοφόρησαν νέο single με τίτλο Σεπτέμβρης, σε παραγωγή του Sativa, ηχογραφημένο στο Black Spot Studio και διαθέσιμο μέσω της Stay Independent.",
-        "Το 14th Street Mode Festival επιστρέφει στη Θεσσαλονίκη στις 12 και 13 Σεπτεμβρίου, με μουσική, graffiti, street dance και parkour σε ένα ολοκληρωμένο σαββατοκύριακο αφιερωμένο στη street culture.",
-        "Οι Rationalistas ανεβαίνουν στη σκηνή της Τεχνόπολης στις 14 Σεπτεμβρίου, λίγο πριν συμπληρώσουν δύο δεκαετίες συνεχούς παρουσίας, για μια συναυλία με τραγούδια από όλη τη δισκογραφία τους."
-      ],
-      "tags": [
-        "Ελλάδα",
-        "Νέα"
-      ],
-      "image": "",
-      "streaming": [],
-      "sources": [
-        {
-          "name": "kworb.net",
-          "url": "https://kworb.net/spotify/country/gr_daily.html"
-        },
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/oi_logos_timis_kykloforisan_neo_single_me_titlo_septemvris/"
-        },
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/14th_street_mode_festival_2026_stin_thessaloniki_12_9_kai_13_9/"
-        },
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/oi_rationalistas_zwntana_stin_athina_14_9/"
-        }
-      ],
-      "slug": "2026-09-10-se-alla-nea-to-ores-toy-saske-sti-2i-thesi-toy-chart-neo-sin"
-    },
-    {
-      "id": "2026-09-10-intl-drake-fomo",
-      "date": "2026-09-10",
-      "author": "Flowless Music",
-      "region": "intl",
-      "title": "Ο Drake δίνει ημερομηνία 15 Σεπτεμβρίου στο μυστηριώδες project FOMO",
-      "summary": "Ο Drake ανακοίνωσε πως το project του με τίτλο FOMO θα αποκαλυφθεί στις 15 Σεπτεμβρίου μέσω live στο YouTube, χωρίς ακόμα να είναι γνωστό αν πρόκειται για άλμπουμ.",
-      "body": [
-        "Ο Drake ανακοίνωσε πως το μυστηριώδες project του με τίτλο FOMO θα κυκλοφορήσει στις 15 Σεπτεμβρίου, με πρεμιέρα σε live στο YouTube στις 9 το βράδυ ώρα Ανατολικής Ακτής. Η φύση του project παραμένει άγνωστη, με τους θαυμαστές να αναρωτιούνται αν πρόκειται για άλμπουμ, περιοδεία ή κάτι διαφορετικό.",
-        "Αν το FOMO αποδειχθεί άλμπουμ, θα είναι το τέταρτο δισκογραφικό project του Drake μέσα στο 2026, μετά τα ICEMAN, HABIBTI και MAID OF HONOUR. Η ανακοίνωση έγινε μέσω Instagram, με τον ίδιο να διατηρεί το μυστήριο γύρω από το περιεχόμενο, ακολουθώντας τη λογική που είχε ακολουθήσει και στο trilogy του ICEMAN, όπου το YouTube γέμισε με επεισόδια και video clips πριν την τελική κυκλοφορία.",
-        "Η κίνηση έρχεται μετά από μια χρονιά όπου ο Drake κυκλοφόρησε τρία άλμπουμ μέσα σε λίγους μήνες, κίνηση που σύμφωνα με αναφορές είχε στόχο και την ολοκλήρωση συμβατικών του υποχρεώσεων με τη δισκογραφική του εταιρεία. Το FOMO έρχεται επίσης μετά την περίοδο ηρεμίας που ακολούθησε τη διαμάχη του με τον Kendrick Lamar.",
-        "Από τη σκοπιά μας ως label, το μοτίβο του Drake να ανεβάζει τη συχνότητα κυκλοφοριών μέσα στο ίδιο έτος, αντί να περιμένει τον καθιερωμένο κύκλο ενός άλμπουμ κάθε δύο τρία χρόνια, είναι κάτι που βλέπουμε να επηρεάζει όλο και περισσότερους καλλιτέχνες διεθνώς. Η στρατηγική του να χτίζει hype μέσω μυστηρίου στο YouTube αντί για παραδοσιακό marketing δείχνει πόσο έχει αλλάξει ο τρόπος που παρουσιάζεται μια κυκλοφορία σήμερα.",
-        "Δεν έχει ανακοινωθεί ακόμα tracklist ή αν το FOMO θα είναι πλήρες άλμπουμ, EP ή κάτι διαφορετικό. Η απάντηση αναμένεται στις 15 Σεπτεμβρίου μέσω του live στο YouTube."
-      ],
-      "tags": [
-        "Hip Hop",
-        "Drake",
-        "Άλμπουμ"
-      ],
-      "image": "assets/news/2026-09-10-intl-drake-fomo.jpg",
-      "streaming": [],
-      "sources": [
-        {
-          "name": "HipHop-N-More",
-          "url": "https://hiphop-n-more.com/2026/09/drake-announces-release-date-for-upcoming-album-fomo/"
-        },
-        {
-          "name": "The Source",
-          "url": "https://thesource.com/2026/09/03/drakes-mysterious-fomo-project-set-for-september-15-youtube-premiere/"
-        }
-      ],
-      "slug": "2026-09-10-o-drake-dinei-imerominia-15-septemvrioy-sto-mystiriodes-proj"
-    },
-    {
-      "id": "2026-09-10-gr-sadam-metallo-no1",
-      "date": "2026-09-10",
-      "author": "Flowless Music",
-      "region": "gr",
-      "title": "Το Metallo του Sadam με τον Dof Twogee ανεβαίνει στην κορυφή του daily chart Spotify Ελλάδας",
-      "summary": "Το Metallo, η κυκλοφορία του Sadam με τον Dof Twogee, πέρασε στην 1η θέση του daily chart Spotify Ελλάδας με 102.958 streams, ξεπερνώντας το APROVEITAR του SNIK.",
-      "body": [
-        "Το Metallo, η κυκλοφορία του Sadam σε συνεργασία με τον Dof Twogee, ανέβηκε στην 1η θέση του daily chart Spotify Ελλάδας με 102.958 streams, λίγες μέρες μετά την κυκλοφορία του, προσπερνώντας το APROVEITAR του SNIK που κρατούσε την κορυφή τις προηγούμενες μέρες.",
-        "Το τραγούδι κυκλοφόρησε μέσω της Minos EMI, με παραγωγή του ίδιου του Dof Twogee και μίξη και mastering από τον Quicksilver. Χθες βρισκόταν στη 2η θέση με 109.898 streams, πίσω από το APROVEITAR, ενώ σήμερα καταγράφει 102.958 streams και περνάει στην κορυφή, καθώς το τραγούδι του SNIK υποχωρεί εκτός πρώτης δεκάδας. Στη 2η θέση βρίσκεται το ORES του Saske με 95.689 streams, ενώ ακολουθεί το Baila του Light με τον Arab στην 3η θέση με 84.556 streams.",
-        "Στο υπόλοιπο του Top 5, το Katsiki του Light με τον RACK βρίσκεται στην 4η θέση με 70.167 streams και το PALOMA του RACK με τους MENJU και Oge στην 5η με 68.184 streams. Ο TOQUEL διατηρεί πολλαπλή παρουσία στη λίστα με πέντε διαφορετικά τραγούδια μέσα στην πρώτη 15άδα, κάτι που δείχνει τη σταθερή απήχηση της δισκογραφίας του τον τελευταίο καιρό.",
-        "Από τη σκοπιά μας ως label, το Metallo επιβεβαιώνει πως ο Sadam συνεχίζει σταθερά την ανοδική του πορεία μετά το BOYKA, που είχε φτάσει επίσης στην κορυφή του Top 50 Ελλάδας. Βλέπουμε έναν καλλιτέχνη που χτίζει σταθερή παρουσία στο chart με διαδοχικές κυκλοφορίες, κάτι που δείχνει συνέπεια στη δουλειά και όχι τυχαία επιτυχία ενός τραγουδιού.",
-        "Δεν έχει ανακοινωθεί ακόμα αν το Metallo θα συνοδευτεί από video clip ή αν εντάσσεται σε ευρύτερο project του Sadam. Το τραγούδι παραμένει διαθέσιμο σε όλες τις πλατφόρμες μέσω Minos EMI."
-      ],
-      "tags": [
-        "Trap",
-        "Ελλάδα",
-        "Chart"
-      ],
-      "image": "assets/news/2026-09-10-gr-sadam-metallo-no1.jpg",
-      "streaming": [],
-      "sources": [
-        {
-          "name": "Simple Radio",
-          "url": "https://www.simpleradio.gr/music-news/metallo-i-nea-dynati-kykloforia-tou-sadam-me-to/"
-        },
-        {
-          "name": "kworb.net",
-          "url": "https://kworb.net/spotify/country/gr_daily.html"
-        }
-      ],
-      "slug": "2026-09-10-to-metallo-toy-sadam-me-ton-dof-twogee-anevainei-stin-koryfi"
-    },
-    {
-      "id": "2026-09-09-gr-sadam-metallo-no2",
-      "date": "2026-09-09",
-      "author": "Flowless Music",
-      "region": "gr",
-      "title": "Το Metallo του Sadam με τον Dof Twogee μπαίνει στη 2η θέση του daily chart Spotify Ελλάδας",
-      "summary": "Το Metallo, η νέα κυκλοφορία του Sadam σε παραγωγή του Dof Twogee, μπήκε στη 2η θέση του daily chart Spotify Ελλάδας με 109.898 streams, πίσω μόνο από το APROVEITAR του SNIK.",
-      "body": [
-        "Το Metallo, η νέα κυκλοφορία του Sadam σε συνεργασία με τον Dof Twogee, μπήκε στη 2η θέση του daily chart Spotify Ελλάδας, μόλις δύο μέρες μετά την κυκλοφορία του. Το κομμάτι έμεινε πίσω μόνο από το APROVEITAR του SNIK, που κρατά την κορυφή του chart για τρίτη συνεχόμενη εβδομάδα.",
-        "Σύμφωνα με τα στοιχεία της 7ης Σεπτεμβρίου, το Metallo συγκέντρωσε 109.898 streams μέσα σε μία ημέρα, έναντι 122.061 του APROVEITAR στο Νο1. Το τραγούδι προσπέρασε στη λίστα ονόματα όπως το ORES του Saske στη 3η θέση και το Baila του Light στην 4η, και μπήκε αμέσως στην πρώτη πεντάδα του chart.",
-        "Το Metallo κυκλοφόρησε μέσω της Minos EMI, με τη μουσική παραγωγή να υπογράφει ο Dof Twogee, μακροχρόνιος συνεργάτης του Sadam, και τη μίξη και το mastering να αναλαμβάνει ο Quicksilver. Το κομμάτι έρχεται μετά την επιτυχία του BOYKA, που είχε φτάσει στην κορυφή του Spotify Top 50 Ελλάδας νωρίτερα φέτος.",
-        "Ως label βλέπουμε στο Metallo ένα ακόμα παράδειγμα του πόσο γρήγορα μπορεί μια κυκλοφορία να ανέβει σήμερα στην κορυφή του ελληνικού chart, όταν συνδυάζονται αναγνωρίσιμος ήχος, σταθερή συνεργασία παραγωγού και καλλιτέχνη και σωστό timing κυκλοφορίας. Η ταχύτητα με την οποία το κοινό ανταποκρίθηκε δείχνει και πόσο ζωντανό παραμένει το κομμάτι της trap σκηνής γύρω από τον Sadam.",
-        "Το ερώτημα τώρα είναι αν το Metallo θα καταφέρει να προσπεράσει το APROVEITAR του SNIK μέσα στις επόμενες μέρες ή αν θα σταθεροποιηθεί στη 2η θέση, με τον ανταγωνισμό στην κορυφή του chart να παραμένει έντονος αυτή την περίοδο."
-      ],
-      "tags": [
-        "Trap",
-        "Ελλάδα",
-        "Chart"
-      ],
-      "image": "assets/news/2026-09-09-gr-sadam-metallo-no2.jpg",
-      "streaming": [],
-      "sources": [
-        {
-          "name": "kworb.net",
-          "url": "https://kworb.net/spotify/country/gr_daily.html"
-        },
-        {
-          "name": "mad.gr",
-          "url": "https://www.mad.gr/music/music-news-music/metallo-i-nea-dynati-kykloforia-toy-sadam-me-ton-dof-twogee/"
-        },
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/sadam_kai_dof_twogee_kykloforisan_neo_single_me_titlo_metallo/"
-        }
-      ],
-      "slug": "2026-09-09-to-metallo-toy-sadam-me-ton-dof-twogee-mpainei-sti-2i-thesi-"
-    },
-    {
-      "id": "2026-09-09-intl-don-toliver-nitrous",
-      "date": "2026-09-09",
-      "author": "Flowless Music",
-      "region": "intl",
-      "title": "Ο Don Toliver επιβεβαιώνει νέο άλμπουμ Nitrous μέσα στο 2026 μετά το πρώτο Νο1 με το Octane",
-      "summary": "Ο Don Toliver επιβεβαίωσε σε συναυλία του στο Μπρούκλιν πως θα κυκλοφορήσει νέο άλμπουμ, το Nitrous, μέσα στο 2026, μετά το πρώτο του Νο1 στο Billboard 200 με το Octane.",
-      "body": [
-        "Ο Don Toliver επιβεβαίωσε σε πρόσφατη συναυλία του στο Μπρούκλιν πως ετοιμάζει νέο άλμπουμ με τίτλο Nitrous, το οποίο θα κυκλοφορήσει μέσα στο 2026. Η ανακοίνωση έγινε ζωντανά επί σκηνής, χωρίς ακόμα συγκεκριμένη ημερομηνία κυκλοφορίας.",
-        "Η νέα κυκλοφορία έρχεται μετά το Octane, το άλμπουμ που τον έστειλε για πρώτη φορά στην κορυφή του Billboard 200 τον Φεβρουάριο, με 162.000 equivalent album units μέσα στην πρώτη εβδομάδα, την καλύτερή του μέχρι σήμερα. Από αυτά τα 162.000, τα 131.000 προήλθαν από streaming και τα 31.000 από πωλήσεις άλμπουμ.",
-        "Στη συναυλία του Μπρούκλιν ο Don Toliver ανέβασε στη σκηνή ένα βαρύ line up καλεσμένων, ανάμεσά τους η Cardi B, η Sexyy Red, ο Cash Cobain, ο Slick Rick και ο Busta Rhymes, δείχνοντας πως το επόμενο κεφάλαιο της καριέρας του θα κινηθεί ξανά σε συνεργασίες μεγάλου βεληνεκούς.",
-        "Από τη σκοπιά μας ως label, η κίνηση του Don Toliver να ανακοινώσει νέο άλμπουμ μέσα στο ίδιο έτος με το πρώτο του Νο1 δείχνει μια στρατηγική που βλέπουμε όλο και πιο συχνά διεθνώς, να μη μένεις σε μια επιτυχία αλλά να χτίζεις πάνω της άμεσα, όσο το κοινό είναι ακόμα προσηλωμένο. Είναι ένα μοντέλο που αξίζει να παρακολουθούμε και για το πώς θα μπορούσε να προσαρμοστεί σε μικρότερες αγορές όπως η ελληνική.",
-        "Ούτε το tracklist ούτε η ακριβής ημερομηνία κυκλοφορίας του Nitrous έχουν ανακοινωθεί επίσημα. Αναμένονται περισσότερες λεπτομέρειες τις επόμενες εβδομάδες, καθώς ο Don Toliver συνεχίζει την περιοδεία του για το Octane."
-      ],
-      "tags": [
-        "Hip Hop",
-        "Billboard",
-        "Άλμπουμ"
-      ],
-      "image": "assets/news/2026-09-09-intl-don-toliver-nitrous.jpg",
-      "streaming": [],
-      "sources": [
-        {
-          "name": "HipHop-N-More",
-          "url": "https://hiphop-n-more.com/2026/09/don-toliver-confirms-new-album-nitrous-release-this-year-2026/"
-        },
-        {
-          "name": "Billboard",
-          "url": "https://www.billboard.com/music/chart-beat/don-toliver-octane-number-one-billboard-200-albums-chart-1236175846/"
-        }
-      ],
-      "slug": "2026-09-09-o-don-toliver-epivevaionei-neo-almpoym-nitrous-mesa-sto-2026"
-    },
-    {
-      "id": "2026-09-09-gr-alla-nea",
-      "date": "2026-09-09",
-      "author": "Flowless Music",
-      "region": "gr",
-      "title": "Σε άλλα νέα: το Off The Hook Festival έρχεται στο ΟΑΚΑ στις 11/9 με πλήρες lineup, το PANTHEON μεταμορφώνει το Plex στις 19/9 και νέο single από τον XRS",
-      "summary": "Το Off The Hook Festival ανακοίνωσε το πλήρες lineup του για τις 11 Σεπτεμβρίου στο ΟΑΚΑ, το PANTHEON έρχεται στο Plex στις 19 Σεπτεμβρίου, ο XRS κυκλοφόρησε το single KILLING SPREE και το Παγκόσμια Μέρα Του Ψεύτη της Κατερίνας Λιόλιου παραμένει στην πρώτη 15άδα του daily chart Spotify Ελλάδας.",
-      "body": [
-        "Το Off The Hook Festival ανακοίνωσε το πλήρες lineup του για τις 11 Σεπτεμβρίου στο ΟΑΚΑ, με headliner τον Skepta και την ελληνική σκηνή να εκπροσωπούν οι TOQUEL, Εθισμός, Vlospa, Gxhan και Lunar.",
-        "Το PANTHEON DOUBLE STAGE έρχεται στο Plex στις 19 Σεπτεμβρίου, με δύο stages, εμφανίσεις από DJ.SILENCE, DJ ALX, KILL EMIL, NICK MATTHEW και άλλους, καθώς και έκθεση τέχνης με πάνω από 30 καλλιτέχνες. Η διοργάνωση είναι παραγωγή του Pantheon σε συνεργασία με το Rapnroll.gr.",
-        "Ο XRS κυκλοφόρησε νέο single με τίτλο KILLING SPREE, σε παραγωγή του Mi368, μέσω της Stay Independent.",
-        "Το Παγκόσμια Μέρα Του Ψεύτη της Κατερίνας Λιόλιου παραμένει στην πρώτη 15άδα του daily chart Spotify Ελλάδας, στην 11η θέση με 56.805 streams, τέσσερις μέρες μετά την είσοδό του στο Νο7."
-      ],
-      "tags": [
-        "Ελλάδα",
-        "Νέα"
-      ],
-      "image": "",
-      "streaming": [],
-      "sources": [
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/to_pantheon_metamorfonei_to_plex_stis_19_9_sto_pio_polypolitismiko_event_ths_xronias/"
-        },
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/akouste_to_neo_single_tou_xrs_me_titlo_killing_spree/"
-        },
-        {
-          "name": "kworb.net",
-          "url": "https://kworb.net/spotify/country/gr_daily.html"
-        }
-      ],
-      "slug": "2026-09-09-se-alla-nea-to-off-the-hook-festival-erchetai-sto-oaka-stis-"
-    },
-    {
-      "id": "2026-09-08-gr-alla-nea",
-      "date": "2026-09-08",
-      "author": "Flowless Music",
-      "region": "gr",
-      "title": "Σε άλλα νέα: ο Buzz Capitano ανακοινώνει winter tour σε 8 πόλεις, οι Pindos Atletico υπογράφουν τη φανέλα του Πυρσού Γρεβενών και νέα singles από Sadam και Phyrosun",
-      "summary": "Ο Buzz Capitano ανακοίνωσε winter tour σε 8 πόλεις για το Λιοντάρια, οι Pindos Atletico σχεδίασαν τη φανέλα του Πυρσού Γρεβενών, ο Sadam κυκλοφόρησε το Metallo με τον Dof Twogee και οι Phyrosun και DJ.Silence το Super Flow.",
-      "body": [
-        "Ο Buzz Capitano ανακοίνωσε τη χειμερινή περιοδεία του για το άλμπουμ Λιοντάρια, με 8 συναυλίες σε Χανιά, Θεσσαλονίκη, Ξάνθη, Ιωάννινα, Πάτρα, Λάρισα, Βόλο και Αθήνα από τις 24 Οκτωβρίου έως τις 6 Φεβρουαρίου, μαζί με τους DJ Marvel και Dolos στα decks και τον Andriko ως special guest. Τα εισιτήρια κοστίζουν 15 ευρώ.",
-        "Οι Pindos Atletico σχεδίασαν τη φετινή φανέλα του Πυρσού Γρεβενών, με το design να αντλεί έμπνευση από το άλμπουμ τους URSA MAJOR και την αρκούδα που αποτελεί σήμα κατατεθέν του σχήματος. Τον σχεδιασμό υπέγραψε ο Vandal, ενώ η φανέλα διατίθεται μέσω του slayonfleek.com.",
-        "Ο Sadam κυκλοφόρησε το single Metallo σε συνεργασία με τον Dof Twogee, ο οποίος υπογράφει και τη μουσική παραγωγή. Τη μίξη και το mastering ανέλαβε ο Quicksilver και το κομμάτι κυκλοφορεί μέσω της Minos EMI.",
-        "Ο Phyrosun κυκλοφόρησε το single Super Flow (Studio Vybz) σε συνεργασία με τον DJ.Silence, ο οποίος υπογράφει την παραγωγή. Το κομμάτι κυκλοφορεί μέσω της Inflowence Muzik και είναι διαθέσιμο στο Spotify."
-      ],
-      "tags": [
-        "Ελλάδα",
-        "Νέα"
-      ],
-      "image": "",
-      "streaming": [],
-      "sources": [
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/buzz_capitano_liontaria_winter_tour/"
-        },
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/oi_pindos_atletico_ypografoun_th_nea_fanela_tou_pursou_grevenon_se_mia_protoporiaki_sinergasia/"
-        },
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/sadam_kai_dof_twogee_kykloforisan_neo_single_me_titlo_metallo/"
-        },
-        {
-          "name": "Rapnroll.gr",
-          "url": "https://www.rapnroll.gr/neo_single_apo_phyrosun_kai_dj_silence_me_titlo_super_flow_studio_vybz/"
-        }
-      ],
-      "slug": "2026-09-08-se-alla-nea-o-buzz-capitano-anakoinonei-winter-tour-se-8-pol"
     }
   ]
 }

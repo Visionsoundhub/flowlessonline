@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://flowlessmusic.gr/news/2026-09-27-san-simera-20-xronia-apo-to-sams-town-ton-killers</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-09-27</news:publication_date>
+      <news:title>Σαν σήμερα: 20 χρόνια από το Sam's Town των Killers</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-09-27-ti-kykloforise-to-savvatokyriako-speira-kai-kk-half-quickie-inka-kai-slvg</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-09-27</news:publication_date>
+      <news:title>Τι κυκλοφόρησε το Σαββατοκύριακο: Σπείρα και KK, Half Quickie, INKA και SLVG</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-09-27-ti-kykloforise-sto-exoteriko-u2-carnaval-de-luz-nothing-but-thieves-stray-dogs</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-09-27</news:publication_date>
+      <news:title>Τι κυκλοφόρησε στο εξωτερικό: οι U2 ανακοίνωσαν το Carnaval De Luz με την τελευταία φωνή της Dolly Parton, οι Nothing But Thieves κυκλοφόρησαν το Stray Dogs</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://flowlessmusic.gr/news/2026-09-25-to-ase-me-na-apotycho-toy-vybezmadethis-aka-black-vybez-kykl</loc>
     <news:news>
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
@@ -54,30 +78,6 @@
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
       <news:publication_date>2026-09-24</news:publication_date>
       <news:title>Σε άλλα νέα: 11 κομμάτια από Evnus και Empne, sold out οι Λόγος Τιμής, 30 χρόνια Sifu Versus</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-23-i-hermes-entachthike-sto-eyropaiko-diktyo-tis-impala-me-13-i</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-23</news:publication_date>
-      <news:title>Η HERMES εντάχθηκε στο ευρωπαϊκό δίκτυο της IMPALA με 13 ιδρυτικά μέλη</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-23-to-choosin-texas-tis-ella-langley-espase-mono-toy-to-rekor-m</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-23</news:publication_date>
-      <news:title>Το Choosin' Texas της Ella Langley έσπασε μόνο του το ρεκόρ με 23 εβδομάδες στο Νο1 του Billboard Hot 100</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-23-se-alla-nea-to-bijo-bijo-ton-rafa-kai-ricta-mpike-sto-daily-</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-23</news:publication_date>
-      <news:title>Σε άλλα νέα: το Bijo Bijo των Rafa και RICTA μπήκε στο daily chart, ανακοινώσεις για Ζήνωνα και Γιούλη</news:title>
     </news:news>
   </url>
 </urlset>
