@@ -25,16 +25,8 @@ function loadArtists() {
 }
 
 /* ---------- Latest Release Registry ---------- */
-const LATEST_RELEASE = {
-  artist: 'DIEM, E VOID & VYBEZMADETHIS',
-  title: 'Nana',
-  desc: {
-    el: 'Το νέο single της Flowless Music, παραγωγή Vybezmadethis aka Black Vybez.',
-    en: 'The new single from Flowless Music, produced by Vybezmadethis aka Black Vybez.'
-  },
-  cover: 'assets/news/nana-cover.jpg',
-  spotify: 'https://open.spotify.com/track/1uIGa3C42ltxIIIRsAhlTw'
-};
+// Η τελευταία κυκλοφορία έρχεται από το latest-release.js (το γράφει το Κέντρο Ελέγχου).
+const LATEST_RELEASE = window.FM_LATEST || null;
 const PLAYLIST_URL = 'https://open.spotify.com/playlist/766LR1ZtOxjvZ8fiRQLkMz?si=40bdc0412e1743f6';
 
 /* ---------- Internationalization (i18n) ---------- */
