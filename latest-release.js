@@ -10,6 +10,6 @@ window.FM_LATEST = {
   },
   "spotify": "https://open.spotify.com/album/1GBdafSJGfmF5IGbA2DjFA",
   "youtube": "https://www.youtube.com/watch?v=B0XbqmYdtMg",
-  "appleMusic": "",
+  "appleMusic": "https://music.apple.com/gr/album/%CE%AC%CF%83%CE%B5-%CE%BC%CE%B5-%CE%BD%CE%B1-%CE%B1%CF%80%CE%BF%CF%84%CF%8D%CF%87%CF%89-single/6813441042?l=el",
   "listen": "/listen/ase-me-na-apotycho"
 };
