@@ -123,6 +123,7 @@ function page(a, all) {
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230a0a0c'/><text x='50' y='72' font-size='64' font-family='Arial Black' font-weight='900' fill='%23e02b38' text-anchor='middle'>F</text></svg>">
 <script type="application/ld+json">${JSON.stringify(ld)}</script>
 <script type="application/ld+json">${JSON.stringify(crumbs)}</script>
+<script defer src="https://studio-stats.studiovisionsound.workers.dev/t.js"></script>
 </head>
 <body>
 
