@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://flowlessmusic.gr/news/2026-10-03-anerchomenos-tis-vdomadas-o-trouf-apo-tin-xanthi-vgazei-to-6</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-10-03</news:publication_date>
+      <news:title>Ανερχόμενος της βδομάδας: ο Trouf από την Ξάνθη βγάζει το «6 Ευκαιρίες» με τον Bloody Hawk και την Ελένη Τσαλιγοπούλου</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-10-03-anerchomenos-tis-vdomadas-o-comehelpglo-anevainei-sto-no68-t</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-10-03</news:publication_date>
+      <news:title>Ανερχόμενος της βδομάδας: ο comehelpglo ανεβαίνει στο Νο68 του Billboard Hot 100 με το onsra</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://flowlessmusic.gr/news/2026-10-02-to-pablona-toy-light-emeine-sto-no1-toy-daily-chart-spotify-</loc>
     <news:news>
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
@@ -22,30 +38,6 @@
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
       <news:publication_date>2026-10-02</news:publication_date>
       <news:title>Σε άλλα νέα: «Keep it Raw» EP με 5 κομμάτια από τον Ένορκο 8, «LOROPIANA» από τον CHRI$, ο A$AP Rocky στην Αθήνα στις 11/10, ο Wang στις 3/10</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-30-to-pablona-toy-light-eftase-sto-no1-toy-daily-chart-spotify-</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-30</news:publication_date>
-      <news:title>Το Pablona του Light έφτασε στο Νο1 του daily chart Spotify Ελλάδας με 94.219 streams την 12η μέρα</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-30-to-patient-zero-tis-taylor-swift-vgike-stis-25-septemvrioy-k</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-30</news:publication_date>
-      <news:title>Το Patient Zero της Taylor Swift βγήκε στις 25 Σεπτεμβρίου και μπήκε στο Νο85 του daily chart Spotify Ελλάδας με 17.207 streams</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-09-30-se-alla-nea-ep-me-5-kommatia-apo-tin-indra-kolasi-apo-ton-sk</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-09-30</news:publication_date>
-      <news:title>Σε άλλα νέα: EP με 5 κομμάτια από την Indra, «Κόλαση» από τον SkapeXIX, «La Douleur» από τον Leva, ο Taki Tsan στη Φλώρινα στις 4/10</news:title>
     </news:news>
   </url>
 </urlset>
