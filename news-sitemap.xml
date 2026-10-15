@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://flowlessmusic.gr/news/2026-10-15-to-vgaino-rixno-toy-hermeshermes-me-ton-blvd-xanapire-to-no1</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-10-15</news:publication_date>
+      <news:title>Το VGAINO RIXNO του HermesHermes με τον BLVD ξαναπήρε το Νο1 του daily chart Spotify Ελλάδας με 66.730 streams, με το top 10 να μαζεύει 546.212 streams</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-10-15-to-patient-zero-tis-taylor-swift-evale-telos-sto-rekor-ton-2</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-10-15</news:publication_date>
+      <news:title>Το Patient Zero της Taylor Swift έβαλε τέλος στο ρεκόρ των 24 εβδομάδων του Choosin' Texas στο Νο1 του Hot 100 και κρατά το Νο1 για δεύτερη εβδομάδα</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-10-15-se-alla-nea-to-single-anasa-ton-mira-kai-phyrosun-o-baro-pas</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-10-15</news:publication_date>
+      <news:title>Σε άλλα νέα: το single ΑΝΑΣΑ των Mira και Phyrosun, ο Baro Passo στο AUX Club, ο TASEOS με το Zero Time και ο Andri J στο ΙΛΙΟΝ Plus</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://flowlessmusic.gr/news/2026-10-14-to-back-toy-diff-me-ton-spize-gyrise-sto-no1-toy-daily-chart</loc>
     <news:news>
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
@@ -46,30 +70,6 @@
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
       <news:publication_date>2026-10-13</news:publication_date>
       <news:title>Σε άλλα νέα: «Ρίμες εν Αθήναις» του Άσαρκου με 23 κομμάτια, οι BARO PASSO στο Eightball στις 29/12, ο Λόγος Τιμής μεταφέρεται στις 22/5/2027</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-10-12-to-vgaino-rixno-toy-hermeshermes-me-ton-blvd-einai-no1-sto-d</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-10-12</news:publication_date>
-      <news:title>Το VGAINO RIXNO του HermesHermes με τον BLVD είναι Νο1 στο daily chart Spotify Ελλάδας με 101.935 streams, το μόνο κομμάτι πάνω από τις 100.000</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-10-12-to-habibti-fomo-toy-drake-mpike-sto-no2-toy-billboard-200-me</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-10-12</news:publication_date>
-      <news:title>Το HABIBTI (FOMO) του Drake μπήκε στο Νο2 του Billboard 200 με 71.000 μονάδες, πίσω από την Taylor Swift με 93.000</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-10-12-se-alla-nea-o-taseos-sti-thessaloniki-stis-21-11-o-andri-j-s</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-10-12</news:publication_date>
-      <news:title>Σε άλλα νέα: ο TASEOS στη Θεσσαλονίκη στις 21/11, ο Andri J στο ΙΛΙΟΝ Plus στις 15/11, ο Stk στις 14/11, ο RICTA στο Gagarin στις 6/11</news:title>
     </news:news>
   </url>
 </urlset>
