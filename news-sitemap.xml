@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://flowlessmusic.gr/news/2026-10-16-to-vgaino-rixno-toy-hermeshermes-me-ton-blvd-kratise-to-no1-</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-10-16</news:publication_date>
+      <news:title>Το VGAINO RIXNO του HermesHermes με τον BLVD κράτησε το Νο1 του daily chart Spotify Ελλάδας με 67.132 streams, με το BACK του DIFF στο Νο2 με 65.307</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-10-16-o-nas-zitise-apo-ti-viomichania-na-plironei-ta-themelia-tis-</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-10-16</news:publication_date>
+      <news:title>Ο Nas ζήτησε από τη βιομηχανία να πληρώνει τα θεμέλια της μουσικής, λίγες μέρες πριν τα Hip Hop Grandmaster Awards της Paid in Full Foundation στις 24 Οκτωβρίου</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-10-16-se-alla-nea-to-riddim-freestyle-ton-ena-dyo-dj-xquze-kai-the</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-10-16</news:publication_date>
+      <news:title>Σε άλλα νέα: το Riddim Freestyle των Ένα Δύο, DJ Xquze και The Plug, το πρώτο single του Sagra, το Showtime του Phyrosun και οι Light με δύο κομμάτια στο top 5</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://flowlessmusic.gr/news/2026-10-15-to-vgaino-rixno-toy-hermeshermes-me-ton-blvd-xanapire-to-no1</loc>
     <news:news>
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
@@ -46,30 +70,6 @@
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
       <news:publication_date>2026-10-14</news:publication_date>
       <news:title>Σε άλλα νέα: νέο single του Agrafos Vivlos με Άσαρκο L90M, το CIRCUS των INS &amp; Lizard, το State of Mind clip και το Stolen Mic στη Θεσσαλονίκη</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-10-13-to-ela-poios-toy-ivan-greko-me-toys-donn-kai-blvd-anevike-st</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-10-13</news:publication_date>
-      <news:title>Το Ela Poios? του Ivan Greko με τους Donn και BLVD ανέβηκε στο Νο7 του daily chart Spotify Ελλάδας με 51.618 streams, χάνοντας μόλις 496 σε μία μέρα</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-10-13-to-solar-eclipse-ton-drake-kai-don-toliver-mpike-sto-no5-toy</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-10-13</news:publication_date>
-      <news:title>Το Solar Eclipse των Drake και Don Toliver μπήκε στο Νο5 του Billboard Hot 100, πάνω στο Choosin' Texas που βρίσκεται στο Νο2</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-10-13-se-alla-nea-rimes-en-athinais-toy-asarkoy-me-23-kommatia-oi-</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-10-13</news:publication_date>
-      <news:title>Σε άλλα νέα: «Ρίμες εν Αθήναις» του Άσαρκου με 23 κομμάτια, οι BARO PASSO στο Eightball στις 29/12, ο Λόγος Τιμής μεταφέρεται στις 22/5/2027</news:title>
     </news:news>
   </url>
 </urlset>
