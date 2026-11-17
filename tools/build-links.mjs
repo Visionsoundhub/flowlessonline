@@ -35,8 +35,17 @@ function fmtDate(iso) {
 function page(l) {
   const url = `${SITE}/listen/${l.slug}`;
   const isComingSoon = !l.platforms || !l.platforms.length;
+  const isPresave = isComingSoon && !!l.presave;
 
-  const body = isComingSoon
+  const body = isPresave
+    ? `
+    <p class="listen-soon-date">Κυκλοφορεί ${esc(fmtDate(l.releaseDate))}</p>
+    <div class="listen-buttons">
+        <a class="listen-btn" href="${esc(l.presave)}">
+          <span>Pre-save</span>
+        </a>
+    </div>`
+    : isComingSoon
     ? `
     <p class="listen-soon-date">Κυκλοφορεί ${esc(fmtDate(l.releaseDate))}</p>
     <p class="listen-soon-text">Άφησε το email σου, θα σου στείλουμε το link μόλις βγει.</p>
@@ -53,7 +62,7 @@ function page(l) {
         </a>`).join('')}
     </div>`;
 
-  const script = isComingSoon ? `
+  const script = (isComingSoon && !isPresave) ? `
 <script>
 document.querySelector('.listen-form')?.addEventListener('submit', async (e) => {
   e.preventDefault();

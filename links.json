@@ -1,6 +1,15 @@
 {
   "links": [
     {
+      "slug": "ole-ole-ole-remix",
+      "artist": "DieM, E Void & Black Vybez",
+      "title": "Ole Ole Ole (Remix)",
+      "cover": "assets/news/ole-ole-ole-remix-cover.jpg",
+      "releaseDate": "2026-11-20",
+      "presave": "https://bfan.link/ole-ole-ole",
+      "platforms": []
+    },
+    {
       "slug": "echo-tabs-sto-mualo",
       "artist": "BLACK VYBEZ",
       "title": "Έχω tabs στο μυαλό",
