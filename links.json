@@ -7,7 +7,25 @@
       "cover": "assets/news/ole-ole-ole-remix-cover.jpg",
       "releaseDate": "2026-11-20",
       "presave": "https://bfan.link/ole-ole-ole",
-      "platforms": []
+      "platforms": [
+        {
+          "name": "Spotify",
+          "url": "https://open.spotify.com/album/6IxX9r1vb7I7PKYSWPTxq3"
+        },
+        {
+          "name": "Apple Music",
+          "url": "https://music.apple.com/at/album/ole-ole-ole-remix-single/6830358077"
+        },
+        {
+          "name": "YouTube",
+          "url": "https://www.youtube.com/watch?v=DBPUDmfb7Rc"
+        },
+        {
+          "name": "Deezer",
+          "url": "https://www.deezer.com/en/album/1035791132"
+        }
+      ],
+      "hubId": "FLOWLESS_MUSIC:ole-ole-ole-remix"
     },
     {
       "slug": "echo-tabs-sto-mualo",
