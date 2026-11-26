@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://flowlessmusic.gr/news/2026-11-26-to-blackout-toy-lex-pire-gia-proti-fora-to-no1-sto-daily-cha</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-11-26</news:publication_date>
+      <news:title>Το BLACKOUT του ΛΕΞ πήρε για πρώτη φορά το Νο1 στο daily chart Spotify Ελλάδας με 93.384 streams, μόλις 398 μπροστά από το DRAKOS</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-11-26-to-soundtrack-toy-gta-vi-egine-57-tragoydia-me-to-deluxe-kai</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-11-26</news:publication_date>
+      <news:title>Το soundtrack του GTA VI έγινε 57 τραγούδια με το deluxe και έχει 5 κομμάτια στο παγκόσμιο top 100 του Spotify με 13,1 εκατομμύρια streams τη μέρα</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-11-26-se-alla-nea-oi-tang-ram-giortazoyn-27-chronia-sto-gagarin-20</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-11-26</news:publication_date>
+      <news:title>Σε άλλα νέα: οι Tang Ram γιορτάζουν 27 χρόνια στο Gagarin 205 στις 27 Δεκεμβρίου, ο ZIPER βγάζει τον πρώτο του δίσκο και οι Βήτα Πεις κάνουν 2 sold out στο An Club</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://flowlessmusic.gr/news/2026-11-25-to-drakos-toy-lex-emeine-no1-sto-daily-chart-spotify-elladas</loc>
     <news:news>
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
@@ -46,38 +70,6 @@
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
       <news:publication_date>2026-11-24</news:publication_date>
       <news:title>Σε άλλα νέα: η Ζημιά από τα Κατεβασμένα Ρολά, η Χαρά στη Θεσσαλονίκη στις 22 Ιανουαρίου και το AGAINST ALL του Τρανού +18 θέσεις</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-11-23-to-ole-ole-ole-ton-diem-kai-e-void-gyrizei-se-remix-me-ton-v</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-11-23</news:publication_date>
-      <news:title>Το Ole Ole Ole των DieM και E Void γυρίζει σε remix με τον Vybezmadethis aka Black Vybez, διαθέσιμο από τις 20 Νοεμβρίου σε 4 πλατφόρμες</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-11-23-to-zoro-toy-light-me-ton-bobby-shmurda-mpike-sto-no1-toy-dai</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-11-23</news:publication_date>
-      <news:title>Το ZORO του Light με τον Bobby Shmurda μπήκε στο Νο1 του daily chart Spotify Ελλάδας με 160.511 streams και έσπασε το σερί του ΛΕΞ</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-11-23-to-flower-in-a-hurricane-ton-justice-apo-to-gta-vi-eftase-st</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-11-23</news:publication_date>
-      <news:title>Το Flower In A Hurricane των Justice από το GTA VI έφτασε στο Νο1 του παγκόσμιου Spotify και κάνει 4,58 εκατομμύρια streams τη μέρα</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-11-23-se-alla-nea-anoichtes-aitiseis-gia-to-athens-music-week-2027</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-11-23</news:publication_date>
-      <news:title>Σε άλλα νέα: ανοιχτές αιτήσεις για το Athens Music Week 2027 ως τις 20 Δεκεμβρίου, ο Εισβολέας στο An Club και το Paris του Merko στο Νο25</news:title>
     </news:news>
   </url>
 </urlset>
