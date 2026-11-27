@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   <url>
+    <loc>https://flowlessmusic.gr/news/2026-11-27-to-drakos-toy-lex-xanapire-to-no1-sto-daily-chart-spotify-el</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-11-27</news:publication_date>
+      <news:title>Το DRAKOS του ΛΕΞ ξαναπήρε το Νο1 στο daily chart Spotify Ελλάδας με 87.658 streams, 2.558 μπροστά από το BLACKOUT</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-11-27-to-carnaval-de-luz-ton-u2-mpike-sto-no4-toy-billboard-200-me</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-11-27</news:publication_date>
+      <news:title>Το Carnaval de Luz των U2 μπήκε στο Νο4 του Billboard 200 με 49.000 μονάδες, με 22.000 βινύλια σε μία εβδομάδα</news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://flowlessmusic.gr/news/2026-11-27-se-alla-nea-to-parakratos-apo-ola-svarna-kai-deja-o-mani-xan</loc>
+    <news:news>
+      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
+      <news:publication_date>2026-11-27</news:publication_date>
+      <news:title>Σε άλλα νέα: το Παρακράτος από Όλα Σβάρνα και Deja, ο Μάνι ξανά στο Aux Athens στις 18 Δεκεμβρίου και 3 κομμάτια του TOQUEL στο top 20</news:title>
+    </news:news>
+  </url>
+  <url>
     <loc>https://flowlessmusic.gr/news/2026-11-26-to-blackout-toy-lex-pire-gia-proti-fora-to-no1-sto-daily-cha</loc>
     <news:news>
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
@@ -46,30 +70,6 @@
       <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
       <news:publication_date>2026-11-25</news:publication_date>
       <news:title>Σε άλλα νέα: ο Ραμμένος Άσσος στο Gagarin 205 στις 13 Φεβρουαρίου, το DHMOSIOGRAFOS του Kabandha και το Pinw Les +49 θέσεις</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-11-24-to-drakos-toy-lex-xanapire-to-no1-toy-daily-chart-spotify-el</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-11-24</news:publication_date>
-      <news:title>Το DRAKOS του ΛΕΞ ξαναπήρε το Νο1 του daily chart Spotify Ελλάδας με 90.981 streams, ενώ το ZORO του Light έπεσε στο Νο3</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-11-24-tria-christoygenniatika-tragoydia-mpikan-sto-top-10-toy-hot-</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-11-24</news:publication_date>
-      <news:title>Τρία χριστουγεννιάτικα τραγούδια μπήκαν στο top 10 του Hot 100, με το All I Want for Christmas Is You της Mariah Carey στο Νο4 με 13,5 εκατομμύρια streams</news:title>
-    </news:news>
-  </url>
-  <url>
-    <loc>https://flowlessmusic.gr/news/2026-11-24-se-alla-nea-i-zimia-apo-ta-katevasmena-rola-i-chara-sti-thes</loc>
-    <news:news>
-      <news:publication><news:name>Flowless Music</news:name><news:language>el</news:language></news:publication>
-      <news:publication_date>2026-11-24</news:publication_date>
-      <news:title>Σε άλλα νέα: η Ζημιά από τα Κατεβασμένα Ρολά, η Χαρά στη Θεσσαλονίκη στις 22 Ιανουαρίου και το AGAINST ALL του Τρανού +18 θέσεις</news:title>
     </news:news>
   </url>
 </urlset>
